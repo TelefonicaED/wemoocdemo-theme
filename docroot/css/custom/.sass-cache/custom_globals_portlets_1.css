@@ -1,0 +1,2127 @@
+/* no puede contener + de 32 archivos importados */
+.portlet-borderless-container .portlet-body {
+  font-size: 16px; }
+
+.portlet-content .portlet-body {
+  font-size: 16px;
+  clear: both;
+  padding-bottom: 8px; }
+
+.portlet-content, .portlet-minimized .portlet-content-container {
+  padding: 0; }
+
+#navigation_table #ul_childmenu li a {
+  color: #2AA8BF;
+  text-decoration: none;
+  font-family: Nunito, Tahoma, Verdana, Arial;
+  font-size: 12px;
+  font-weight: bold; }
+
+#navigation_table #ul_childmenu .selected a {
+  color: #000; }
+
+#navigation_table #ul_childmenu li.last_li {
+  border-right: none; }
+
+#navigation_table #ul_childmenu li.first_child {
+  border-top: 1px solid #E3E3E3; }
+
+#navigation_table .submenu {
+  float: none;
+  list-style-type: none;
+  position: absolute; }
+
+#navigation_table #ul_childmenu li {
+  display: none;
+  float: none;
+  background-color: #FFFFFF;
+  width: auto;
+  padding: 0 10px 2px 10px;
+  margin: 0;
+  border: none;
+  height: auto;
+  border-bottom: 1px solid #E3E3E3;
+  border-left: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3; }
+
+#navigation_table .submenu li a {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+#navigation_table .submenu li span {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+#portletnav #menudearriba {
+  /*position: absolute;*/
+  margin: 0; }
+
+#portletnav {
+  clear: both;
+  overflow: hidden;
+  display: block;
+  padding: 39px 0; }
+
+#portletnav ul li.last_li {
+  border-right: none; }
+
+#portletnav ul li.first_child {
+  border-top: 1px solid #E3E3E3; }
+
+#portletnav .submenu {
+  float: none;
+  list-style-type: none;
+  position: absolute; }
+
+#portletnav ol, ul, dl {
+  margin-left: 0px; }
+
+#portletnav blockquote, ul, ol, dl {
+  margin: 0px; }
+
+#portletnav .submenu li {
+  display: none;
+  float: none;
+  background-color: #FFFFFF;
+  width: auto;
+  padding: 0 10px 2px 10px;
+  margin: 0;
+  border: none;
+  height: auto;
+  border-bottom: 1px solid #E3E3E3;
+  border-left: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3; }
+
+#portletnav .submenu li a {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+#portletnav .submenu li span {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+/* GENERICO TT PORTLETS */
+.portlet .portlet-special-tt {
+  height: 66px;
+  border-bottom: 1px #e2e2e2 solid;
+  padding: 1px; }
+
+.portlet .portlet-special-tt .portlet-special-ttcontent {
+  height: 66px;
+  font-size: 20px;
+  color: #00c4d9; }
+
+.portlet .portlet-special-tt .table_text {
+  width: 100px;
+  font-size: 18px;
+  color: #36b3d1;
+  line-height: 18px;
+  text-align: left;
+  position: relative;
+  left: 12px;
+  top: 36px; }
+
+.portlet .portlet-special-tt .portlet-special-ttcontent .portlet-special-ttcontent-tape {
+  height: 66px; }
+
+.portlet .portlet-special-tt .specialFontSize {
+  font-size: 20px;
+  font-weight: bold; }
+
+.portlet-special-tt .portlet-title {
+  width: 200px; }
+
+/* Marco y sombreado portlets */
+.portlet {
+  background-color: #FFFFFF;
+  border: none; }
+
+/* Barra titulo portlets */
+.portlet-title img {
+  float: right;
+  padding-bottom: 4px; }
+
+.portlet-topper {
+  background-color: #fff;
+  color: #2d2849; }
+
+.portlet-title-text {
+  font: 600 20px Nunito, Tahoma, Verdana, Arial;
+  cursor: default;
+  color: #e4701e; }
+
+.portlet-topper-toolbar {
+  display: block;
+  margin: 0;
+  padding: 2px;
+  position: relative;
+  right: 3px;
+  text-align: right;
+  top: 0px;
+  top: -40px;
+  float: right; }
+
+.displaywebcontentrotator-portlet .body_cont {
+  height: 210px;
+  overflow: hidden;
+  margin-bottom: 10px; }
+
+.aui-calendar-link-none, .aui-calendar-link-today {
+  display: none; }
+
+/*FOROS*/
+/*Foros*/
+.portlet-message-boards ul.lfr-actions li.lfr-trigger .nobr {
+  color: #FFF; }
+
+.portlet-message-boards .col-2 {
+  display: none; }
+
+.portlet-message-boards .top-links {
+  float: left; }
+
+.portlet-message-boards .top-links img {
+  display: none; }
+
+.portlet-message-boards .taglib-text {
+  text-decoration: none; }
+
+.portlet-message-boards .thread-icon .taglib-icon .icon {
+  display: block;
+  padding-right: 5px;
+  margin-top: 5px; }
+
+.portlet-message-boards .message-container {
+  border: 0;
+  margin-left: 0; }
+
+.portlet-message-boards .thread-body {
+  font-size: 16px; }
+
+.portlet-message-boards {
+  background-color: #FFF;
+  padding: 0 0 5px 0; }
+
+.portlet-message-boards .lfr-panel-title {
+  color: #00b5cc;
+  font-size: 18px; }
+
+.portlet-message-boards .search-results {
+  color: #d78613;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px; }
+
+.portlet-message-boards .taglib-search-iterator-page-iterator-bottom {
+  padding: 10px 0; }
+
+.portlet-message-boards .taglib-search-iterator-page-iterator-bottom .search-results {
+  display: none; }
+
+.portlet-message-boards .top-links-container {
+  border-bottom: #2d2849 solid 1px;
+  padding: 0 0 10px 10px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  margin: 0; }
+
+.portlet-message-boards .top-links-container a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none; }
+
+.portlet-message-boards .taglib-icon {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .category-search .aui-button-content input[type="submit"] {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat 0 0;
+  color: transparent;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px; }
+
+.portlet-message-boards .search_box {
+  float: right;
+  clear: right;
+  padding: 5px;
+  margin: 0; }
+
+.portlet-message-boards .separator {
+  padding: 0;
+  clear: both;
+  border-top: 0 none transparent;
+  margin: 0; }
+
+.portlet-message-boards .taglib-flags .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .thread-bottom .taglib-icon .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .thread-top .taglib-icon .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .user-details {
+  font-size: 12px !important; }
+
+.portlet-message-boards .thread-message-view .taglib-user-display .user-details .user-name {
+  font-size: 16px;
+  font-weight: bold !important; }
+
+.portlet-message-boards .user-details .taglib-icon .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .header-back-position {
+  clear: left; }
+
+.portlet-message-boards .header-back-position a {
+  font-size: 16px;
+  font-weight: bold; }
+
+.portlet-message-boards .taglib-header .header-title {
+  font-size: 18px;
+  margin: 0; }
+
+.portlet-message-boards .taglib-header {
+  border: 0;
+  min-height: 10px;
+  margin-bottom: 0;
+  border-bottom: 0 none transparent; }
+
+.portlet-message-boards .header-title-position {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Nunito, Tahoma, Verdana, Arial;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  color: #000;
+  padding: 5px 0; }
+
+.portlet-message-boards .header-pretit {
+  float: left;
+  margin-top: 0;
+  font-weight: bold;
+  color: #004250;
+  padding-right: 5px; }
+
+.portlet-message-boards .header-pretit2 {
+  float: left;
+  margin-top: 0;
+  font-weight: bold;
+  padding-right: 5px; }
+
+.portlet-message-boards .header-top-links-title {
+  float: left;
+  margin-top: 0;
+  font-weight: bold;
+  color: #56c1d3;
+  width: 350px;
+  padding: 20px 0 20px 0; }
+
+.portlet-message-boards .thread-navigation {
+  color: #FFF;
+  display: none; }
+
+.portlet-message-boards .thread-navigation a {
+  display: none; }
+
+/*Contenidos ocultos*/
+.portlet-message-boards .lfr-top .user-info .alt td {
+  background-color: #f8f8f8; }
+
+.portlet-message-boards .thread-message-view .portlet-section-alternate .results-row .alt td {
+  background-color: #f8f8f8 !important; }
+
+.portlet-message-boards #toggle_id_message_boards_view_message_thread tr.results-row td a, .portlet-message-boards #toggle_id_message_boards_view_message_thread tr.results-row-hover td a {
+  font-weight: bold !important; }
+
+.portlet-message-boards #toggle_id_message_boards_view_message_thread .results-row.alt td a, .portlet-message-boards #toggle_id_message_boards_view_message_thread .results-row-hover.alt td a {
+  font-weight: bold !important; }
+
+.portlet-message-boards .toggle_id_message_boards_view_message_thread {
+  border: 0 none transparent; }
+
+.portlet-message-boards .results-row .col-1 a, .portlet-message-boards .results-row-hover .col-1 a {
+  background: url(images/custom/enreda/bullet_triangulo_blanco.png) no-repeat right 50% transparent;
+  padding-right: 9px; }
+
+.portlet-message-boards .taglib-header .header-back-to {
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px; }
+
+.portlet-message-boards .category-buttons {
+  display: block!important;
+  float: right;
+  margin: 0;
+  clear: left;
+  font-size: 12px; }
+
+.portlet-message-boards .threads-panel {
+  margin-top: 10px; }
+
+/* DESACTIVAMOS  DISCUSIONES EN FINANZAS, SOLO DESDE CADA CATEGORIA */
+/*New estilos foros*/
+.portlet-message-boards .taglib-header .header-back-to a {
+  padding: 4px 10px 4px 2px;
+  color: #555555; }
+
+.portlet-message-boards .thread-message-view.portlet-section-alternate.results-row.alt td {
+  background-color: #f8f8f8 !important; }
+
+.portlet-message-boards .category-subscriptions {
+  float: right;
+  clear: right; }
+
+.portlet-message-boards .category-subscriptions .category-subscription-types {
+  padding-left: 5px; }
+
+.portlet-message-boards .category-subscriptions .category-subscription-types a {
+  display: inline-block;
+  font-size: 1em;
+  font-family: Nunito, Tahoma, Verdana;
+  font-weight: bold;
+  text-shadow: none; }
+
+.portlet-message-boards .category-subscriptions .category-subscription-types a span {
+  line-height: 15px; }
+
+.portlet-message-boards .thread-controls .thread-actions a {
+  display: inline-block;
+  font-weight: bold;
+  font-family: Nunito, Tahoma, Verdana;
+  text-shadow: none; }
+
+.portlet-message-boards .edit-controls a.taglib-icon {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Nunito, Tahoma, Verdana;
+  text-shadow: none; }
+
+/* add */
+.portlet-message-boards .portlet-topper-toolbar {
+  display: block; }
+
+.portlet-message-boards .thread-user-rank {
+  display: none; }
+
+/* */
+.portlet-message-boards .message-container .user-info {
+  border-right: 0 none transparent; }
+
+.portlet-message-boards .thread-top {
+  border-bottom: 0 none transparent; }
+
+/* BLOGS */
+.portlet-blogs {
+  background-color: #FFF; }
+
+.portlet-blogs .lfr-meta-actions.edit-actions,
+.portlet-blogs .entry-navigation {
+  display: none; }
+
+.portlet-blogs .aui-search-bar {
+  display: block;
+  clear: right;
+  padding-bottom: 10px; }
+
+.portlet-blogs .subscribe {
+  display: none; }
+
+/* .portlet-blogs .aui-field-assettags, .portlet-blogs .aui-field.aui-field-choice {display: none;} */
+/* .portlet-blogs .aui-field-assetcategories {display: none !important;} */
+.portlet-blogs .subscribe {
+  display: none; }
+
+/* BIBLIOTECA */
+#portlet_20 #aui_3_2_0_11166 {
+  display: none; }
+
+#portlet_20 .jnpk_-webdav-action {
+  display: none; }
+
+#portlet_20 .waho_-webdav-action {
+  display: none; }
+
+#portlet_20 .top-links-navigation,
+#portlet_20 .aui-column-content .aui-column-content-last .lfr-asset-column-content .lfr-asset-column-actions-content,
+#portlet_20 .lfr-asset-summary, .portlet-wiki .top-links {
+  padding-bottom: 0; }
+
+.portlet-blogs .taglib-header {
+  padding: 0 5px;
+  margin: 0 0 -2px -15px;
+  border: 0;
+  background-color: #FFF;
+  width: 100%; }
+
+.portlet-blogs .taglib-header h1 {
+  font-size: 20px; }
+
+.portlet-blogs .taglib-header span {
+  color: #000; }
+
+/*desde aquï¿½*/
+.portlet-blogs .lista_blogs {
+  overflow: hidden;
+  padding-bottom: 10px; }
+
+.portlet-blogs .lista_blogs .limpio {
+  width: 298px;
+  height: 80px;
+  float: left;
+  clear: none !important;
+  border: solid 1px #CCC;
+  padding: 2px; }
+
+.portlet-blogs .lista_blogs .limpio div {
+  padding: 1px 0; }
+
+/*hasta aquï¿½*/
+.portlet-blogs .entry {
+  clear: left !important;
+  display: block;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: #FFF;
+  float: left;
+  font-size: 16px;
+  border-bottom: #2d2849 solid 1px; }
+
+.portlet-blogs .entry .entry {
+  border-bottom: 0 none; }
+
+.portlet-blogs .entry-content {
+  overflow: hidden; }
+
+.portlet-blogs .entry-content .entry-title {
+  float: left; }
+
+.portlet-blogs .entry-content .entry-date {
+  float: Left;
+  padding-bottom: 6px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  color: #000;
+  background: #FFF;
+  padding-top: 3px;
+  padding-left: 5px; }
+
+.portlet-blogs .entry-body {
+  clear: left;
+  text-align: justify;
+  overflow: hidden;
+  font-size: 16px; }
+
+.portlet-blogs .entry-body a {
+  font-weight: bold; }
+
+.portlet-blogs .entry-body ol {
+  padding-left: 2em; }
+
+.portlet-blogs .taglib-user-display .user-name {
+  font-weight: bold;
+  font-style: italic; }
+
+.portlet-blogs .separator {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  border-top: 0 none; }
+
+.portlet-blogs .separator2 {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  background-color: #FFF;
+  height: 1px; }
+
+.portlet-blogs .lfr-panel-content {
+  margin: 0;
+  padding: 10px 0 10px 0; }
+
+.portlet-blogs .header-title span {
+  color: #000; }
+
+.portlet-blogs .aui-rating-label-element {
+  float: left;
+  padding-right: 5px;
+  display: block; }
+
+.portlet-blogs .entry-author {
+  font-family: Nunito;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #00b5cc;
+  background-color: #FFF;
+  margin-left: -20px;
+  margin-bottom: 4px;
+  padding-right: 0px;
+  margin-right: 0px;
+  border: 0; }
+
+.portlet-blogs .stats {
+  font-family: Nunito;
+  font-size: 1.1em;
+  color: #000; }
+
+.portlet-blogs .taglib-page-iterator .search-results {
+  left: 40%;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+  display: none; }
+
+.portlet-blogs .taglib-page-iterator {
+  clear: both; }
+
+.portlet-blogs .page-links {
+  clear: both;
+  width: 100%;
+  left: 10%;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 0;
+  text-align: center; }
+
+.portlet-blogs .search-pages {
+  background-color: #FFF;
+  width: 100%; }
+
+.portlet-blogs .delta-selector {
+  padding-left: 10px; }
+
+/*New estilos Blogs*/
+.portlet-blogs .lfr-meta-actions.edit-actions {
+  display: block;
+  margin-top: -20px;
+  height: 15px;
+  padding-left: 15px; }
+
+.portlet-blogs .taglib-header .header-back-to a {
+  padding: 0px; }
+
+.portlet-blogs .taglib-flags {
+  font-family: Nunito;
+  font-weight: 600;
+  border: 0; }
+
+.portlet-blogs #ykmt_socialBookmarks {
+  display: none; }
+
+.portlet-blogs .taglib-social-bookmarks {
+  display: none;
+  clear: none;
+  float: left;
+  padding-top: 0px;
+  width: 120px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.portlet-blogs .taglib-social-bookmarks li {
+  line-height: 30px; }
+
+.portlet-blogs .taglib-ratings .aui-rating-label-element {
+  font-family: Nunito;
+  font-size: 1.1em; }
+
+.portlet-blogs .add-comment td {
+  font-family: Nunito;
+  font-size: 1.1em; }
+
+.portlet-blogs .add-comment td a {
+  color: #1EADC4; }
+
+.portlet-blogs .add-comment td a:hover {
+  font-weight: bold;
+  text-decoration: underline; }
+
+.portlet-blogs .add-comment td #_33_mefv:hover {
+  font-weight: normal;
+  text-decoration: none; }
+
+.portlet-blogs .add-comment .taglib-icon {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none;
+  padding: 4px 20px; }
+
+.portlet-blogs .add-comment .taglib-icon .taglib-text {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.portlet-blogs .portlet-topper-toolbar .taglib-icon .icon {
+  display: inline; }
+
+.portlet-blogs .lfr-top.stretch {
+  color: #004151;
+  font-size: 1.1em;
+  font-weight: bold; }
+
+.portlet-blogs .lfr-top.stretch a {
+  color: #004151; }
+
+.portlet-blogs .lfr-top.stretch a:hover {
+  text-decoration: underline; }
+
+.portlet-blogs .lfr-top.stretch div:first-child {
+  font-weight: normal;
+  /*padding-top: 8px;*/ }
+
+.portlet-blogs .taglib-icon .taglib-text {
+  text-decoration: none;
+  font-weight: 600; }
+
+.portlet-blogs .taglib-user-display .user-details .user-name {
+  font-family: Nunito;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #004151; }
+
+.portlet-blogs .portlet-toolbar.search-form {
+  color: #FFF;
+  margin-right: 5px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  text-align: right; }
+
+.portlet-blogs .search-title {
+  font-family: Nunito, Tahoma, Verdana, Arial;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold; }
+
+.portlet-blogs .view-count {
+  color: #00b5cc; }
+
+.portlet-blogs .search-input {
+  color: #CCC; }
+
+.portlet-blogs .search-button {
+  padding-top: 5px;
+  float: right; }
+
+.portlet-blogs .written-by {
+  font-family: Nunito;
+  color: #000;
+  font-weight: normal; }
+
+.portlet-blogs .comments {
+  color: #00b5cc;
+  font-weight: bold;
+  border: 0; }
+
+.portlet-blogs .comments a {
+  color: #00b5cc;
+  font-weight: bold; }
+
+.portlet-blogs .entry-title a {
+  color: #00b5cc; }
+
+.portlet-blogs .lfr-panel-container {
+  width: 100%;
+  margin-left: -15px;
+  padding-left: 10px; }
+
+.portlet-blogs .taglib-ratings.stars {
+  clear: left;
+  color: #d48a0f;
+  font-weight: bold;
+  float: left !important;
+  padding-right: 8px;
+  display: inline;
+  position: relative; }
+
+.portlet-blogs .taglib-ratings {
+  float: left;
+  display: inline;
+  position: relative; }
+
+.portlet-blogs .taglib-social-bookmarks a {
+  font-weight: bold;
+  color: #d48a0f; }
+
+.portlet-blogs .aui-rating-label-element {
+  /*border-right: 1px solid #d48a0f;
+  padding-left:8px;*/ }
+
+.portlet-blogs .search-form .aui-field-text input[type="text"] {
+  width: 155px; }
+
+.portlet-blogs .search-form .aui-button-submit input.aui-button-input-submit {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat scroll 0 0 transparent;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px;
+  vertical-align: top; }
+
+.portlet-blogs .entry-footer {
+  clear: left !important;
+  width: 100%; }
+
+.portlet-blogs .opens-new-window-accessible {
+  display: none; }
+
+.portlet-blogs .liferay-rating-vote {
+  float: left; }
+
+.portlet-blogs .liferay-rating-score {
+  float: left; }
+
+/*FIN - New estilos Blogs*/
+#portlet_20 .results-header th {
+  background: url("/wemoocdemo-theme/images/custom/betwen.gif") no-repeat scroll left top white;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold; }
+
+#portlet_20 .lfr-menu-list li a {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+/* #portlet_20 .lfr-menu-list li a {width:100%} */
+#portlet_20 .results-row td a, #portlet_20 .results-row-hover td a {
+  color: #000000;
+  font-weight: normal !important; }
+
+#portlet_20 .taglib-page-iterator .search-results {
+  font-size: 12px;
+  font-weight: bold;
+  left: 40%;
+  padding-bottom: 10px;
+  position: relative; }
+
+#portlet_20 ul.lfr-actions li.lfr-trigger .nobr {
+  color: #FFF; }
+
+/*#portlet_20 .lfr-asset-field, */
+#portlet_20 .lfr-asset-column-actions-content {
+  background-color: #FFFFFF; }
+
+#portlet_20 .lfr-asset-column-actions .lfr-asset-column-actions-content {
+  border: 0px; }
+
+#portlet_20 .aui-w75 {
+  width: 75%; }
+
+#portlet_20 .aui-w25 {
+  width: 25%;
+  display: block; }
+
+/* wiki */
+.portlet-wiki .results-header th {
+  background: url("/wemoocdemo-theme/images/custom/betwen.gif") no-repeat scroll left top white;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-wiki .lfr-menu-list li a {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+.portlet-wiki .lfr-menu-list li a {
+  width: 100%; }
+
+.portlet-wiki .results-row td a, .portlet-wiki .results-row-hover td a {
+  color: #000000;
+  font-weight: normal !important; }
+
+.portlet-wiki .taglib-page-iterator .search-results {
+  font-weight: bold;
+  left: 40%;
+  padding-bottom: 10px;
+  position: relative; }
+
+.portlet-wiki ul.lfr-actions li.lfr-trigger .nobr {
+  color: #fff; }
+
+.portlet-wiki .child-pages h2 {
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #2d2849;
+  border-top: 1px solid #2d2849;
+  font-size: 18px;
+  color: #2d2849; }
+
+.portlet-wiki .child-pages ul {
+  padding-left: 20px;
+  color: #00b1b0; }
+
+.portlet-wiki .child-pages li {
+  font-size: 1.4em;
+  padding: 3px 0; }
+
+.portlet-wiki .wiki-body {
+  font-size: 16px; }
+
+.portlet-wiki .wiki-body .portlet-msg-info {
+  font-size: 16px; }
+
+.portlet-wiki #ires {
+  padding-left: 10px; }
+
+#portlet_86 .portlet-icon-back {
+  display: none; }
+
+/* wiki */
+.portlet-wiki .top-links-container {
+  margin: 0;
+  padding: 0; }
+
+.portlet-wiki .top-links {
+  float: none; }
+
+.portlet-wiki .top-links .top-links-navigation {
+  float: none;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  border-bottom: #2d2849 solid 1px;
+  padding: 0 0 10px;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.portlet-wiki .top-links img.icon {
+  display: none; }
+
+.portlet-wiki .aui-search-bar input.aui-button-input-submit {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat scroll 0 0 transparent;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px; }
+
+.portlet-wiki .page-actions {
+  font-size: 12px; }
+
+.portlet-wiki .taglib-text {
+  font-size: 16px;
+  font-weight: 600; }
+
+.portlet-wiki .header-title {
+  padding: 10px 0; }
+
+.portlet-wiki .header-title span {
+  color: #000; }
+
+.portlet-wiki .taglib-header {
+  border-bottom: 0 none;
+  margin-bottom: 5px; }
+
+.portlet-wiki .results-header {
+  background: none;
+  border-bottom: #00b5cb solid 1px; }
+
+.portlet-wiki .results-header th {
+  background: none;
+  color: #00b5cc;
+  font-size: 16px;
+  padding: 5px 10px 10px; }
+
+.portlet-wiki .taglib-page-iterator .search-results {
+  left: 0;
+  padding: 10px;
+  font-weight: 300;
+  color: #000; }
+
+.portlet-wiki .taglib-ratings.stars {
+  padding-top: 0; }
+
+.aui-rating-label-element {
+  float: left;
+  color: #00b5cb; }
+
+.results-row.hover td {
+  background: #e5e5e5; }
+
+/*wiki hook*/
+.portlet-wiki .hook_comment {
+  padding-top: 10px;
+  font-size: 13px; }
+
+.portlet-wiki .hook_postedOn {
+  font-size: 13px;
+  color: #00b5cb;
+  font-weight: bold; }
+
+/* */
+/* documentos */
+.portlet-document-library .results-header th {
+  background-color: #FFFFFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #2d2849;
+  padding: 0 5px 5px; }
+
+.portlet-document-library .results-row {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%; }
+
+.portlet-document-library .results-row td a, .portlet-message-boards .results-row-hover td a {
+  font-weight: normal !important; }
+
+.portlet-document-library .results-row .col-1 a, .portlet-message-boards .results-row-hover .col-1 a {
+  background: url(images/custom/enreda/bullet_triangulo_blanco.png) no-repeat right 50% transparent;
+  padding-right: 9px; }
+
+.portlet-document-library .lfr-asset-column-actions .lfr-asset-column-actions-content {
+  border-color: #000; }
+
+.portlet-document-library .lfr-asset-column-actions-content {
+  background-color: #fff; }
+
+.portlet-document-library .lfr-asset-column-actions-content li {
+  list-style: none; }
+
+/* FIN documentos */
+.container-activity h2, .container-activity h3, .container-activity h4, .container-activity h5, .container-activity h6 {
+  margin: 0;
+  padding: 5px 0 10px; }
+
+.container-activity p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+h2.description-title {
+  color: #e4701e;
+  font: bold 18px Arial; }
+
+.description {
+  color: #000;
+  font-size: 14px; }
+
+.container-buttons {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  padding: 10px 0; }
+
+.video {
+  text-align: center; }
+
+.hide-calendar {
+  float: left;
+  display: block;
+  padding-right: 29px; }
+
+.doc_descarga {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_doc.png") no-repeat 0 50%;
+  padding: 5px 0 5px 25px; }
+
+.doc_descarga span {
+  float: left;
+  color: #e8557c;
+  display: block;
+  font: bold 14px Arial, Verdana;
+  padding: 5px 0; }
+
+.doc_descarga a.verMas {
+  float: left;
+  text-align: left;
+  display: block;
+  font: bold 14px Arial, Verdana;
+  padding: 5px 25px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 100% 50% no-repeat; }
+
+a.verMas {
+  display: block;
+  font: bold 14px Arial, Verdana;
+  padding: 5px 25px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 100% 50% no-repeat; }
+
+/* lmsactivitieslist */
+.lms-tree ul {
+  padding: 0 0 0 10px; }
+
+.lms-tree ul li {
+  padding: 5px 0;
+  display: block;
+  list-style: none;
+  font: bold 16px Nunito;
+  color: #37aebd; }
+
+.lms-tree ul li li {
+  padding: 5px 0 5px 20px; }
+
+.lms-tree ul li a {
+  color: #37aebd; }
+
+.lms-tree ul li a:hover {
+  color: #45c3d3; }
+
+.lms-tree ul li .destacado {
+  color: #e4701e; }
+
+.lms-tree ul li li a, .lms-tree ul li li span {
+  background-image: none;
+  color: #37aebd; }
+
+.lms-tree ul li.informacionmodule a, .lms-tree ul li.informacionmodule span {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 0 50% no-repeat; }
+
+.lms-tree ul li.learningCategory a, .lms-tree ul li.learningCategory span {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%; }
+
+.lms-tree ul li.learningCategory li a, .lms-tree ul li.learningCategory li span {
+  background-image: none; }
+
+.lms-tree ul li.option-none span.desplegar {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%;
+  padding: 10px 15px; }
+
+.lms-tree ul li.option-none span.desplegar:hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more_hover.png") no-repeat 0 50%;
+  padding: 10px 15px; }
+
+.lms-tree ul li.option-none span.locked {
+  background: url("/wemoocdemo-theme/images/common/lock.png") no-repeat 3px 50%;
+  padding: 10px 15px; }
+
+.lms-tree ul li.option-more span.desplegar {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-less span.desplegar {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_less.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-more span.desplegar:hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more_hover.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-less span.desplegar:hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more_hover.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-more li a, .lms-tree ul li.option-less li a, .lms-tree ul li.option-more li span, .lms-tree ul li.option-less li span {
+  background-image: none; }
+
+.lms-tree ul li.option-less span.desplegar, .lms-tree ul li.option-more span.desplegar {
+  padding: 10px 15px;
+  cursor: pointer; }
+
+.lms-tree ul li li.passed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ok.png") no-repeat 0% 50%; }
+
+.lms-tree ul li li.passed a, .lms-tree ul li li.passed span {
+  display: inline-block; }
+
+.lms-tree ul li li.failed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ko.png") no-repeat 0% 50%; }
+
+.lms-tree ul li li.activado {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_link.png") no-repeat 7px 50%; }
+
+.lms-tree ul li li.activado a, .lms-tree ul li li.activado span {
+  color: #37aebd; }
+
+.lms-tree ul li li.locked {
+  background: url("/wemoocdemo-theme/images/common/lock.png") no-repeat 0 50%; }
+
+.lms-tree ul li li.locked a, .lms-tree ul li li.locked span {
+  color: #464646; }
+
+.lms-tree ul li li.editing {
+  clear: both;
+  background: none; }
+
+.lms-tree ul li li.editing a {
+  width: 165px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.lms-tree ul li li.editing .iconsedit {
+  padding: 5px 0; }
+
+.lms-tree ul li li.editing .iconsedit span {
+  padding: 0 2px;
+  background: 0 none; }
+
+.lms-tree ul li li.editing .iconsedit span a {
+  width: auto;
+  padding: 0;
+  background: 0 none; }
+
+.lms-tree ul li .iconsedit {
+  padding: 5px 0 5px 20px; }
+
+.lms-tree ul li li .iconsedit {
+  padding: 5px 0; }
+
+/* Arbol con solo una unidad */
+.lms-desplegable ul {
+  padding: 0 0 0 10px; }
+
+.lms-desplegable ul li {
+  padding: 5px 0 5px 20px;
+  display: block;
+  list-style: none;
+  font: bold 16px Nunito;
+  color: #37aebd; }
+
+.lms-desplegable ul li a {
+  color: #37aebd; }
+
+.lms-desplegable ul li a:hover {
+  color: #45c3d3; }
+
+.lms-desplegable ul li.passed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ok.png") no-repeat 0% 50%; }
+
+.lms-desplegable ul li.passed a, .lms-desplegable ul li.passed span {
+  display: inline-block; }
+
+.lms-desplegable ul li.failed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ko.png") no-repeat 0% 50%; }
+
+.lms-desplegable ul li.activado {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_link.png") no-repeat 7px 50%; }
+
+.lms-desplegable ul li.activado.editing {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_link.png") no-repeat 7px 50%;
+  background-position: 7px 10px; }
+
+.lms-desplegable ul li.activado a, .lms-desplegable ul li.activado span {
+  color: #37aebd; }
+
+.lms-desplegable ul li.locked {
+  background: url("/wemoocdemo-theme/images/common/lock.png") no-repeat 0 50%; }
+
+.lms-desplegable ul li.locked a, .lms-desplegable ul li.locked span {
+  color: #464646; }
+
+.lms-desplegable ul li.editing {
+  clear: both;
+  background: none; }
+
+.lms-desplegable ul li.editing a {
+  width: 165px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.lms-desplegable ul li.editing .iconsedit {
+  padding: 5px 0; }
+
+.lms-desplegable ul li.editing .iconsedit span {
+  padding: 0 2px;
+  background: 0 none; }
+
+.lms-desplegable ul li.editing .iconsedit span a {
+  width: auto;
+  padding: 0;
+  background: 0 none; }
+
+.lms-desplegable ul li .iconsedit {
+  padding: 5px 0 5px 20px; }
+
+/* */
+.newactivity img.icon {
+  display: none; }
+
+.newactivity a.taglib-icon {
+  display: block;
+  background: #e4701e;
+  padding: 10px 5px;
+  text-align: center;
+  font: bold 16px Nunito, Arial;
+  color: white;
+  margin: 5px 0;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+  .newactivity a.taglib-icon .taglib-text {
+    color: white;
+    text-decoration: none; }
+
+.newactivity a.taglib-icon:hover {
+  background: #fcb034; }
+  .newactivity a.taglib-icon:hover .taglib-text {
+    color: white;
+    text-decoration: none; }
+
+/* formularios*/
+.lmsactivitieslist-portlet .taglib-header .header-title {
+  color: #e4701e;
+  font: bold 18px Arial; }
+
+/* */
+/* FIN lmsactivitieslist */
+/* titulo */
+.moduletitle-portlet .taglib-header {
+  margin-bottom: 0; }
+
+.moduletitle-portlet .taglib-header .header-title {
+  padding: 5px 0 5px 25px;
+  border-bottom: #2d2849 solid 1px;
+  color: #e4701e;
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom.png") no-repeat 0 50%;
+  font: 600 18px "Nunito"; }
+
+/* */
+/* Descripcion */
+.moduledescription-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  font-size: 14px; }
+
+/* */
+/* plantilla tarea */
+.reto_container .entradilla {
+  font-size: 14px; }
+
+.reto_container .galery_video .clearfix {
+  text-align: center; }
+
+.reto_container .galery_docs {
+  list-style: none; }
+
+.reto_container .galery_docs li {
+  text-align: left;
+  list-style: none;
+  color: #e8557c;
+  display: block;
+  font: bold 14px Arial, Verdana;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_doc.png") no-repeat 0 50%;
+  padding: 5px 0 5px 25px; }
+
+.reto_container .galery_docs a {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") no-repeat scroll 100% 50% transparent;
+  padding: 5px 25px 5px 5px; }
+
+/* */
+/* Question */
+.execactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+.execactivity-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.execactivity-portlet .correct .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_correct.png") no-repeat 95% 50%;
+  min-height: 50px;
+  padding-right: 90px; }
+
+.execactivity-portlet .incorrect .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_incorrect.png") no-repeat 95% 50%;
+  min-height: 50px;
+  padding-right: 90px; }
+
+.execactivity-portlet .question {
+  font-size: 14px;
+  border-bottom: 0 none; }
+
+.execactivity-portlet .question .questiontext {
+  padding: 10px;
+  margin: 0 0 10px;
+  background: #f8f8f8;
+  border-top: 0 none;
+  border-bottom: 0 none;
+  font-weight: 600; }
+
+.execactivity-portlet .question .questiontext p {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.execactivity-portlet .question .answer {
+  padding: 5px 10px; }
+
+.execactivity-portlet .correct .answer {
+  padding: 5px 0 5px 10px; }
+
+.execactivity-portlet .incorrect .answer {
+  padding: 5px 0 5px 10px; }
+
+.execactivity-portlet .question .answer input {
+  margin-top: 5px;
+  margin-right: 5px;
+  float: left; }
+
+.execactivity-portlet .aui-button-submit {
+  padding: 10px 0;
+  text-align: right; }
+
+.execactivity-portlet .questionFeedback {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_informacion.png") no-repeat 0 50%;
+  padding: 10px 0 10px 30px;
+  font: bold 14px Arial;
+  color: #e4701e; }
+
+.execactivity-portlet .aui-button {
+  clear: both;
+  display: block;
+  padding: 10px 0 0;
+  text-align: right; }
+
+.question_sortable ul.sortable {
+  list-style: none; }
+
+.question_sortable ul.sortable .answer {
+  cursor: pointer; }
+
+.questiontype_fillblank .answer-fillblank img {
+  vertical-align: middle; }
+
+.questiontype_multioptions .answer input {
+  display: inline-block; }
+
+.questiontype_options .answer input {
+  display: inline-block; }
+
+.questiontype_options .answer .answer-options {
+  vertical-align: middle; }
+
+/* */
+/* Tipo tarea */
+.p2ptaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden; }
+
+.p2ptaskactivity-portlet .sub-title {
+  color: #37aebd;
+  font: bold 14px Arial, Verdana; }
+
+.p2ptaskactivity-portlet .steps {
+  color: #37aebd;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  font: bold 16px Arial, Verdana; }
+
+.p2ptaskactivity-portlet .steps span {
+  color: #37aebd; }
+
+.p2ptaskactivity-portlet .steps span.selected {
+  color: #2d2849; }
+
+.p2ptaskactivity-portlet .steps span.clicable {
+  cursor: pointer; }
+
+.p2ptaskactivity-portlet .steps span.clicable:hover {
+  color: #1ed1e7; }
+
+.p2ptaskactivity-portlet .container-textarea {
+  padding: 5px 0 10px; }
+
+.p2ptaskactivity-portlet .container-textarea textarea {
+  width: 99%;
+  padding: 10px;
+  background: white;
+  color: #2d2849;
+  font: 300 14px Arial;
+  border: 1px solid #d5d5d5; }
+
+.p2ptaskactivity-portlet .container-file {
+  border: #e4701e solid 1px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font: bold 14px Arial;
+  color: #e4701e; }
+
+.p2ptaskactivity-portlet .container-file label {
+  display: none; }
+
+.p2ptaskactivity-portlet .container-file input {
+  font-size: 14px;
+  font-weight: 300; }
+
+.p2ptaskactivity-portlet .option-more span.label-col {
+  display: block;
+  color: #e4701e;
+  font: bold 14px Arial;
+  padding: 5px 0 5px 25px;
+  cursor: pointer;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%; }
+
+.p2ptaskactivity-portlet .option-less span.label-col {
+  display: block;
+  color: #e8557c;
+  font: bold 14px Arial;
+  padding: 5px 0 5px 25px;
+  cursor: pointer;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_less.png") no-repeat 0 50%; }
+
+.p2ptaskactivity-portlet span.label-col span.number {
+  display: none; }
+
+.p2ptaskactivity-portlet .option-more .collapsable span {
+  color: #000;
+  padding: 5px 0;
+  background: none; }
+
+.p2ptaskactivity-portlet .option-less .collapsable span {
+  color: #000;
+  padding: 5px 0;
+  background: none; }
+
+.p2ptaskactivity-portlet .portlet-body .portlet-body li {
+  list-style-image: url("/wemoocdemo-theme/images/custom/webcontent/bullet.png");
+  margin: 0 20px 10px; }
+
+.no-p2pActivites-uploaded {
+  font-size: 14px; }
+
+/* */
+/* marsupial*/
+.marsupialwebcontentactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden; }
+
+.marsupialwebcontentactivity-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+/* */
+/* lms navegacion */
+.activitynavigator-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+#previusactivity {
+  float: left; }
+
+#previusactivity a {
+  font: bold 16px "Nunito";
+  padding: 5px 5px 5px 25px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left.png") no-repeat 0 50%; }
+
+#previusactivity span {
+  font: bold 16px "Nunito";
+  padding: 5px 5px 5px 25px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left_off.png") no-repeat 0 50%;
+  color: #b4b4b4; }
+
+#nextactivity {
+  float: right; }
+
+#nextactivity a {
+  font: bold 16px "Nunito";
+  padding: 5px 25px 5px 5px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") no-repeat scroll 100% 50%; }
+
+#nextactivity span {
+  font: bold 16px "Nunito";
+  padding: 5px 25px 5px 5px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right_off.png") no-repeat scroll 100% 50%;
+  color: #b4b4b4; }
+
+#startactivity {
+  float: right; }
+
+#startactivity a {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  cursor: pointer;
+  overflow: visible;
+  padding: 8px 35px;
+  width: auto;
+  font: 300 16px Nunito, Arial; }
+
+#startactivity a:hover {
+  background: #45c3d3;
+  border: 0 none;
+  color: #fff; }
+
+.activitynavigator-portlet #modulegreetings {
+  text-align: center;
+  font: bold 16px Nunito;
+  color: #e4701e;
+  padding: 10px 10px 20px; }
+
+/* */
+/* Cambio de navegacion */
+.changeeditingmode-portlet {
+  margin: 0 0 10px; }
+
+.changeeditingmode-portlet .aui-button-input {
+  display: block;
+  background: #37aebd;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold; }
+
+.changeeditingmode-portlet .aui-button-input:hover {
+  background: #45c3d3; }
+
+/* */
+.moduledescription-portlet .taglib-discussion {
+  font-size: 14px; }
+
+.moduledescription-portlet #moduleDescription ul {
+  list-style-image: url("/wemoocdemo-theme/images/custom/webcontent/bullet.png");
+  margin: 0 20px 10px; }
+
+/* botones de unidades y actividades */
+.newitem .taglib-icon {
+  padding: 10px 10px 10px 10px;
+  font: bold 16px Nunito, Arial;
+  display: block;
+  background: #e4701e;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+  .newitem .taglib-icon .taglib-text {
+    text-decoration: none; }
+
+.newitem .taglib-icon:hover {
+  background: #fcb034; }
+  .newitem .taglib-icon:hover .taglib-text {
+    text-decoration: none; }
+
+.newitem .taglib-icon img.icon {
+  display: none; }
+
+/* */
+/* Offline */
+.offlinetaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+/* */
+/* Online */
+.onlinetaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+/* */
+/* Evaluacion activity */
+.evaluationtaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+.evaluationtaskactivity-portlet .col-calification .see-more {
+  float: none; }
+
+/* */
+/* Recursos activity */
+.resourceExternalActivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+.resourceInternalActivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+/* */
+/* Activity list */
+ul.activity-list li img.icon {
+  display: none; }
+
+ul.activity-list {
+  margin: 20px 50px; }
+
+ul.activity-list li {
+  list-style: none;
+  width: 32%;
+  display: inline-block;
+  padding: 10px 0; }
+
+ul.activity-list li a {
+  display: block;
+  padding-top: 90px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_list.png) no-repeat center top;
+  text-align: center;
+  font: bold 16px Arial; }
+
+ul.activity-list li.activity_0 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_prueba.png); }
+
+ul.activity-list li.activity_2 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_e.png); }
+
+ul.activity-list li.activity_3 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_p2p.png); }
+
+ul.activity-list li.activity_4 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_survey.png); }
+
+ul.activity-list li.activity_5 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_of.png); }
+
+ul.activity-list li.activity_6 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_on.png); }
+
+ul.activity-list li.activity_7 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_i.png); }
+
+ul.activity-list li.activity_8 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_evaluation.png); }
+
+ul.activity-list li.activity_9 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_scorm.png); }
+
+ul.activity-list li.activity_103 a {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_group.png) no-repeat center top; }
+
+.col-type span {
+  display: block;
+  width: 50px;
+  height: 30px;
+  text-indent: -60000px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_list_m.png) no-repeat left top; }
+
+.col-type span.activity-2 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_e_m.png) no-repeat left top; }
+
+.col-type span.activity-7 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_i_m.png) no-repeat left top; }
+
+.col-type span.activity-9 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_scorm_m.png) no-repeat left top; }
+
+.col-type span.activity-4 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_survey_m.png) no-repeat left top; }
+
+.col-type span.activity-3 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_p2p_m.png) no-repeat left top; }
+
+.col-type span.activity-8 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_evaluation_m.png) no-repeat left top; }
+
+.col-type span.activity-6 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_on_m.png) no-repeat left top; }
+
+.col-type span.activity-5 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_of_m.png) no-repeat left top; }
+
+.col-type span.activity-0 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_prueba_m.png) no-repeat left top; }
+
+.col-type span.activity-103 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_group_m.png) no-repeat left top; }
+
+.evaluationtaskactivity-portlet .activity-0 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-2 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-3 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-4 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-5 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-6 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-7 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-8 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-9 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-103 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad.png) no-repeat 5px 50%; }
+
+/* */
+/* SCORM */
+.scormactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+#placeholder_treecontentContainer {
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+#placeholder_treeContainer {
+  font: 300 12px Nunito; }
+
+#placeholder_treeContainer a {
+  cursor: pointer; }
+
+/* Activity scorm */
+#placeholder_treeContainer {
+  position: absolute;
+  background: white;
+  border: 1px solid #d5d5d5;
+  padding: 5px 5px 0;
+  width: 20%;
+  margin-top: -3px; }
+
+.portal-popup #placeholder_treeContainer {
+  margin-top: -5px; }
+
+.portal-popup #placeholder_treeContainer {
+  width: 35%; }
+
+#treeContainer {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white; }
+
+#placeholder_barContainer {
+  margin-bottom: 2px;
+  background-color: white;
+  width: 36px; }
+
+#placeholder_navigationContainer {
+  float: right;
+  margin-bottom: 6px; }
+
+#navigationContainer2 {
+  width: 99%;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-top: 0 none;
+  height: 35px;
+  padding-top: 15px; }
+
+#btnPrevious-link {
+  float: left;
+  padding-left: 15px; }
+
+#btnPrevious-link a {
+  font: bold 16px Nunito;
+  padding: 15px 15px 15px 40px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left_2.png") no-repeat 0 50%;
+  color: #37aebd; }
+
+#btnPrevious-link a:hover {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left_2_off.png") no-repeat 0 50%;
+  color: #b63b6a; }
+
+#btnContinue-link {
+  float: right;
+  padding-right: 15px; }
+
+#btnContinue-link a {
+  font: bold 16px Nunito;
+  padding: 15px 40px 15px 15px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right_2.png") no-repeat 100% 50%;
+  color: #37aebd; }
+
+#btnContinue-link a:hover {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right_2_off.png") no-repeat 100% 50%;
+  color: #b63b6a; }
+
+/* */
+/* */
+/* encuesta */
+.surveyactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.surveyactivity-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.surveyactivity-portlet .correct .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_correct.png") no-repeat 95% 50%; }
+
+.surveyactivity-portlet .incorrect .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_incorrect.png") no-repeat 95% 50%; }
+
+.surveyactivity-portlet .question {
+  font-size: 14px;
+  border-bottom: 0 none; }
+
+.surveyactivity-portlet .question .questiontext {
+  padding: 10px;
+  margin: 0;
+  background: #f8f8f8;
+  border-top: 0 none;
+  border-bottom: 0 none;
+  font-weight: 600; }
+
+.surveyactivity-portlet .question .questiontext p {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.surveyactivity-portlet .question .answer {
+  padding: 5px 10px; }
+
+.surveyactivity-portlet .question .answer .aui-field-label-right {
+  float: left; }
+
+.surveyactivity-portlet .question .answer input {
+  margin-right: 5px; }
+
+.surveyactivity-portlet .aui-button-submit {
+  display: block;
+  padding: 10px 0;
+  text-align: right; }
+
+.surveyactivity-portlet .questionFeedback {
+  background: transparent "/wemoocdemo-theme/images/custom/icons/ico_informacion.png" no-repeat 0 50%;
+  padding: 10px 0 10px 30px;
+  font: bold 14px Arial;
+  color: #e4701e; }
+
+/* */
+.container-toolbar {
+  clear: both;
+  display: block;
+  overflow: hidden; }
+
+.option-nota {
+  font: bold 16px "Nunito";
+  padding: 10px 15px 10px 30px;
+  background: url("/wemoocdemo-theme/images/custom/icons/ico_h2_up_blue.png") no-repeat 10px 50%; }
+
+/* Evaluacion final */
+.evaluationAvg-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.evaluationAvg-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+/* */
+/* navegador activity test */
+#testactivity-navigator {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background: #f8f8f8;
+  padding: 10px;
+  position: relative;
+  margin: 10px 0 0; }
+
+.execactivity-portlet #testactivity-navigator .aui-button {
+  padding: 0; }
+
+#testactivity-navigator #testactivity-navigator-pages {
+  text-align: center;
+  position: absolute;
+  width: 40%;
+  margin: 0 0 0 29%;
+  font-weight: 600; }
+
+#testactivity-navigator #testactivity-navigator-pages p {
+  display: inline; }
+
+#testactivity-navigator #testactivity-navigator-progress {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #e4701e;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+
+#testactivity-navigator #testactivity-navigator-progress .testactivity-navigator-progress-frame {
+  background: #e4701e;
+  height: 10px;
+  float: left; }
+
+#testactivity-navigator #testactivity-navigator-progress .testactivity-navigator-progress-frame-browsed {
+  background: #fcb034; }
+
+/* */
+/* */
+.wrapper-icon-course .aui-field-choice {
+  display: block;
+  margin-bottom: 10px; }
+
+.wrapper-icon-course .container_ico_course {
+  padding-top: 10px; }
+
+/* */
+.rightSideAnswer {
+  text-align: right; }
+
+.rightSideAnswer a.taglib-icon {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.rightSideAnswer a.taglib-icon:hover {
+  background: #45c3d3; }
+
+.rightSideAnswer a.taglib-icon img.icon {
+  display: none; }
+
+.rightSideAnswer .taglib-icon .taglib-text {
+  font: 300 16px Nunito, Arial; }
+
+/*  */
+.groupTask-portlet .portlet-borderless-container .portlet-body {
+  background: #fff;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+/* enlaces que parezcan botones */
+.coursemodule .access a.module-list-button-edit {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-edit:hover {
+  background: #45c3d3; }
+
+.coursemodule .access a.module-list-button-access {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-access:hover {
+  background: #45c3d3; }
+
+/* */
+/* enlaces que parezcan botones */
+.coursemodule .access a.module-list-button-edit {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-edit:hover {
+  background: #45c3d3; }
+
+.coursemodule .access a.module-list-button-access {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-access:hover {
+  background: #45c3d3; }
+
+/* */
+.solution .leftSideAnswer input.aui-field-input-text {
+  width: 97%; }
+
+.execactivity-portlet .buttons_content .aui-button {
+  clear: none;
+  display: inline; }
+
+/* module selector */
+.modules_selector_container {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 10px; }
+
+.modules_selector_container span.modules_selector_list {
+  display: block;
+  float: left;
+  width: 80%; }
+
+.modules_selector_container select {
+  width: 100%;
+  height: 35px; }
+
+.modules_selector_container span.aui-button {
+  display: block;
+  float: left;
+  width: 19%;
+  text-align: left;
+  padding: 0; }
+
+.modules_selector_container span.aui-button input {
+  padding: 7px 14px; }
+
+/* */
+.contain_actions {
+  text-align: right; }
+
+.aui-button {
+  text-align: right;
+  padding: 10px 0; }
+
+/* formulario de busqueda */
+.student_search .aui-column {
+  float: none;
+  display: inline-block; }
+
+.student_search .search_lms_button {
+  float: none;
+  display: inline-block;
+  vertical-align: bottom; }
+
+/* */
+

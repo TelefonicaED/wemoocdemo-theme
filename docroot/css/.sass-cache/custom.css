@@ -1,0 +1,7006 @@
+/* Los import hay que ponerlos antes que las reglas sino son ignorados y Liferay necesita el ; al final */
+/* Los import hay que ponerlos antes que las reglas sino son ignorados y Liferay necesita el ; al final */
+/* no puede contener + de 32 archivos importados */
+/* Includes de vistas compartidas entre portlets: */
+/* jQuery UI - v1.8.19 - 2012-04-16
+* https://github.com/jquery/jquery-ui
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.tabs.css, jquery.ui.theme.css
+* Copyright (c) 2012 AUTHORS.txt; Licensed MIT, GPL */
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+  display: none; }
+
+.ui-helper-hidden-accessible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none; }
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table; }
+
+.ui-helper-clearfix:after {
+  clear: both; }
+
+.ui-helper-clearfix {
+  zoom: 1; }
+
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0); }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+  cursor: default !important; }
+
+/* Icons
+----------------------------------*/
+/* states and images */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.ui-widget-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* IE/Win - Fix animation bug - #4615 */
+.ui-accordion {
+  width: 100%; }
+
+.ui-accordion .ui-accordion-header {
+  cursor: pointer;
+  position: relative;
+  margin-top: 1px;
+  zoom: 1; }
+
+.ui-accordion .ui-accordion-li-fix {
+  display: inline; }
+
+.ui-accordion .ui-accordion-header-active {
+  border-bottom: 0 !important; }
+
+.ui-accordion .ui-accordion-header a {
+  display: block;
+  font-size: 1em;
+  padding: .5em .5em .5em .7em; }
+
+.ui-accordion-icons .ui-accordion-header a {
+  padding-left: 2.2em; }
+
+.ui-accordion .ui-accordion-header .ui-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px; }
+
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  border-top: 0;
+  margin-top: -2px;
+  position: relative;
+  top: 1px;
+  margin-bottom: 2px;
+  overflow: auto;
+  display: none;
+  zoom: 1; }
+
+.ui-accordion .ui-accordion-content-active {
+  display: block; }
+
+.ui-autocomplete {
+  position: absolute;
+  cursor: default; }
+
+/* workarounds */
+* html .ui-autocomplete {
+  width: 1px; }
+
+/* without this, the menu expands to 100% in IE6 */
+/*
+ * jQuery UI Menu 1.8.19
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+.ui-menu {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  display: block;
+  float: left; }
+
+.ui-menu .ui-menu {
+  margin-top: -3px; }
+
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  float: left;
+  clear: left;
+  width: 100%; }
+
+.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: .2em .4em;
+  line-height: 1.5;
+  zoom: 1; }
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: normal;
+  margin: -1px; }
+
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-right: .1em;
+  text-decoration: none !important;
+  cursor: pointer;
+  text-align: center;
+  zoom: 1;
+  overflow: visible; }
+
+/* the overflow property removes extra width in IE */
+.ui-button-icon-only {
+  width: 2.2em; }
+
+/* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only {
+  width: 2.4em; }
+
+/* button elements seem to need a little more width */
+.ui-button-icons-only {
+  width: 3.4em; }
+
+button.ui-button-icons-only {
+  width: 3.7em; }
+
+/*button text element */
+.ui-button .ui-button-text {
+  display: block;
+  line-height: 1.4; }
+
+.ui-button-text-only .ui-button-text {
+  padding: .4em 1em; }
+
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+  padding: .4em;
+  text-indent: -9999999px; }
+
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text {
+  padding: .4em 1em .4em 2.1em; }
+
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text {
+  padding: .4em 2.1em .4em 1em; }
+
+.ui-button-text-icons .ui-button-text {
+  padding-left: 2.1em;
+  padding-right: 2.1em; }
+
+/* no icon support for input elements, provide padding by default */
+input.ui-button {
+  padding: .4em 1em; }
+
+/*button icon element(s) */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px; }
+
+.ui-button-icon-only .ui-icon {
+  left: 50%;
+  margin-left: -8px; }
+
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary {
+  left: .5em; }
+
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+  right: .5em; }
+
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+  right: .5em; }
+
+/*button sets*/
+.ui-buttonset {
+  margin-right: 7px; }
+
+.ui-buttonset .ui-button {
+  margin-left: 0;
+  margin-right: -0.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* reset extra padding in Firefox */
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none; }
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0; }
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em; }
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  top: 1px; }
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px; }
+
+.ui-datepicker .ui-datepicker-next {
+  right: 2px; }
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px; }
+
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px; }
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center; }
+
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0; }
+
+.ui-datepicker select.ui-datepicker-month-year {
+  width: 100%; }
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%; }
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em; }
+
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0; }
+
+.ui-datepicker td {
+  border: 0;
+  padding: 1px; }
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none; }
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0; }
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible; }
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto; }
+
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left; }
+
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em; }
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%; }
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%; }
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%; }
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
+  border-left-width: 0; }
+
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0; }
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left; }
+
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0em; }
+
+/* RTL support */
+.ui-datepicker-rtl {
+  direction: rtl; }
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left; }
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: right; }
+
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right; }
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px; }
+
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+  display: none;
+  /*sorry for IE5*/
+  display/**/: block;
+  /*sorry for IE5*/
+  position: absolute;
+  /*must have*/
+  z-index: -1;
+  /*must have*/
+  filter: mask();
+  /*must have*/
+  top: -4px;
+  /*must have*/
+  left: -4px;
+  /*must have*/
+  width: 200px;
+  /*must have*/
+  height: 200px;
+  /*must have*/ }
+
+.ui-dialog {
+  position: absolute;
+  padding: .2em;
+  width: 300px;
+  overflow: hidden; }
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: .4em 1em;
+  position: relative; }
+
+.ui-dialog .ui-dialog-title {
+  float: left;
+  margin: .1em 16px .1em 0; }
+
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: .3em;
+  top: 50%;
+  width: 19px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  height: 18px; }
+
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: block;
+  margin: 1px; }
+
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+  padding: 0; }
+
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: none;
+  overflow: auto;
+  zoom: 1; }
+
+.ui-dialog .ui-dialog-buttonpane {
+  text-align: left;
+  border-width: 1px 0 0 0;
+  background-image: none;
+  margin: .5em 0 0 0;
+  padding: .3em 1em .5em .4em; }
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: right; }
+
+.ui-dialog .ui-dialog-buttonpane button {
+  margin: .5em .4em .5em 0;
+  cursor: pointer; }
+
+.ui-dialog .ui-resizable-se {
+  width: 16px;
+  height: 16px;
+  right: 3px;
+  bottom: 3px; }
+
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move; }
+
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+  overflow: hidden; }
+
+.ui-progressbar .ui-progressbar-value {
+  margin: -1px;
+  height: 100%; }
+
+.ui-resizable {
+  position: relative; }
+
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  z-index: 99999;
+  display: block; }
+
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+  display: none; }
+
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0; }
+
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0; }
+
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%; }
+
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%; }
+
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px; }
+
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px; }
+
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px; }
+
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px; }
+
+.ui-selectable-helper {
+  position: absolute;
+  z-index: 100;
+  border: 1px dotted black; }
+
+.ui-slider {
+  position: relative;
+  text-align: left; }
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default; }
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0; }
+
+.ui-slider-horizontal {
+  height: .8em; }
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.3em;
+  margin-left: -0.6em; }
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%; }
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0; }
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0; }
+
+.ui-slider-vertical {
+  width: .8em;
+  height: 100px; }
+
+.ui-slider-vertical .ui-slider-handle {
+  left: -0.3em;
+  margin-left: 0;
+  margin-bottom: -0.6em; }
+
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%; }
+
+.ui-slider-vertical .ui-slider-range-min {
+  bottom: 0; }
+
+.ui-slider-vertical .ui-slider-range-max {
+  top: 0; }
+
+.ui-tabs {
+  position: relative;
+  padding: .2em;
+  zoom: 1; }
+
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0; }
+
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 1px;
+  margin: 0 .2em 1px 0;
+  border-bottom: 0 !important;
+  padding: 0;
+  white-space: nowrap; }
+
+.ui-tabs .ui-tabs-nav li a {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+  margin-bottom: 0;
+  padding-bottom: 1px; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+  cursor: text; }
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+  cursor: pointer; }
+
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 1em 1.4em;
+  background: none; }
+
+.ui-tabs .ui-tabs-hide {
+  display: none !important; }
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.1em; }
+
+.ui-widget .ui-widget {
+  font-size: 1em; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em; }
+
+.ui-widget-content {
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+  color: #222222; }
+
+.ui-widget-content a {
+  color: #222222; }
+
+.ui-widget-header {
+  border: 1px solid #aaaaaa;
+  background-color: #cccccc;
+  color: #222222;
+  font-weight: bold; }
+
+.ui-widget-header a {
+  color: #222222; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: url(/wemoocdemo-theme/images/custom/list_tt.gif) repeat-x;
+  color: #fff;
+  text-shadow: 0px;
+  border-color: #DEDEDE #BFBFBF #BFBFBF #DEDEDE;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: visible;
+  width: auto;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Nunito; }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #555555;
+  text-decoration: none; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #999999;
+  background-color: #dadada;
+  font-weight: normal;
+  color: #212121; }
+
+.ui-state-hover a, .ui-state-hover a:hover {
+  color: #212121;
+  text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+  font-weight: normal;
+  color: #212121; }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #212121;
+  text-decoration: none; }
+
+.ui-widget :active {
+  outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fcefa1;
+  background-color: #fbf9ee;
+  color: #363636; }
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636; }
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background-color: #fef1ec;
+  color: #cd0a0a; }
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #cd0a0a; }
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #cd0a0a; }
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none; }
+
+/* positioning */
+.ui-icon-carat-1-n {
+  background-position: 0 0; }
+
+.ui-icon-carat-1-ne {
+  background-position: -16px 0; }
+
+.ui-icon-carat-1-e {
+  background-position: -32px 0; }
+
+.ui-icon-carat-1-se {
+  background-position: -48px 0; }
+
+.ui-icon-carat-1-s {
+  background-position: -64px 0; }
+
+.ui-icon-carat-1-sw {
+  background-position: -80px 0; }
+
+.ui-icon-carat-1-w {
+  background-position: -96px 0; }
+
+.ui-icon-carat-1-nw {
+  background-position: -112px 0; }
+
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0; }
+
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0; }
+
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px; }
+
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px; }
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px; }
+
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px; }
+
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px; }
+
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px; }
+
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px; }
+
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px; }
+
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px; }
+
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px; }
+
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px; }
+
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px; }
+
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px; }
+
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px; }
+
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px; }
+
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px; }
+
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px; }
+
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px; }
+
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px; }
+
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px; }
+
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px; }
+
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px; }
+
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px; }
+
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px; }
+
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px; }
+
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px; }
+
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px; }
+
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px; }
+
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px; }
+
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px; }
+
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px; }
+
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px; }
+
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px; }
+
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px; }
+
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px; }
+
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px; }
+
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px; }
+
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px; }
+
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px; }
+
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px; }
+
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px; }
+
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px; }
+
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px; }
+
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px; }
+
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px; }
+
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px; }
+
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px; }
+
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px; }
+
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px; }
+
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px; }
+
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px; }
+
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px; }
+
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px; }
+
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px; }
+
+.ui-icon-arrow-4 {
+  background-position: 0 -80px; }
+
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px; }
+
+.ui-icon-extlink {
+  background-position: -32px -80px; }
+
+.ui-icon-newwin {
+  background-position: -48px -80px; }
+
+.ui-icon-refresh {
+  background-position: -64px -80px; }
+
+.ui-icon-shuffle {
+  background-position: -80px -80px; }
+
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px; }
+
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px; }
+
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px; }
+
+.ui-icon-folder-open {
+  background-position: -16px -96px; }
+
+.ui-icon-document {
+  background-position: -32px -96px; }
+
+.ui-icon-document-b {
+  background-position: -48px -96px; }
+
+.ui-icon-note {
+  background-position: -64px -96px; }
+
+.ui-icon-mail-closed {
+  background-position: -80px -96px; }
+
+.ui-icon-mail-open {
+  background-position: -96px -96px; }
+
+.ui-icon-suitcase {
+  background-position: -112px -96px; }
+
+.ui-icon-comment {
+  background-position: -128px -96px; }
+
+.ui-icon-person {
+  background-position: -144px -96px; }
+
+.ui-icon-print {
+  background-position: -160px -96px; }
+
+.ui-icon-trash {
+  background-position: -176px -96px; }
+
+.ui-icon-locked {
+  background-position: -192px -96px; }
+
+.ui-icon-unlocked {
+  background-position: -208px -96px; }
+
+.ui-icon-bookmark {
+  background-position: -224px -96px; }
+
+.ui-icon-tag {
+  background-position: -240px -96px; }
+
+.ui-icon-home {
+  background-position: 0 -112px; }
+
+.ui-icon-flag {
+  background-position: -16px -112px; }
+
+.ui-icon-calendar {
+  background-position: -32px -112px; }
+
+.ui-icon-cart {
+  background-position: -48px -112px; }
+
+.ui-icon-pencil {
+  background-position: -64px -112px; }
+
+.ui-icon-clock {
+  background-position: -80px -112px; }
+
+.ui-icon-disk {
+  background-position: -96px -112px; }
+
+.ui-icon-calculator {
+  background-position: -112px -112px; }
+
+.ui-icon-zoomin {
+  background-position: -128px -112px; }
+
+.ui-icon-zoomout {
+  background-position: -144px -112px; }
+
+.ui-icon-search {
+  background-position: -160px -112px; }
+
+.ui-icon-wrench {
+  background-position: -176px -112px; }
+
+.ui-icon-gear {
+  background-position: -192px -112px; }
+
+.ui-icon-heart {
+  background-position: -208px -112px; }
+
+.ui-icon-star {
+  background-position: -224px -112px; }
+
+.ui-icon-link {
+  background-position: -240px -112px; }
+
+.ui-icon-cancel {
+  background-position: 0 -128px; }
+
+.ui-icon-plus {
+  background-position: -16px -128px; }
+
+.ui-icon-plusthick {
+  background-position: -32px -128px; }
+
+.ui-icon-minus {
+  background-position: -48px -128px; }
+
+.ui-icon-minusthick {
+  background-position: -64px -128px; }
+
+.ui-icon-close {
+  background-position: -80px -128px; }
+
+.ui-icon-closethick {
+  background-position: -96px -128px; }
+
+.ui-icon-key {
+  background-position: -112px -128px; }
+
+.ui-icon-lightbulb {
+  background-position: -128px -128px; }
+
+.ui-icon-scissors {
+  background-position: -144px -128px; }
+
+.ui-icon-clipboard {
+  background-position: -160px -128px; }
+
+.ui-icon-copy {
+  background-position: -176px -128px; }
+
+.ui-icon-contact {
+  background-position: -192px -128px; }
+
+.ui-icon-image {
+  background-position: -208px -128px; }
+
+.ui-icon-video {
+  background-position: -224px -128px; }
+
+.ui-icon-script {
+  background-position: -240px -128px; }
+
+.ui-icon-alert {
+  background-position: 0 -144px; }
+
+.ui-icon-info {
+  background-position: -16px -144px; }
+
+.ui-icon-notice {
+  background-position: -32px -144px; }
+
+.ui-icon-help {
+  background-position: -48px -144px; }
+
+.ui-icon-check {
+  background-position: -64px -144px; }
+
+.ui-icon-bullet {
+  background-position: -80px -144px; }
+
+.ui-icon-radio-off {
+  background-position: -96px -144px; }
+
+.ui-icon-radio-on {
+  background-position: -112px -144px; }
+
+.ui-icon-pin-w {
+  background-position: -128px -144px; }
+
+.ui-icon-pin-s {
+  background-position: -144px -144px; }
+
+.ui-icon-play {
+  background-position: 0 -160px; }
+
+.ui-icon-pause {
+  background-position: -16px -160px; }
+
+.ui-icon-seek-next {
+  background-position: -32px -160px; }
+
+.ui-icon-seek-prev {
+  background-position: -48px -160px; }
+
+.ui-icon-seek-end {
+  background-position: -64px -160px; }
+
+.ui-icon-seek-start {
+  background-position: -80px -160px; }
+
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first {
+  background-position: -80px -160px; }
+
+.ui-icon-stop {
+  background-position: -96px -160px; }
+
+.ui-icon-eject {
+  background-position: -112px -160px; }
+
+.ui-icon-volume-off {
+  background-position: -128px -160px; }
+
+.ui-icon-volume-on {
+  background-position: -144px -160px; }
+
+.ui-icon-power {
+  background-position: 0 -176px; }
+
+.ui-icon-signal-diag {
+  background-position: -16px -176px; }
+
+.ui-icon-signal {
+  background-position: -32px -176px; }
+
+.ui-icon-battery-0 {
+  background-position: -48px -176px; }
+
+.ui-icon-battery-1 {
+  background-position: -64px -176px; }
+
+.ui-icon-battery-2 {
+  background-position: -80px -176px; }
+
+.ui-icon-battery-3 {
+  background-position: -96px -176px; }
+
+.ui-icon-circle-plus {
+  background-position: 0 -192px; }
+
+.ui-icon-circle-minus {
+  background-position: -16px -192px; }
+
+.ui-icon-circle-close {
+  background-position: -32px -192px; }
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px; }
+
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px; }
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px; }
+
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px; }
+
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px; }
+
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px; }
+
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px; }
+
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px; }
+
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px; }
+
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px; }
+
+.ui-icon-circle-check {
+  background-position: -208px -192px; }
+
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px; }
+
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px; }
+
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px; }
+
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px; }
+
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px; }
+
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px; }
+
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px; }
+
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px; }
+
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px; }
+
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px; }
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px; }
+
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px; }
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+/* Overlays */
+.ui-widget-overlay {
+  background-color: #aaaaaa;
+  opacity: .3;
+  filter: Alpha(Opacity=30); }
+
+.ui-widget-shadow {
+  margin: -8px 0 0 -8px;
+  padding: 8px;
+  background-color: #aaaaaa;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
+
+.portlet-column-content {
+  padding: 10px; }
+
+.portlet-column-content-only, .ltr .portlet-column-content-first, .rtl .portlet-column-content-last {
+  padding-left: 10px; }
+
+.portlet-column-content-only, .ltr .portlet-column-content-last, .rtl .portlet-column-content-first {
+  padding-right: 10px; }
+
+/* Menu de la comunidad */
+#nav_and_out {
+  position: relative;
+  z-index: 100; }
+
+#navigation {
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  padding: 0;
+  color: #fff;
+  text-align: right; }
+
+#navigation ul {
+  font-family: Nunito, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 0px; }
+
+#navigation ul li {
+  font: 600 16px Nunito, Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 5px;
+  border-right: #00b5cb solid 2px; }
+
+#navigation .child-menu {
+  float: none;
+  position: absolute;
+  white-space: nowrap;
+  left: 10px;
+  top: 24px; }
+
+#navigation .child-menu li {
+  display: none;
+  background-image: url(/wemoocdemo-theme/images/custom/bg_menu_bar.jpg);
+  background-repeat: repeat-x;
+  padding: 0 0 2px 0;
+  margin: 0;
+  border: none;
+  position: relative; }
+
+#navigation .child-menu li a {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+.portlet-icon-back {
+  background: url(/wemoocdemo-theme/images/custom/blue_arrow_left.gif) no-repeat 0px 50%;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 5px 10px 5px 11px;
+  color: #00b5cb;
+  text-decoration: none; }
+
+.portlet-icon-back:hover {
+  color: #1ed1e7; }
+
+.portlet-title {
+  display: inline;
+  float: left;
+  overflow: visible;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #2d2849;
+  border-bottom: #2d2849 solid 1px; }
+
+/* GLOBALES  PORTLET */
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+ */
+#basic-modal-content {
+  display: none; }
+
+/* Overlay */
+#simplemodal-overlay {
+  background-color: #000;
+  cursor: wait; }
+
+/* Container */
+#simplemodal-container {
+  height: 360px;
+  width: 600px;
+  color: #bbb;
+  background-color: #fff;
+  border: 1px solid #a8a8a8;
+  padding: 12px; }
+
+#simplemodal-container .simplemodal-data {
+  padding: 8px; }
+
+#simplemodal-container code {
+  background: #141414;
+  border-left: 3px solid #65B43D;
+  color: #bbb;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 12px;
+  padding: 4px 6px 6px; }
+
+#simplemodal-container a {
+  color: #ddd; }
+
+#simplemodal-container a.modalCloseImg {
+  background: url(/wemoocdemo-theme/images/custom/basic/x.png) no-repeat;
+  width: 25px;
+  height: 29px;
+  display: inline;
+  z-index: 3200;
+  position: absolute;
+  top: -15px;
+  right: -16px;
+  cursor: pointer; }
+
+#simplemodal-container h3 {
+  color: #84b8d9; }
+
+/* IE 6 hacks */
+.ie6 #simplemodal-container a.modalCloseImg {
+  background: none;
+  right: -16px;
+  width: 22px;
+  height: 26px;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wemoocdemo-theme/images/custom/basic/x.png',sizingMethod='scale'); }
+
+#simplemodal-data iframe {
+  overfow-y: hidden;
+  border: 0 none; }
+
+html body {
+  background: #fff;
+  font-family: Nunito, Arial,Helvetica,Verdana,sans-serif;
+  font-size: 14px;
+  color: #2d2849; }
+
+.color_principal {
+  color: #00b5cb; }
+
+.color_secundario {
+  color: #00b5cc; }
+
+.color_tercero {
+  color: #7e3f98; }
+
+.font_14 {
+  font-size: 16px; }
+
+.font_13 {
+  font-size: 13px; }
+
+h1, h2, h5 {
+  color: #2d2849;
+  font-weight: bold; }
+
+h6 {
+  color: #7e3f98;
+  font-weight: bold; }
+
+h1 {
+  font: 600 18px Nunito; }
+
+h2 {
+  font: 300 17px Nunito, Arial; }
+
+h3 {
+  font: 600 16px Nunito, Arial;
+  color: #e4701e; }
+
+h4 {
+  font-size: 15px;
+  color: #7e3f98; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 13px; }
+
+.taglib-header {
+  border-bottom: 0 none; }
+
+.taglib-header .header-title {
+  margin: 0; }
+
+ol, ul {
+  list-style-position: inside; }
+
+/* CSS globales */
+.bttxt {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: #1eadc4;
+  white-space: nowrap;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 20px;
+  font-family: Nunito, Tahoma, Verdana,Arial; }
+
+.texto-derecha {
+  text-align: right; }
+
+#enlace_logo {
+  background: url("/wemoocdemo-theme/images/custom/logo_miriada.png") no-repeat 0 0;
+  position: absolute;
+  top: 20px;
+  height: 68px;
+  width: 284px;
+  margin-left: 40px; }
+
+#enlace_intranet {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  height: 25px;
+  width: 100px;
+  margin-left: 840px; }
+
+.lfr-header-row .lfr-actions.lfr-extended, .lfr-header-row .lfr-search-combobox {
+  border: 0 none; }
+
+/* ---------- HTML Editor ---------- */
+body.html-editor {
+  font-size: 14px; }
+
+/*Estilo para ocultar los portlets que no se quieren ver cuando se esta logado.*/
+.signed-in .control_acceso_visibilidad {
+  display: none; }
+
+.oculto {
+  display: none; }
+
+.clickbad {
+  cursor: pointer; }
+
+.instrucciones_password {
+  display: none; }
+
+/*Capa del nombre y logout*/
+/* Boton de Usuario */
+#userName {
+  color: #1eadc4;
+  font-size: 1.1em; }
+
+#separator_name {
+  border-right: 1px solid #1eadc4; }
+
+/* Boton Salir */
+#bt_out {
+  text-align: right;
+  padding-right: 0; }
+
+#sign-in {
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d8faff; }
+
+/*Capa de los idiomas*/
+#td_language {
+  padding-top: 5px;
+  width: auto;
+  text-align: right;
+  padding-right: 150px;
+  width: auto; }
+
+/*Formulario Busqueda*/
+#td_search {
+  padding-top: 2px;
+  float: right; }
+
+#portlet-search {
+  display: inline; }
+
+#portlet-search .aui-field .aui-field-text {
+  float: left;
+  width: 164px;
+  height: 31px; }
+
+#_mediatecasearch_WAR_npaportletportlet_text {
+  height: 31px;
+  width: 165px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid #f1efea;
+  border-right: 1px solid #f1efea; }
+
+#td_search .aui-field.aui-field-text, #td_search .aui-field-content {
+  display: inline;
+  float: left; }
+
+/*Portlet del idioma (portlet npalanguage_WAR_npanavportlet)*/
+.npalanguage-portlet a {
+  color: #1eadc4;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Nunito;
+  text-transform: capitalize;
+  font-weight: normal; }
+
+.taglib-language-list-text {
+  border-right: 1px solid #1eadc4;
+  padding: 0 0.2em; }
+
+.negrita {
+  font-weight: bold; }
+
+.colorBlanco {
+  color: #fff; }
+
+.f11px {
+  font-size: 11px; }
+
+.f12px {
+  font-size: 12px; }
+
+.f16px {
+  font-size: 16px; }
+
+.colorTefAzulO {
+  color: #004250; }
+
+.ancho100per {
+  width: 100%; }
+
+.portlet-borderless-bar {
+  position: relative;
+  min-height: 20px; }
+
+.page-maximized .portlet-borderless-bar {
+  position: absolute; }
+
+a {
+  color: #00b5cb;
+  text-decoration: none; }
+
+a:hover {
+  color: #1ed1e7;
+  text-decoration: none; }
+
+.color_blue {
+  color: #34B5D0; }
+
+.textcenter {
+  text-align: center; }
+
+.textright {
+  text-align: right; }
+
+.textleft {
+  text-align: left; }
+
+.width100per {
+  width: 100%; }
+
+.width80per {
+  width: 80%; }
+
+.width10per {
+  width: 10%; }
+
+.paddingright10px {
+  padding-right: 10px; }
+
+.paddingleft10px {
+  padding-left: 10px; }
+
+.aire_global {
+  padding: 5px 0px 5px 10px; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+.ie7 .clearfix {
+  overflow: hidden; }
+
+.floatl {
+  float: left; }
+
+.floatr {
+  float: right; }
+
+/* GLOBALES  FUENTES */
+.bold {
+  font-weight: bold; }
+
+.no_underline {
+  text-decoration: none; }
+
+.color_black {
+  color: #000000; }
+
+.arial12px {
+  font-family: Nunito;
+  font-size: 12px; }
+
+.arial11px {
+  font-family: Nunito;
+  font-size: 11px; }
+
+.txt_color_blue {
+  color: #00C6D7; }
+
+/* Cabecera tema */
+#wrapper {
+  padding: 0 9px 9px;
+  width: 1007px;
+  margin: auto; }
+
+#heading {
+  height: 140px;
+  display: block; }
+
+#heading h1 {
+  display: none; }
+
+#heading h2 {
+  display: none; }
+
+#heading h3 {
+  display: none; }
+
+#heading table {
+  width: 950px; }
+
+#td_name {
+  background: url(/wemoocdemo-theme/images/custom/bg_name_login.gif) no-repeat bottom center transparent;
+  font-size: 1.1em;
+  text-align: center;
+  width: 236px;
+  color: #FFF; }
+
+#td_search {
+  padding-top: 2px; }
+
+#td_search .aui-field.aui-field-text, #td_search .aui-field-content {
+  display: inline;
+  float: left; }
+
+.bt_generico_sub {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  font-family: Nunito, Arial, Helvetica, Verdana, sans-serif;
+  text-shadow: none;
+  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+#p_p_id_npalanguage_WAR_npanavportlet_ .portlet-body {
+  width: 400px; }
+
+/* Fondo columnas layout */
+.margin-botton-special {
+  margin-bottom: 5px; }
+
+.portlet-layout {
+  border-collapse: collapse;
+  border-spacing: 0;
+  clear: both;
+  display: table;
+  table-layout: auto;
+  width: 100%; }
+
+div.bajo_caja {
+  height: 9px;
+  background-color: transparent; }
+
+/*Pie*/
+#footer {
+  clear: both;
+  display: block;
+  overflow: hidden; }
+
+#footer div.logos {
+  background: #fff;
+  width: 982px;
+  margin: 0 auto;
+  text-align: center; }
+
+#footer div.powered-by {
+  width: 982px;
+  background: #f9f9f9;
+  color: #00b5cb;
+  letter-spacing: 0.04em;
+  padding-top: 5px;
+  text-align: center;
+  clear: both;
+  font-size: 1.1em;
+  margin: 0 auto 5px;
+  bottom: 0; }
+
+#footer div.powered-by ul {
+  padding-top: 15px; }
+
+/* PIE DE PAGINA - Este codigo se sacarÃƒÂ¡ a un portlet */
+.chat-portlet {
+  display: none; }
+
+.chat-bar2 {
+  clear: both;
+  color: #FFFFFF;
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 299; }
+
+.chat-bar2 .chat-tabs-container {
+  width: 950px;
+  margin: auto; }
+
+#footer_table_links {
+  margin-left: 10px;
+  margin-top: 0px; }
+
+.footer_link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.1em;
+  font-family: Nunito; }
+
+.footer_link:hover {
+  color: #FFFFFF;
+  text-decoration: underline; }
+
+.padding_right10 {
+  padding-right: 10px; }
+
+.border_left {
+  border-left: 1px solid #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#footer_table_friends {
+  margin-top: 5px;
+  float: right; }
+
+.friends_text {
+  color: #C9DA12; }
+
+.vertical_align {
+  vertical-align: super; }
+
+.tbl_pie_notificaciones {
+  font-weight: normal !important;
+  border-collapse: collapse;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  text-align: center;
+  color: white;
+  height: 0px !important;
+  vertical-align: middle;
+  font-size: 1.1em; }
+
+.tbl_pie_notificaciones b {
+  font-weight: normal !important; }
+
+#list_online_users {
+  display: none;
+  font-weight: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 30px;
+  padding: 2px;
+  z-index: 10; }
+
+#list_online_users a {
+  text-decoration: none; }
+
+.onlineusers-portlet {
+  padding-top: 4px; }
+
+#link_online_users {
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1.1em; }
+
+.bgd_list_online_users {
+  background-image: url("/wemoocdemo-theme/images/custom/bgd_fondo_lista.jpg");
+  background-repeat: repeat-x;
+  /*height: 28px;*/
+  width: 100%;
+  white-space: nowrap; }
+
+#table_list_online_users {
+  width: 100%; }
+
+#table_list_online_users td {
+  float: none;
+  padding: 0px 5px;
+  height: 28px; }
+
+.icon_online_users {
+  width: 18px;
+  z-index: 1000; }
+
+#table_list_online_users .txt_online_users {
+  font-weight: normal;
+  font-family: Nunito, Arial,Helvetica,sans-serif;
+  padding-left: 0;
+  padding-right: 10px;
+  white-space: nowrap; }
+
+#table_list_online_users .marker_online_users {
+  background-image: url("/wemoocdemo-theme/images/custom/marker_see_user.gif");
+  background-repeat: no-repeat;
+  background-position: left center; }
+
+#table_list_online_users .link_see_user {
+  color: #00C6D7;
+  font-family: Nunito, Arial,Helvetica,sans-serif;
+  white-space: nowrap; }
+
+/* FIN PIE DE PAGINA - Este codigo se sacarÃƒÂ¡ a un portlet */
+/************************************************************************************/
+/* INICIO PERSONALIZACION RASTRO DE MIGAS  */
+#breadcrumbs {
+  display: none; }
+
+#breadcrumbs li.first {
+  display: none; }
+
+#breadcrumbs h1 {
+  display: none; }
+
+/* ELIMINAMOS EL TEXTO */
+#breadcrumbs ul li {
+  display: inline;
+  float: left;
+  padding: 3px;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  background: url(/wemoocdemo-theme/images/custom/bullet.png) center left no-repeat; }
+
+/* ELIMINAMOS EL TEXTO */
+#breadcrumbs ul li:first-child + li {
+  background: none;
+  padding-left: 0;
+  margin-left: -3px; }
+
+/* ELIMINAMOS EL TEXTO */
+#breadcrumbs ul li span {
+  padding-left: 5px; }
+
+/* ELIMINAMOS EL TEXTO */
+#breadcrumbs ul li a {
+  color: #007FB5;
+  text-decoration: none; }
+
+/* ELIMINAMOS EL TEXTO */
+#breadcrumbs ul li.last a {
+  color: #004250;
+  text-decoration: none;
+  cursor: default; }
+
+/* ELIMINAMOS EL TEXTO */
+#skip-to-content {
+  display: none; }
+
+#content {
+  width: 969px;
+  padding: 10px;
+  margin: auto auto 10px;
+  min-height: 316px; }
+
+/* PORTLET MI FORMACION */
+#p_p_id_testtlsapi_WAR_npaportletportlet_ .portlet-content {
+  padding: 0; }
+
+.bgd_course_data {
+  background-image: url(/wemoocdemo-theme/images/custom/bgd_fondo_subtitulo.jpg);
+  background-repeat: repeat-x;
+  color: #FFFFFF;
+  font-weight: bold;
+  height: 25px; }
+
+.course_row {
+  border: 1px solid #FFFFFF;
+  /*padding: 0 10px;*/
+  padding: 4px 10px; }
+
+.course_data_row {
+  border-bottom: 1px solid #E4E4E4;
+  height: 30px; }
+
+.course_data_row td {
+  vertical-align: middle; }
+
+.img_all {
+  background-image: url(/wemoocdemo-theme/images/custom/icono_mas.png);
+  background-repeat: no-repeat;
+  float: right;
+  position: relative;
+  right: 20px;
+  height: 18px; }
+
+/* PORTLET BUSCADOR */
+#conten_top_table {
+  width: 820px; }
+
+#conten_top_table .portlet-borderless-container {
+  min-height: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+#portlet-search .aui-field .aui-field-text {
+  float: left; }
+
+/*#nav_and_out table{width:950px;}*/
+#centrado90 {
+  background-color: #F2F2F2;
+  margin: auto;
+  padding: 10px; }
+
+.flota_izq {
+  float: left; }
+
+.ancho79per {
+  width: 79%; }
+
+.imagennoticias_43_1 {
+  background: url(/wemoocdemo-theme/images/custom/imagen_lateral_tic.jpg) no-repeat scroll 0 0 transparent; }
+
+.imagenlateral_1 {
+  background: url(/wemoocdemo-theme/images/custom/imagen_lateral_general_es.jpg) no-repeat scroll 0 0 transparent;
+  float: right;
+  height: 500px;
+  width: 20%; }
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 1px;
+  height: 0; }
+
+.borde_gris_1px {
+  border: 1px solid #E4E4E4; }
+
+.borde_blanco_2px {
+  border: 2px solid #FFFFFF; }
+
+.cabecera_principal {
+  background: url(/wemoocdemo-theme/images/custom/fondo_barra_noticias.gif) repeat-x scroll 0 0 transparent;
+  color: #FFFFFF;
+  font-family: Nunito, Tahoma, Verdana;
+  font-size: 21px;
+  height: 30px;
+  padding: 10px;
+  position: relative;
+  vertical-align: middle; }
+
+.img_searcher {
+  background: url(/wemoocdemo-theme/images/custom/icono_buscador.png) no-repeat scroll 0 0 transparent;
+  height: 22px; }
+
+.nombre_concepto {
+  color: #111111;
+  padding: 9px 10px 9px 0;
+  text-align: right; }
+
+#div_advancedsearch .nombre_concepto {
+  color: #004151; }
+
+#div_advancedsearch .txt_portlet {
+  font-size: 11pt; }
+
+.txt_portlet {
+  font-size: 1.1em; }
+
+.flota_der {
+  float: right; }
+
+.padding_lateral_30px {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.color_fondo_buscador {
+  background-color: #FFF; }
+
+.borde_gris_sup_1px {
+  border-top: 1px solid #DEDBD4; }
+
+.borde_blanco_inf_1px {
+  border-bottom: 1px solid white !important; }
+
+.cabecera_secundaria {
+  background: url(/wemoocdemo-theme/images/custom/portlet_topper.gif) repeat-x scroll 0 0 transparent;
+  color: #FFFFFF;
+  font-family: Nunito, Tahoma, Verdana;
+  font-size: 13px;
+  /*height: 20px;
+  padding: 1px 10px;*/
+  height: 25px;
+  padding: 4px 0 0 10px;
+  vertical-align: middle; }
+
+.cabecera_columnas {
+  background: url(/wemoocdemo-theme/images/custom/bgd_fondo_subtitulo.jpg) repeat-x scroll 0 0 transparent;
+  color: #FFFFFF;
+  font-family: Nunito, Tahoma, Verdana;
+  font-size: 12px;
+  height: 25px; }
+
+#table_results .separation {
+  padding: 9px 10px 9px 10px; }
+
+.bg_white {
+  background-color: #FFFFFF; }
+
+.bg_color1 {
+  background-color: #fff; }
+
+.bg_color1 .portlet-topper {
+  background-color: #fff; }
+
+.bg_color1 .portlet-title {
+  border: 0 none; }
+
+.bg_color1 .portlet {
+  background-color: #fff; }
+
+.bg_color2 {
+  background-color: #f0f0f0; }
+
+.bg_color2 .portlet-topper {
+  background-color: #f0f0f0; }
+
+.bg_color2 .portlet-title {
+  border: 0 none; }
+
+.bg_color2 .portlet {
+  background-color: #f0f0f0; }
+
+.bg_color3 {
+  background-color: #f2f1f1; }
+
+.bg_color3 .portlet-topper {
+  background-color: #f2f1f1; }
+
+.bg_color3 .portlet-title {
+  border: 0 none; }
+
+.bg_color3 .portlet {
+  background-color: #f2f1f1; }
+
+.txt_color_blue_dark {
+  color: #004250; }
+
+.ico_anterior {
+  background: url(/wemoocdemo-theme/images/custom/marcador_paginacion.gif) no-repeat scroll 0 0 transparent;
+  height: 13px;
+  width: 8px; }
+
+.ico_siguiente {
+  background: url(/wemoocdemo-theme/images/custom/marcador_paginacion2.gif) no-repeat scroll 0 0 transparent;
+  height: 13px;
+  width: 8px; }
+
+.enlacesimple {
+  text-decoration: none; }
+
+/* GENERICO BT ACCIONES */
+.lfr-actions .lfr-trigger strong {
+  background: 0 none;
+  padding: 2px 8px 3px 3px; }
+
+.lfr-actions.show-arrow .lfr-trigger strong a {
+  background: none;
+  background-image: none;
+  font-weight: normal;
+  border: 0px;
+  background-repeat: no-repeat; }
+
+.lfr-actions .lfr-trigger strong a {
+  text-decoration: none;
+  padding: 0px;
+  vertical-align: middle;
+  color: #FFF;
+  text-shadow: none; }
+
+.lfr-actions, .lfr-actions ul {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+.lfr-actions:hover, .lfr-actions:hover {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: 0 none;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+.lfr-actions .lfr-trigger {
+  padding: 0px;
+  border: 0px; }
+
+.aui-menu-content, .lfr-menu-list ul {
+  background-image: none;
+  background-color: #FFF; }
+
+.aui-menu-content, .lfr-menu-list ul li {
+  background-color: #FFF;
+  border: 0px;
+  border-bottom: 1px solid #BCBBBB;
+  padding: 0px;
+  color: #34b5d0; }
+
+.lfr-menu-list li a {
+  padding: 0px;
+  display: block;
+  font-weight: normal;
+  text-decoration: none; }
+
+.aui-menu-content a, .lfr-menu-list li a, .lfr-actions .lfr-trigger, .lfr-actions .lfr-trigger strong {
+  text-shadow: none;
+  font-weight: normal; }
+
+.aui-menu-content li a.aui-focus, .lfr-menu-list ul a.aui-focus, .lfr-menu-expanded li a:focus {
+  background-color: #34b5d0;
+  color: white;
+  text-shadow: none; }
+
+.lfr-actions, .lfr-actions ul {
+  border: 0px; }
+
+/* COLOR ERRORES PROPIOS GLOBAL */
+.error {
+  color: #e44949; }
+
+/* GENERICO POP PUPS */
+.aui-dialog-content {
+  background-color: #fff; }
+
+.portal-popup input[type="submit"],
+.portal-popup input[type="button"],
+.portal-popup input[type="reset"],
+.portal-popup button,
+.portal-popup .lfr-actions, .lfr-actions ul {
+  background: #e4701e none; }
+
+.aui-dialog-content {
+  padding: 0px; }
+
+.aui-panel-hd, .ui-widget-header {
+  background: none #7e3f98;
+  border: 1px solid #FFFFFF;
+  color: #FFF;
+  text-shadow: none;
+  padding: 0; }
+
+.portal-popup .aui-tooltip .aui-state-default {
+  background: #7e3f98;
+  color: #fff;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0; }
+
+.aui-panel-hd-text {
+  font: 300 20px Nunito;
+  padding: 5px 0 0 10px; }
+
+.aui-panel-hd .aui-panel-icons {
+  background-color: #bb78d7;
+  padding: 7px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.aui-panel .aui-button-input, .portal-popup .aui-button-input,
+.aui-panel .aui-state-default, .aui-panel .aui-button {
+  background: #e4701e;
+  border: 0 none; }
+
+.aui-panel .aui-button-holder .aui-button {
+  background: transparent none; }
+
+.aui-state-default, .aui-state-active, .aui-state-hover {
+  background: none;
+  background-image: none;
+  border: 0px;
+  color: #000000; }
+
+.aui-button-input-submit, .submit {
+  padding: 3px 15px 4px 15px; }
+
+#closethick {
+  background: none;
+  border: 0px;
+  background-image: none; }
+
+.acticons {
+  font-size: 16px; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: url(/wemoocdemo-theme/images/custom/list_tt.gif) repeat-x;
+  color: #fff;
+  text-shadow: none;
+  border-color: #DEDEDE #BFBFBF #BFBFBF #DEDEDE;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: visible;
+  width: auto;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Nunito; }
+
+.aui-icon-closethick, .ui-widget-header .ui-icon {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_close.png);
+  background-position: 0px 0px; }
+
+.portal-popup .columns-max textarea {
+  width: 97%; }
+
+inpu
+.aui-w33 {
+  width: 33.3%; }
+
+.aui-w25 {
+  width: 24.9%; }
+
+.aui-w50 {
+  width: 49.9%; }
+
+#portlet_search .portlet-borderless-container {
+  display: inline; }
+
+#portlet_search #p_p_id_mediatecasearch_WAR_npaportletportlet_ {
+  display: inline; }
+
+#portlet_search .aui-form {
+  display: inline; }
+
+#portlet_search label {
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+#portlet_search .aui-field.aui-field-text {
+  display: inline; }
+
+#portlet_search .aui-field-content, #portlet_search .aui-button-holder {
+  display: inline; }
+
+#portlet_search .aui-field-element {
+  display: inline; }
+
+#ahyk_averageRatingContent {
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+.aui-helper-clearfix .aui-rating-content {
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+.aui-widget-bd.aui-panel-bd.aui-dialog-bd {
+  overflow: visible; }
+
+.dialog-iframe-help {
+  height: 480px; }
+
+.dialog-iframe-test {
+  height: 400px; }
+
+.portlet-msg-error {
+  background: url("/wemoocdemo-theme/images/custom/error.png") no-repeat scroll 6px 50% #ddffff;
+  border: 1px solid #62e2ff;
+  display: block;
+  font-weight: bold;
+  margin: 4px auto 4px;
+  color: #004151; }
+
+.portlet-borderless-container {
+  position: static; }
+
+.foot_space {
+  height: 40px; }
+
+.foot_space_login {
+  height: 20px; }
+
+/*GENERICO BOTON VER TODOS*/
+#vertodos .right {
+  text-align: right; }
+
+#vertodos .link_image_fleft, #vertodos .link_image_fright {
+  padding-top: 8px; }
+
+#vertodos .latRight {
+  padding-right: 10px; }
+
+#vertodos .btvertodos {
+  background-image: url("/wemoocdemo-theme/images/custom/icono_mas_resources.gif");
+  background-position: left center;
+  background-repeat: no-repeat;
+  line-height: 20px;
+  padding-bottom: 6px;
+  padding-left: 23px;
+  padding-top: 6px;
+  white-space: nowrap; }
+
+.portlet-blogs .entry-body ul {
+  list-style-type: disc;
+  list-style-position: inside; }
+
+.vertodos {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 6px 0 0 0;
+  text-align: right; }
+
+.aui-widget.aui-component.aui-overlay.aui-overlaycontext.aui-overlaycontextpanel.aui-tooltip.aui-widget-positioned.aui-widget-stacked {
+  display: none; }
+
+/*Stars*/
+.aui-rating-element {
+  background-image: url(/wemoocdemo-theme/images/custom/stars_bgd_white.png); }
+
+#navigation .classPublicProfile {
+  background-color: #00b5cc; }
+
+#navigation .classPublicProfile .creator_text {
+  color: #fff; }
+
+/* rotator */
+.rotator_container {
+  position: absolute;
+  top: 175px;
+  overflow: hidden;
+  width: 950px;
+  height: 210px; }
+
+.rotator_container_banner {
+  position: absolute;
+  overflow: hidden;
+  width: 950px;
+  height: 210px; }
+
+.rotator_banner {
+  height: 210px;
+  position: absolute;
+  overflow: hidden; }
+
+.capaInfoEnlace {
+  position: absolute;
+  z-index: 104;
+  left: 15px;
+  top: 90px;
+  width: 130px;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-image: url("/wemoocdemo-theme/images/custom/spacer.png");
+  cursor: pointer;
+  height: 100px; }
+
+.capaInfoEnlace a {
+  float: left;
+  margin-right: 4px;
+  text-indent: -4000em;
+  display: block;
+  font-size: 0;
+  height: 100px;
+  width: 130px;
+  cursor: pointer; }
+
+.rotator_paginado {
+  position: absolute;
+  z-index: 103;
+  left: 860px;
+  top: 190px;
+  width: 120px;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.rotator_paginado a {
+  float: left;
+  margin-right: 4px;
+  text-indent: -4000em;
+  display: block;
+  font-size: 0;
+  height: 13px;
+  width: 13px;
+  background-image: url("/wemoocdemo-theme/images/custom/bullet-azul-claro.png"); }
+
+.rotator_paginado a:hover, .rotator_paginado a.activeSlide {
+  background-image: url("/wemoocdemo-theme/images/custom/bullet-azul-oscuro.png"); }
+
+/* FIN rotator */
+azul_ascuro {
+  color: #004151; }
+
+.lfr-upload-container a.browse-button {
+  cursor: pointer; }
+
+.ie7 .npahome #column-1, .ie7 .npahome #column-2 {
+  margin-right: 0; }
+
+.ie7 .npahome .wAuto {
+  width: 425px; }
+
+/* diana */
+#title_and_nav {
+  clear: both;
+  overflow: hidden; }
+
+#navigation_sup {
+  clear: both;
+  overflow: hidden;
+  width: 989px;
+  margin: 0 auto; }
+
+.navigation-row {
+  padding: 0;
+  height: 50px; }
+
+#navigation_sup ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#navigation_sup li {
+  font-size: 1.2em;
+  display: inline-block;
+  padding-right: 15px; }
+
+#navigation_sup li.selected {
+  font-weight: 700; }
+
+.ie6 #navigation_sup li, .ie7 #navigation_sup li, .ie6 #navigation_sup a, .ie7 #navigation_sup a {
+  display: inline;
+  zoom: 1;
+  z-index: 200; }
+
+#navigation_sup .rsociales_top {
+  float: right; }
+
+#navigation_sup .rsociales_top li {
+  padding: 5px 0 3px; }
+
+#navigation_sup .rsociales_top li a {
+  width: 2.3em;
+  height: 2em;
+  text-indent: -5000px;
+  display: inline-block; }
+
+.ie7 #navigation_sup .rsociales_top li a {
+  display: block; }
+
+#navigation_sup .rsociales_top .ico_facebook {
+  background: url(/wemoocdemo-theme/images/custom/ico_facebook2.png) no-repeat 0 5px; }
+
+#navigation_sup .rsociales_top .ico_twitter {
+  background: url(/wemoocdemo-theme/images/custom/ico_twitter2.png) no-repeat 0 5px; }
+
+#navigation_sup .rsociales_top .ico_vimeo {
+  background: url(/wemoocdemo-theme/images/custom/ico_vimeo2.png) no-repeat 0 5px; }
+
+#navigation_sup .rsociales_top .ico_linkedin {
+  background: url(/wemoocdemo-theme/images/custom/ico_linkedin2.png) no-repeat 0 5px; }
+
+#navigation_sup span#userName {
+  font-size: 1.2em;
+  color: #000;
+  padding: 10px 5px 0 20px;
+  line-height: 3em; }
+
+#navigation_sup span a {
+  font-size: 1.2em;
+  color: #fff;
+  color: #00b5cb;
+  font-weight: 600;
+  padding: 10px 5px 0 5px;
+  line-height: 3em; }
+
+#navigation_sup span a#sign-in {
+  background: #e4701e;
+  color: #fff;
+  padding: 5px 10px 5px;
+  margin-left: 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+#navigation_sup span a#sign-in:hover {
+  background: #fcb034; }
+
+.selectorLanguage {
+  float: left;
+  font: 600 1.2em Arial;
+  padding-top: .5em; }
+
+.selectorLanguage a {
+  color: #000;
+  text-transform: capitalize; }
+
+.selectorLanguage a:hover {
+  color: #00b5cc;
+  text-decoration: none; }
+
+.selectorLanguage a.taglib-language-list-text {
+  padding: 0 .2em 0 .4em; }
+
+.selectorLanguage select, .selectorLanguage option {
+  font: 300 1em Arial;
+  color: #000;
+  text-transform: capitalize; }
+
+.ie7 .selectorLanguage {
+  padding-top: .2em; }
+
+.ie7 .selectorLanguage .portlet-borderless-container {
+  margin-top: -10px; }
+
+.selectorLanguage select {
+  border: #00b5cc 1px solid;
+  background: #fff;
+  color: #00b5cc; }
+
+.selectorLanguage option {
+  color: #000; }
+
+#banner {
+  width: 989px;
+  margin: 0 auto;
+  padding: 15px 0 40px; }
+
+#banner h1 {
+  margin-top: 0; }
+
+#footer a {
+  color: #2d2849; }
+
+#footer span {
+  color: #2d2849; }
+
+#footer ul {
+  padding: 0;
+  list-style: none; }
+
+#footer ul li {
+  display: inline;
+  padding: 0 .5em;
+  font: 600 12px Nunito, Arial;
+  border-right: #2d2849 solid 1px; }
+
+#footer ul li.last {
+  border-right: none; }
+
+.header_sec2 {
+  overflow: hidden; }
+
+.generalnav-portlet {
+  float: right; }
+
+/* paginador */
+.taglib-page-iterator {
+  clear: both;
+  height: auto;
+  overflow: hidden;
+  width: auto; }
+
+.taglib-page-iterator .search-results {
+  font-size: 12px;
+  float: left; }
+
+.taglib-page-iterator .search-pages {
+  float: right; }
+
+.taglib-page-iterator .search-pages .page-links a, .taglib-page-iterator .search-pages .page-links span {
+  background: url() no-repeat 0 0;
+  border-left: 0 none transparent;
+  display: inline-block;
+  line-height: 1;
+  padding: 2px 20px; }
+
+.taglib-page-iterator .search-pages .page-links span {
+  background-position: 0 -17px; }
+
+.taglib-page-iterator .search-pages .page-links a.first, .taglib-page-iterator .search-pages .page-links span.first {
+  background-image: url(/wemoocdemo-theme/images/arrows/paging_first.png);
+  background-repeat: no-repeat;
+  border-left: none; }
+
+.taglib-page-iterator .search-pages .page-links a.previous, .taglib-page-iterator .search-pages .page-links span.previous {
+  background-image: url(/wemoocdemo-theme/images/arrows/paging_previous.png);
+  background-repeat: no-repeat; }
+
+.taglib-page-iterator .search-pages .page-links a.next, .taglib-page-iterator .search-pages .page-links span.next {
+  background-image: url(/wemoocdemo-theme/images/arrows/paging_next.png);
+  background-repeat: no-repeat; }
+
+.taglib-page-iterator .search-pages .page-links a.last, .taglib-page-iterator .search-pages .page-links span.last {
+  background-image: url(/wemoocdemo-theme/images/arrows/paging_last.png);
+  background-repeat: no-repeat; }
+
+.taglib-page-iterator .search-pages .page-links a.first, .taglib-page-iterator .search-pages .page-links span.first, .taglib-page-iterator .search-pages .page-links a.previous, .taglib-page-iterator .search-pages .page-links span.previous {
+  padding-right: 5px; }
+
+.taglib-page-iterator .search-pages .page-links a.next, .taglib-page-iterator .search-pages .page-links span.next, .taglib-page-iterator .search-pages .page-links a.last, .taglib-page-iterator .search-pages .page-links span.last {
+  background-position: 100% 4px;
+  padding-left: 5px; }
+
+.taglib-page-iterator .search-pages .page-links span.first, .taglib-page-iterator .search-pages .page-links span.previous {
+  background-position: 0 -16px; }
+
+.taglib-page-iterator .search-pages .page-links span.next, .taglib-page-iterator .search-pages .page-links span.last {
+  background-position: 100% -16px; }
+
+.taglib-page-iterator .search-pages .delta-selector, .taglib-page-iterator .search-pages .page-selector, .taglib-page-iterator .search-pages .page-links {
+  float: left; }
+
+.taglib-page-iterator .search-pages .page-selector {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* FIN paginador */
+/* Comentarios */
+.taglib-discussion .lfr-grid {
+  border-top: #4ab3b9 dotted 2px;
+  font-size: 16px; }
+
+.taglib-discussion .lfr-grid .lfr-center {
+  padding: 5px 5px 5px 0; }
+
+.taglib-discussion .lfr-grid .stretch {
+  padding: 5px 0 5px 20px;
+  background: url("/wemoocdemo-theme/images/custom/ico_arrow_right.png") no-repeat 0 17px; }
+
+.taglib-discussion .lfr-grid a {
+  font-weight: 600; }
+
+.taglib-discussion .separator {
+  display: none; }
+
+.taglib-discussion .lfr-grid .taglib-icon {
+  font-size: .7142em; }
+
+.hook_comment {
+  text-align: left; }
+
+#mediatecaClass .hook_col2 .lfr-table {
+  border-top: 0 none; }
+
+#mediatecaClass .hook_col2 .lfr-grid .lfr-table .taglib-icon img {
+  display: inline-block; }
+
+#mediatecaClass .hook_col2 .lfr-table .taglib-icon .taglib-text {
+  border-right: 0 none;
+  color: #00C7D5;
+  padding-right: 0;
+  font-size: 10px; }
+
+#mediatecaClass .hook_col2 .lfr-table .taglib-icon:hover .taglib-text {
+  color: #aac9c8; }
+
+#mediatecaClass .lfr-grid .lfr-table .taglib-icon img {
+  display: inline-block; }
+
+#mediatecaClass .lfr-table {
+  border-top: #00b5cb solid 1px; }
+
+.taglib-discussion .lfr-grid {
+  clear: none; }
+
+.taglib-discussion table.add-comment {
+  clear: none; }
+
+.taglib-discussion .hook_discussion {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%; }
+
+/* q&a */
+.qaPortlet_container .qa_row .col_1 {
+  background: #fff; }
+
+.qaPortlet_container .options {
+  text-align: right;
+  display: block;
+  clear: both; }
+
+.qaPortlet_container .tags .taglib-asset-tags-summary {
+  display: block;
+  background: #f0f0f0;
+  padding: 2px 5px; }
+
+.qaPortlet_container .tags .taglib-asset-tags-summary .tag {
+  font-size: .8571em; }
+
+.qaPortlet_container .taglib-ratings.thumbs {
+  float: none; }
+
+.qaPortlet_container .taglib-ratings.thumbs .aui-thumbrating {
+  height: auto; }
+
+.qaPortlet_container .aui-thumbrating .aui-rating-thumb-up.aui-rating-element-off {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ok_off.png") no-repeat 50% 50%;
+  background-position: 50% 50%;
+  float: none; }
+
+.qaPortlet_container .aui-thumbrating .aui-rating-thumb-down.aui-rating-element-off {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ko_off.png") no-repeat 50% 50%;
+  background-position: 50% 50%;
+  float: none; }
+
+.qaPortlet_container .aui-thumbrating .aui-rating-thumb-up.aui-rating-element-on {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ok.png") no-repeat 50% 50%;
+  float: none; }
+
+.qaPortlet_container .aui-thumbrating .aui-rating-thumb-down.aui-rating-element-on {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ko.png") no-repeat 50% 50%;
+  float: none; }
+
+.qaPortlet_container .aui-thumbrating .aui-rating-thumb-up.aui-rating-element-hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ok_hover.png") no-repeat 50% 50%;
+  background-position: 50% 50%;
+  float: none; }
+
+.qaPortlet_container .aui-thumbrating .aui-rating-thumb-down.aui-rating-element-hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ko_hover.png") no-repeat 50% 50%;
+  background-position: 50% 50%;
+  float: none; }
+
+.qaPortlet_container .aui-rating-thumb-up {
+  width: 34px; }
+
+.qaPortlet_container .aui-rating-thumb-down {
+  width: 34px; }
+
+.qaPortlet_container .qa_row .col_2 .qa_footer {
+  clear: none; }
+
+.qaPortlet_container .qa_row .col_2 .qa_footer .bold {
+  color: #00b5cc; }
+
+.qaPortlet_container .qa-options {
+  display: block;
+  text-align: right; }
+
+.qaPortlet_container .user {
+  color: #00b5cc; }
+
+.qaPortlet_container .col_2 .qa_comment_header .lfr-panel-container {
+  clear: none; }
+
+.qaPortlet_container .col_2 .qa_comment_header .lfr-panel-container .lfr-panel-title {
+  color: #00b5cc; }
+
+td.etiqueta {
+  display: block;
+  width: 20%;
+  text-align: right; }
+
+.qaPortlet_container .qa_footer {
+  clear: both;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  text-align: right; }
+
+.qaPortlet_container .qa_footer .bold {
+  color: #8c8c8c; }
+
+.qaPortlet_container .qa_footer li {
+  display: inline; }
+
+.qa_edit {
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.qa_edit .row {
+  clear: both;
+  display: block; }
+
+.qa_edit .row label {
+  display: block;
+  clear: both;
+  padding: 10px 0;
+  font-size: 1.2727em;
+  color: #00b5cc; }
+
+.qa_edit .row input {
+  font-size: 1.4em; }
+
+.qa_edit .row .cke_show_borders {
+  font-size: 16px; }
+
+.qaPortlet_container .qa_nav {
+  margin: 10px 0 0; }
+
+span.rating-desactivado-up {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ok_off.png") no-repeat 50% 50%;
+  background-position: 50% 50%;
+  float: none; }
+
+span.rating-desactivado-down {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_vote_ko_off.png") no-repeat 50% 50%;
+  background-position: 50% 50%;
+  float: none; }
+
+.qaPortlet_container .qa_cont {
+  background: transparent url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/bg_qa_cont.png") no-repeat 50% 50%;
+  background-position: 50% 50%; }
+
+.qaPortlet_container .qa_row .col_2 .qa_content {
+  padding-top: 10px; }
+
+.portlet-borderless-container {
+  min-height: 0; }
+
+.qaPortlet_container .button {
+  border: 0 none;
+  float: right;
+  padding: 5px 10px;
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x left top;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 600;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+.qaPortlet_container .qa_nav li.active a {
+  color: #000; }
+
+.qaPortlet_container .qa_row .col_1 ul li.answers .active_2 {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bg_answers_1.png") no-repeat 50% 50%; }
+
+.qaPortlet_container .qa_row .col_1 ul li.answers .active_3 {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bg_answers_2.png") no-repeat 50% 50%; }
+
+.qaPortlet_container .qa_row .col_1 ul li.answers .active_4 {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bg_answers_2.png") no-repeat 50% 50%; }
+
+.qaPortlet_container .qa_row .col_1 ul li.votes .active_2 {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bg_votes_1.png") no-repeat 50% 50%; }
+
+.qaPortlet_container .qa_row .col_1 ul li.votes .active_3 {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bg_votes_2.png") no-repeat 50% 50%; }
+
+.qaPortlet_container .qa_row .col_1 ul li.votes .active_4 {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bg_votes_2.png") no-repeat 50% 50%; }
+
+.qaPortlet_container .qa_row .col_1 ul li.readings .active_2 {
+  background-color: #585858; }
+
+.qaPortlet_container .qa_row .col_1 ul li.readings .active_3 {
+  background-color: #333; }
+
+.qaPortlet_container .qa_row .col_1 ul li.readings .active_4 {
+  background-color: #333; }
+
+.qaPortlet_container .qa_row .col_2 h1 {
+  color: #00b5cc; }
+
+.qaPortlet_container h2 {
+  color: #00b5cc; }
+
+.qaPortlet_container .ico_important a.on {
+  background: url(/wemoocdemo-theme/images/custom/portlet/ico_star_on.png) no-repeat 0 50%; }
+
+.qaPortlet_container .aui-tooltip-content {
+  background-color: #00b5cc;
+  color: #fff; }
+
+.qaPortlet_container .qa_youranswer form {
+  border-top: #2d2849 solid 1px; }
+
+.qaPortlet_container .row {
+  border-top: #2d2849 solid 1px; }
+
+.qaPortlet_container .aui-rating-label-element {
+  color: #000; }
+
+.resumen-portlet .portlet_resumen {
+  background-image: url("/wemoocdemo-theme/images/custom/portlet/img_interrogante.png");
+  background-color: #f0f0f0; }
+
+.resumen-portlet .portlet_resumen p {
+  color: #2d2849; }
+
+.tit_line {
+  background-color: #2d2849; }
+
+.tit_act {
+  background-color: #2d2849; }
+
+.tit_inact {
+  background-color: #00b5cc; }
+
+.tags-portlet .portlet {
+  background-color: #f0f0f0; }
+
+.tags-portlet .portlet-topper {
+  background-color: #f0f0f0; }
+
+/* */
+/* home estructuras */
+.tmpl_imagen_listado {
+  padding: 0; }
+
+.tmpl_imagen_listado h1 .negrita {
+  color: #00b5cc; }
+
+.tmpl_imagen_listado li {
+  font: 300 1.2727em Nunito, Tahoma, Verdana; }
+
+.tmpl_imagen_listado li a {
+  font-weight: 600;
+  padding: 5px 20px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/arrow_right_a.png") no-repeat 100% 50%; }
+
+.tmpl_imagen_listado .ico_li {
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.tmpl_imagen_listado li .negrita {
+  color: #00b5cc;
+  padding-right: 5px; }
+
+.verMas {
+  padding: 10px 10px 0 0;
+  font: 600 16px Nunito, Tahoma, Verdana;
+  text-align: right; }
+
+.verMas a {
+  padding: 5px 15px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/btnNext.png") 100% 55% no-repeat; }
+
+.pie_verTodo {
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+/* */
+.delta-selector {
+  display: none; }
+
+.page-selector {
+  display: none; }
+
+/* mensajes del portal */
+.portlet-msg-info {
+  padding: 10px 10px 10px 40px;
+  border: 0 none;
+  background: #adadad url("/wemoocdemo-theme/images/messages/info.png") no-repeat 10px 50%;
+  font-size: 16px;
+  color: #fff; }
+
+.portlet-msg-error {
+  padding: 10px 10px 10px 40px;
+  border: 0 none;
+  background: #adadad url(/wemoocdemo-theme/images/messages/error.png) no-repeat 10px 50%;
+  font-size: 16px;
+  color: #fff; }
+
+.portlet-msg-alert {
+  padding: 10px 10px 10px 40px;
+  border: 0 none;
+  background: #adadad url(/wemoocdemo-theme/images/messages/alert.png) no-repeat 10px 50%;
+  font-size: 16px;
+  color: #fff; }
+
+.portlet-msg-success {
+  padding: 10px 10px 10px 40px;
+  border: 0 none;
+  background: #adadad url(/wemoocdemo-theme/images/messages/success.png) no-repeat 10px 50%;
+  font-size: 16px;
+  color: #fff; }
+
+.portlet-msg-info a, .portlet-msg-error a, .portlet-msg-alert a, .portlet-msg-success a {
+  color: #f2f1f1; }
+
+.portlet-msg-info a:hover, .portlet-msg-error a:hover, .portlet-msg-alert a:hover, .portlet-msg-success a:hover {
+  color: #fff; }
+
+.portlet-msg-info, .portlet-msg-help, .lfr-message-help, .portlet-msg-progress, .lfr-message-progress, .portlet-msg-help, .lfr-message-help, .portlet-msg-progress, .lfr-message-progress, .lfr-message-info, .portlet-msg-success {
+  clear: both; }
+
+/* */
+/*Pagina Curso Inicio*/
+.tmpl_info_curso_listado {
+  background-color: #f0f0f0;
+  padding: 5px 10px; }
+
+.tmpl_info_curso .multimedia {
+  float: left; }
+
+.tmpl_info_curso .info_curso {
+  padding: 10px; }
+
+.tmpl_info_curso .titulo_curso {
+  font-size: 16px;
+  padding-bottom: 10px; }
+
+.tmpl_info_curso .destacado_curso {
+  font-size: 25px;
+  text-align: center; }
+
+.tmpl_info_curso .enlace_inscribete {
+  text-align: center; }
+
+.info_adicional_curso .color_secundario {
+  color: #000; }
+
+.titulo_info_adicional {
+  font-size: 16px;
+  padding: 10px 0; }
+
+.texto_info_adicional {
+  font-size: 12px; }
+
+.tmpl_claustro_curso {
+  padding: 10px 0;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.tmpl_claustro_curso ul {
+  list-style: none; }
+
+.portlet-journal-content .journal-content-article .tmpl_claustro_curso ul li {
+  margin: 0;
+  padding-bottom: 10px;
+  list-style: none;
+  width: 50%;
+  float: left;
+  text-align: center; }
+
+.tmpl_claustro_curso ul li img {
+  height: 71px; }
+
+.tmpl_claustro_curso ul li span.nombre_profesor {
+  display: block;
+  font-size: 12px;
+  color: #000; }
+
+/* Pestanias */
+ul.tab_title {
+  border-bottom: #024444 solid 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  overflow: hidden; }
+
+.portlet-journal-content .journal-content-article ul.tab_title li {
+  margin: 0;
+  font-size: 17px;
+  float: left;
+  width: 50%;
+  background: #00b5cc;
+  list-style: none outside none; }
+
+.portlet-journal-content .journal-content-article ul.tab_title li.active {
+  background: #024444; }
+
+.portlet-journal-content .journal-content-article ul.tab_title li.active a {
+  cursor: default;
+  border-right: 2px solid #fff; }
+
+.portlet-journal-content .journal-content-article ul.tab_title li a, .portlet-journal-content .journal-content-article ul.tab_title li span {
+  border-right: 2px solid #fff;
+  color: #fff;
+  display: block;
+  padding: 5px 0;
+  text-align: center; }
+
+.tab_content {
+  background: #f0f0f0;
+  padding: 0 16px;
+  color: #000000; }
+
+.tab_content .respuesta_tab {
+  padding: 16px 0; }
+
+.tab_container {
+  font-size: 16px; }
+
+.tab_content ul li {
+  margin: 0 20px 10px;
+  list-style-image: url("/webTLS-theme/images/custom/bullet_azul.png"); }
+
+.tab_content ol li {
+  margin: 0 20px 10px; }
+
+/* Fin pestanias*/
+/*FIN Pagina Curso Inicio*/
+/* rotator */
+.rotator_home {
+  margin-left: -10px; }
+
+/* */
+/* Conocenos */
+.conocenos-blog {
+  background: url(/wemoocdemo-theme/images/custom/webcontent/bg_fondo_blog.jpg) no-repeat transparent;
+  height: 661px;
+  width: 383px; }
+
+.conocenos-blog .portlet {
+  background-color: transparent; }
+
+.conocenos-blog .portlet-title {
+  border: 0; }
+
+.conocenos-blog .portlet-topper {
+  background-color: transparent; }
+
+.conocenos-blog .portlet-content {
+  padding: 10px; }
+
+.conocenos-blog .date-blog {
+  font-size: 13px; }
+
+.conocenos-blog .title-blog {
+  font-size: 16px; }
+
+/* FIN Conocenos */
+/* TablÃ³n anuncios */
+.tablonAnuncios-portlet {
+  font-size: 12px; }
+
+.tablonAnuncios-portlet .enlace-nombre {
+  font-weight: bold; }
+
+.tablonAnuncios-portlet .results-row.alt td {
+  background: none repeat scroll 0 0 #FFFFFF; }
+
+.seccionOferta {
+  float: left;
+  width: 49%; }
+
+.seccionDemanda {
+  float: right;
+  width: 49%; }
+
+.tituloSeccion {
+  color: #00b5cc;
+  font-size: 16px;
+  border-bottom: 1px solid #2d2849;
+  padding: 0 0 5px; }
+
+.tablonAnuncios-portlet .user .nombre {
+  font-weight: bold;
+  color: #00b5cc; }
+
+.tablonAnuncios-portlet .fechaSolicitud {
+  font-weight: bold; }
+
+.seccionOferta .results-header, .seccionDemanda .results-header {
+  display: none; }
+
+.tablonAnuncios-portlet .ver_mas_tablon {
+  border-top: 1px solid #2d2849;
+  height: 20px;
+  padding-right: 25px;
+  text-align: right;
+  padding-top: 5px; }
+
+.tablonAnuncios-portlet .taglib-page-iterator .search-results {
+  display: none; }
+
+.tablonAnuncios-portlet .search-pages .page-links {
+  float: none;
+  padding-left: 0; }
+
+.tablonAnuncios-portlet .taglib-page-iterator .search-pages {
+  float: none;
+  text-align: center; }
+
+.tablonAnuncios-portlet .tablon_borrar input[type="submit"] {
+  background-image: none;
+  color: #00b5cc;
+  font-weight: normal;
+  padding: 0;
+  padding-left: 20px;
+  background: url("/wemoocdemo-theme/images/custom/btn-borrar.png") no-repeat scroll left center white; }
+
+.tablonAnuncios-portlet .tablon_borrar .aui-button-holder {
+  margin: 0; }
+
+.tablonAnuncios-portlet .tipoConocimiento, .tablonAnuncios-portlet .subTipoConocimiento {
+  display: none; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .detalleAnuncio {
+  padding: 10px 0; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .detalleAnuncio table {
+  width: 99%; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .detalleAnuncio td {
+  font: 300 1.1667em Nunito, Tahoma, Verdana;
+  padding: 5px; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .detalleAnuncio .label {
+  width: 250px;
+  font-weight: 600;
+  color: #00b5cc; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .detalleAnuncio .titulo-seccion {
+  border-bottom: #00b5cb solid 1px;
+  color: #00b5cb;
+  font-weight: 600;
+  padding-top: 10px; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .botonesDetalle {
+  text-align: right; }
+
+.tablonAnuncios-portlet .contenidoAnuncio .botonesDetalle .boton {
+  font-weight: 600;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #fff; }
+
+#formAltaAnuncio .titulo-seccion {
+  border-bottom: #00b5cb solid 1px;
+  color: #00b5cb;
+  font-weight: 600;
+  padding-top: 10px; }
+
+/* FIN TablÃ³n anuncios */
+/* Retos */
+.informacionmodule .results-header {
+  background: transparent; }
+
+.informacionmodule .results-row.alt td {
+  background: transparent; }
+
+/* */
+/* Actualidad */
+.news_contenedor .content {
+  font: 300 16px Nunito, Arial;
+  padding-top: 10px; }
+
+.news_contenedor .owner {
+  font: 300 12px Nunito, Arial;
+  padding-bottom: 10px; }
+
+.news_contenedor .owner .username {
+  font-weight: 600;
+  color: #00b5cc; }
+
+.news_contenedor .separator {
+  display: none; }
+
+.news_contenedor_list {
+  padding: 0; }
+
+.news_contenedor_list .content {
+  font: 300 16px Nunito, Arial; }
+
+.contenedor_act_list {
+  padding-bottom: 20px; }
+
+/* */
+/* Modulo Cursos - Retos */
+.coursemodule {
+  width: 100%;
+  font-size: 12px; }
+
+.coursemodule th {
+  text-align: center;
+  color: #00b5cc;
+  font-weight: bold;
+  border-bottom: 1px solid #2d2849;
+  padding-bottom: 8px;
+  font-size: 16px; }
+
+.coursemodule td {
+  border-bottom: 1px solid #2d2849;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.coursemodule .title {
+  font-weight: bold;
+  width: 30%; }
+
+.coursemodule .percent {
+  font-weight: bold;
+  color: #00b5cb;
+  text-align: center; }
+
+.coursemodule .date {
+  font-weight: bold;
+  color: #00b5cb;
+  text-align: center;
+  width: 20%; }
+
+.coursemodule .access a {
+  font-size: 16px;
+  font-weight: bold;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_flecha_cursos.png") no-repeat right;
+  padding-right: 30px; }
+
+.coursemodule .access {
+  text-align: center;
+  width: 30%; }
+
+.coursemodule .icon {
+  text-align: center;
+  width: 20%; }
+
+/* fin */
+/* Portada curso*/
+#caja_inscripcion {
+  font-size: 16px;
+  padding-bottom: 10px; }
+
+.boton_inscibirse {
+  padding: 10px;
+  text-align: center; }
+
+.boton_inscibirse a {
+  font-size: 1.4em;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e4701e;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.boton_inscibirse a:hover {
+  background: #fcb034; }
+
+.mensaje_marcado {
+  color: #00b5cb;
+  font-weight: 600;
+  text-align: center; }
+
+.descripcion_curso {
+  font-size: 16px; }
+
+/* */
+/*noticias*/
+.bg_color1 .contenedor {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  font-size: 12px; }
+
+.bg_color1 .date-blog {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 5px; }
+
+.bg_color1 .title-blog {
+  font-size: 12px; }
+
+.bg_color1 .journal-content-article p {
+  margin-bottom: 0; }
+
+.bg_color1 .portlet-content .portlet-body {
+  padding-bottom: 0; }
+
+/* fin */
+/* portlet heroes*/
+.videobycategorieslist-portlet .testimonio .testimonio_titulo {
+  font-size: 12px; }
+
+.videobycategorieslist-portlet .testimonio .testimonio_empresa {
+  font-size: 12px; }
+
+.videobycategorieslist-portlet .testimonio .ajustelat {
+  padding: 10px;
+  vertical-align: top; }
+
+.videobycategorieslist-portlet #mediatecaClass .tablemenu_dblue tr .filo {
+  border-bottom: 2px dotted #00b5cb;
+  vertical-align: top; }
+
+.btupload {
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom.png") no-repeat scroll right center white;
+  padding-right: 20px; }
+
+.videobycategorieslist-portlet .content_testimonio_ico {
+  display: none; }
+
+.bttxt {
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom.png") no-repeat scroll right center white;
+  padding-right: 20px; }
+
+.videobycategorieslist-portlet #mediatecaClass .title_testimonio {
+  color: #00b5cb;
+  border: 0px; }
+
+.videobycategorieslist-portlet .box_title .cargo {
+  color: #00b5cc;
+  font-size: 16px;
+  padding-top: 10px; }
+
+.videobycategorieslist-portlet #mediatecaClass .box_title_ico {
+  border-bottom: 1px solid #2d2849;
+  border-top: 1px solid #2d2849; }
+
+.videobycategorieslist-portlet #mediatecaClass.testimonio .box_title_ico {
+  color: #00b5cb !important; }
+
+.videobycategorieslist-portlet .testimonio .results-row {
+  /*border-bottom: 2px dotted #00b5cb;*/
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%; }
+
+#mediatecaClass .box_tt {
+  display: none; }
+
+.videobycategorieslist-portlet .taglib-flags {
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom.png") no-repeat scroll right center white;
+  padding-right: 20px; }
+
+.videobycategorieslist-portlet .uploadByResource {
+  display: none; }
+
+.videobycategorieslist-portlet .uploadByResource {
+  display: none; }
+
+.videobycategorieslist-portlet #mediatecaClass .taglib-flags span a span {
+  color: #00b5cc;
+  font-size: 16px; }
+
+.videobycategorieslist-portlet #mediatecaClass .help_img {
+  display: none; }
+
+.videobycategorieslist-portlet #mediatecaClass .box_title_com {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 1px solid #2d2849;
+  border-top: 1px solid #2d2849;
+  color: #00b5cb;
+  font-size: 15px;
+  height: 0;
+  line-height: 0;
+  padding: 20px 0; }
+
+.videobycategorieslist-portlet #mediatecaClass #favorit {
+  display: none; }
+
+.videobycategorieslist-portlet #mediatecaClass #val {
+  color: #00b5cb; }
+
+.videobycategorieslist-portlet #mediatecaClass .box_ratings {
+  color: #00b5cb;
+  font-weight: normal; }
+
+.videobycategorieslist-portlet
+#mediatecaClass #hmhp_postReplyForm0 {
+  text-align: right; }
+
+.videobycategorieslist-portlet .hook_comment {
+  font-size: 16px;
+  color: #000; }
+
+.videobycategorieslist-portlet .hook_postedOn {
+  font-size: 13px;
+  color: #00b5cb; }
+
+.videobycategorieslist-portlet #mediatecaClass .add-comment textarea {
+  background: #f0f0f0;
+  color: #7e7e7e;
+  font-weight: normal; }
+
+#mediatecaClass .taglib-discussion .lfr-grid .hook_col1 {
+  display: table-cell; }
+
+.videobycategorieslist-portlet .portlet-icon-back {
+  display: none; }
+
+.videobycategorieslist-portlet .box_title_ico img {
+  display: none; }
+
+.videobycategorieslist-portlet .bt_actions .aui-button-content input {
+  display: none; }
+
+.videobycategorieslist-portlet .authorResource {
+  display: none; }
+
+.videobycategorieslist-portlet .previousPage {
+  float: left;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom_left.png") no-repeat scroll left center transparent; }
+
+.videobycategorieslist-portlet .nextPage {
+  float: right;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom.png") no-repeat scroll right center transparent; }
+
+.videobycategorieslist-portlet #mediatecaClass .videos #pagination .bt_next_on {
+  background: none; }
+
+.videobycategorieslist-portlet .textoPagina {
+  display: none; }
+
+.videobycategorieslist-portlet #mediatecaClass .videos #pagination .bt_previous_on {
+  background: none; }
+
+/* fin */
+/* portlet tablon de anuncion*/
+.tablonAnuncios-portlet .results-row {
+  /*border-bottom: 2px dotted #00b5cb;*/
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%; }
+
+.tablonAnuncios-portlet .page-links {
+  /*border-bottom: 2px dotted #00b5cb;*/
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.tablonAnuncios-portlet .portlet-icon-back {
+  display: none; }
+
+#formAltaAnuncio #botonSubmit {
+  float: left;
+  padding-right: 0; }
+
+#formAltaAnuncio #botonCancel {
+  float: left;
+  margin-top: 0; }
+
+.tablonAnuncios-portlet .user {
+  float: left;
+  padding-right: 10px; }
+
+.tablonAnuncios-portlet .ver_mas_tablon {
+  padding-right: 20px; }
+
+.tablonAnuncios-portlet .botonesAnuncios {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  font-family: Nunito, Tahoma, Verdana;
+  font-size: 1.2727em;
+  color: #FFFFFF;
+  text-shadow: none;
+  padding: 3px 15px 4px 15px; }
+
+.tablonAnuncios-portlet #capaBotones {
+  clear: both; }
+
+.tablonAnuncios-portlet #capaBotones .botones a {
+  font-size: 1.2727em;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #fff; }
+
+/* fin */
+/* landing */
+ul.list_logos {
+  text-align: center;
+  list-style: none; }
+
+ul.list_logos li {
+  display: inline-block;
+  float: none;
+  padding: 0 20px;
+  vertical-align: middle;
+  list-style: none; }
+
+.portlet-asset-categories-navigation .portlet .portlet-content {
+  padding-top: 0; }
+
+.portlet-asset-categories-navigation .portlet .portlet-content .portlet-body .lfr-panel-container {
+  border: 0 none;
+  background: transparent; }
+
+.portlet-asset-categories-navigation .portlet .portlet-content .portlet-body .lfr-panel.lfr-extended .lfr-panel-titlebar {
+  background: transparent;
+  border-bottom: #00b5cb solid 1px; }
+
+.portlet-asset-categories-navigation .portlet .portlet-content .portlet-body .lfr-panel-content li {
+  padding: 0; }
+
+.portlet-asset-categories-navigation .portlet .portlet-content .portlet-body .lfr-panel-content li .aui-tree-node-content {
+  margin: 0; }
+
+.bg_green_categorie .portlet {
+  color: #fff;
+  background: #006c67;
+  border: 0 none; }
+
+.bg_green_categorie .portlet-topper {
+  background: #006c67; }
+
+.bg_green_categorie .portlet-topper .portlet-title {
+  color: #fff; }
+
+.bg_green_categorie .portlet-content {
+  background: #006c67;
+  padding-top: 5px; }
+
+.bg_green_categorie .tag-cloud, .bg_green_categorie .tag-list, .bg_green_categorie .lfr-asset-category-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.bg_green_categorie .tag-cloud li, .bg_green_categorie .tag-list li, .bg_green_categorie .lfr-asset-category-list li {
+  display: block;
+  float: none;
+  padding: 5px 0;
+  margin: 0;
+  border-top: #fff solid 1px; }
+
+.bg_green_categorie .tag-cloud a, .bg_green_categorie .tag-list a, .bg_green_categorie .lfr-asset-category-list a {
+  color: #fff;
+  font: 600 1.1em Nunito, Tahoma, Verdana, Helvetica; }
+
+/* */
+/* Buscador usuario */
+.npa_search_user .form_col {
+  display: block;
+  padding-bottom: 5px; }
+
+.npa_search_user .form_col .aui-field-label {
+  color: #00b5cc;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 2px; }
+
+.npa_search_user .form_col .aui-field-input-text {
+  width: 100%; }
+
+.npa_search_user .search_users {
+  display: block;
+  margin-top: 5px;
+  padding: 10px 0;
+  border-top: #00b5cb solid 1px;
+  border-bottom: #00b5cb solid 1px;
+  text-align: right; }
+
+.searchfriendslucene-portlet .lfr-search-container .results-header {
+  background: transparent;
+  padding: 5px 0;
+  font: 600 16px Nunito, Tahoma, Verdana;
+  color: #00b5cb; }
+
+.searchfriendslucene-portlet .lfr-search-container .results-row {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%; }
+
+.searchfriendslucene-portlet .lfr-search-container .results-row.alt td {
+  background: transparent; }
+
+.searchfriendslucene-portlet .lfr-search-container .taglib-user-display .user-details .user-name {
+  font: 300 16px Nunito, Tahoma, Verdana; }
+
+.searchfriendslucene-portlet .aui-button {
+  clear: both;
+  overflow: hidden;
+  padding: 5px 0;
+  text-align: right; }
+
+/* */
+/* my activity portlet*/
+.myactivity-notinmypage-portlet .activity-title {
+  font-size: 12px;
+  padding-bottom: 5px; }
+
+.myactivity-notinmypage-portlet .activity-title a {
+  font-weight: bold; }
+
+.myactivity-notinmypage-portlet .activity-data {
+  padding-left: 10px;
+  vertical-align: middle; }
+
+.myactivity-notinmypage-portlet .activity-body {
+  font-size: 12px;
+  font-weight: bold; }
+
+/* fin */
+.container_rotator_video {
+  background: transparent;
+  overflow: hidden; }
+
+.container_rotator_video a {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #fff; }
+
+.titulo_company {
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 10px; }
+
+/* feedback
+.ico_feedback{cursor:pointer;position:fixed;top:100px;left:0;background:url("/wemoocdemo-theme/images/custom/basic/ico_feedback.png") no-repeat 0 0;width:44px;height:131px;text-indent:-2000px;}
+*/
+/* listado cursos */
+.course {
+  padding: 5px 0; }
+
+.course img {
+  width: 4%;
+  vertical-align: middle; }
+
+.course .challenges {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  color: #2d2849;
+  width: 32%;
+  display: inline-table;
+  vertical-align: middle; }
+
+.course a {
+  display: inline-table;
+  vertical-align: middle;
+  width: 56%;
+  font-weight: 600;
+  font-size: 16px; }
+
+.course .moduleList {
+  width: 100%;
+  margin-top: 10px; }
+
+.course .moduleList tr {
+  border-top: #bfbfbf solid 1px; }
+
+.course .moduleList tr td {
+  padding: 5px 0; }
+
+.course .moduleList .result {
+  width: 150px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600; }
+
+.course .moduleList .title {
+  background: url("/wemoocdemo-theme/images/custom/icons/bullet_list_cursos.png") no-repeat 0 50%;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 600; }
+
+.course .moduleList .title a {
+  width: auto;
+  font-size: 14px; }
+
+.mycourses-portlet .option-less .ico-desplegable {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_less.png") no-repeat 100% 50%;
+  display: inline-table;
+  vertical-align: middle;
+  width: 6%;
+  height: 30px;
+  cursor: pointer; }
+
+.mycourses-portlet .option-more .ico-desplegable {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 100% 50%;
+  display: inline-table;
+  vertical-align: middle;
+  width: 6%;
+  height: 30px;
+  cursor: pointer; }
+
+/* */
+/* Mi perfil */
+.caja-miperfil .imagen-perfil {
+  margin-right: 10px; }
+
+.caja-miperfil .dataperfil {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000; }
+
+.caja-miperfil .dataperfil span {
+  padding-right: 10px;
+  font-weight: 600; }
+
+.caja-miperfil span.dataperfil {
+  display: block;
+  text-align: right; }
+
+.caja-miperfil span.dataperfil a {
+  font-weight: 600;
+  padding: 5px 25px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 100% 50% no-repeat; }
+
+#userprofile .imagen-perfil {
+  margin-right: 10px; }
+
+#userprofile .miperfil-datos {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000; }
+
+#userprofile .miperfil-datos span {
+  padding-right: 10px;
+  font-weight: 600; }
+
+.biografia {
+  font-size: 16px; }
+
+.miprofile-portlet label.aui-field-label {
+  display: block;
+  font-size: 16px;
+  color: #00b5cc;
+  padding: 5px 0 5px 5px; }
+
+.miprofile-portlet input.aui-field-input {
+  width: 400px;
+  height: 20px; }
+
+.miprofile-portlet textarea.aui-field-input {
+  width: 90%;
+  height: 90px; }
+
+.miprofile-portlet .oblidatorio {
+  display: block;
+  margin-top: -55px;
+  padding-bottom: 20px;
+  color: #00b5cc;
+  font-weight: 600; }
+
+.publicprofile-portlet .portlet-body h1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-top: 1px solid #2d2849;
+  border-bottom: 1px solid #2d2849;
+  font: 300 18px Nunito, Tahoma, Verdana; }
+
+/* modal tareas */
+#activityResult {
+  text-align: center; }
+
+#activityResult div {
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: Nunito, Tahoma, Verdana;
+  text-align: center; }
+
+#activityResult #score {
+  padding: 10px 0;
+  font: 600 1.6em Nunito, Tahoma, Verdana;
+  text-align: center;
+  color: #000; }
+
+#activityResult .button {
+  margin: 20px auto;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 35px;
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  color: #fff; }
+
+/* */
+/* foro */
+.foro_banner_cond {
+  padding: 15px 15px 15px 82px;
+  font: 600 16px Nunito, Tahoma, Verdana;
+  background: #f0f0f0 url("/wemoocdemo-theme/images/custom/webcontent/bg_forum_condiciones.png") no-repeat left bottom; }
+
+.foro_banner_cond p {
+  margin-bottom: 0; }
+
+/* */
+/* Alumnos */
+.social-networking-portlet-members {
+  font-size: 16px; }
+
+.social-networking-portlet-members .portlet-body div {
+  display: none; }
+
+.social-networking-portlet-members .portlet-body .lfr-search-container {
+  display: block; }
+
+.social-networking-portlet-members .portlet-body .lfr-search-container div {
+  display: block; }
+
+.social-networking-portlet-members .portlet-body .taglib-search-iterator-page-iterator-bottom {
+  display: block; }
+
+.social-networking-portlet-members .portlet-body .taglib-search-iterator-page-iterator-bottom div {
+  display: block; }
+
+.social-networking-portlet-members .portlet-body .taglib-search-iterator-page-iterator-bottom div.search-results {
+  display: none; }
+
+.social-networking-portlet-members .taglib-page-iterator .search-pages .page-links a.next {
+  background-position: 100% 4px; }
+
+.social-networking-portlet-members .taglib-page-iterator .search-pages .page-links a.previous {
+  background-position: 0 4px; }
+
+.social-networking-portlet-members .taglib-search-iterator-page-iterator-bottom .search-pages .page-links {
+  float: right !important; }
+
+.communitymembersmanage-portlet {
+  font-size: 16px; }
+
+.communitymembersmanage-portlet .taglib-page-iterator .search-pages .page-links a.next {
+  background-position: 100% 4px; }
+
+.communitymembersmanage-portlet .taglib-page-iterator .search-pages .page-links a.previous {
+  background-position: 0 4px; }
+
+.communitymembersmanage-portlet .taglib-search-iterator-page-iterator-bottom .search-pages .page-links {
+  float: right !important; }
+
+.communityteamsmanage-portlet {
+  font-size: 16px; }
+
+.courseadmin-portlet {
+  font-size: 16px; }
+
+.coursetoolsmanage-portlet {
+  font-size: 16px; }
+
+.groupactivities-portlet .activity-title {
+  font-size: 1.1em; }
+
+.groupactivities-portlet .activity-data a {
+  font-weight: bold; }
+
+.groupactivities-portlet .img-user .avatar {
+  border: 1px solid #EBEBEB;
+  padding: 1px; }
+
+.groupactivities-portlet .activity-data .activity-title {
+  padding-left: 8px; }
+
+.groupactivities-portlet .activity-data .activity-body {
+  padding-left: 8px; }
+
+/* */
+/* categorias */
+.portlet-asset-categories-navigation .portlet .portlet-content .portlet-body .lfr-panel.lfr-extended .lfr-panel-titlebar {
+  display: none; }
+
+.bg_color1 .portlet {
+  font-size: 16px; }
+
+.portlet-asset-categories-navigation ul.lfr-asset-category-list {
+  background: url("/wemoocdemo-theme/images/custom/icons/bg_categoria_li.png") no-repeat 0 0; }
+
+.portlet-asset-categories-navigation .portlet .portlet-content .portlet-body .lfr-panel-content li {
+  padding: 0 0 5px;
+  background: url("/wemoocdemo-theme/images/custom/icons/bg_categoria_li.png") no-repeat 0 100%; }
+
+.portlet-asset-categories-navigation ul.lfr-asset-category-list li .aui-tree-data-content {
+  padding: 7px 0 8px 30px;
+  background: url("/wemoocdemo-theme/images/custom/icons/ico_categoria.png") no-repeat 0 6px; }
+
+/* */
+/* Asset publisher */
+.portlet-asset-publisher .header-title {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #2d2849; }
+
+.portlet-asset-publisher .taglib-header {
+  margin-bottom: 0; }
+
+.portlet-asset-publisher .asset-content {
+  font-size: 16px; }
+
+.portlet-asset-publisher .asset-full-content {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  border-bottom: #2d2849 solid 1px; }
+
+.portlet-asset-publisher .asset-full-content .coursedasset .courselogodiv {
+  padding: 11px 11px 0;
+  float: left;
+  margin-right: 10px;
+  background: url("/wemoocdemo-theme/images/custom/background/bg_image.png");
+  width: 197px;
+  height: 136px; }
+
+.portlet-asset-publisher .asset-full-content .coursedasset .courselogodiv .courselogo {
+  width: 198px;
+  height: 113px; }
+
+.portlet-asset-publisher .asset-more {
+  text-align: right; }
+
+/* */
+.portlet-calendar .calendar-container {
+  background: #fff; }
+
+.portlet-calendar .calendar-day .day-number {
+  font-size: 100px;
+  padding-bottom: 0; }
+
+.taglib-calendar tr td a {
+  background: #f2f1f1; }
+
+.taglib-calendar .calendar-current-day a {
+  color: #00b5cc; }
+
+.taglib-calendar tr td.calendar-inactive {
+  background: #f2f1f1;
+  color: #adadad; }
+
+/* mis comunidades */
+.miscomunidades-portlet .results-header {
+  display: none; }
+
+.miscomunidades-portlet .col-1 {
+  background: url("/wemoocdemo-theme/images/custom/icons/ico_comunidad.png") no-repeat 50% 50%; }
+
+.miscomunidades-portlet .col-1 img.icon {
+  display: none; }
+
+.miscomunidades-portlet .col-3 a {
+  font-weight: 600;
+  background: url("/wemoocdemo-theme/images/custom/arrow_right_a.png") no-repeat scroll right 60% transparent;
+  padding-right: 20px; }
+
+/* */
+.aui-tab-active, .aui-tab-active a {
+  color: #000;
+  text-shadow: 0 0 black; }
+
+.patrocinadores {
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 10px;
+  background: white url(/wemoocdemo-theme/images/custom/bg_navigation.png) no-repeat 0 0; }
+
+.tags-portlet .tema_content {
+  font-size: 16px; }
+
+/* universidades */
+.universitylist-portlet .university .header-title {
+  margin-bottom: 0;
+  padding: 10px 20px;
+  background: #00B5CC;
+  color: #fff; }
+
+.universitylist-portlet .university .content {
+  clear: both;
+  overflow: hidden;
+  display: block;
+  padding: 10px;
+  background: #fff;
+  font-size: 16px; }
+
+.universitylist-portlet .university .content .universitylogo {
+  float: left;
+  margin-right: 10px;
+  width: 209px; }
+
+.myuniversity-portlet .university a {
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+/* */
+/* universidad detalle */
+.universitydetails-portlet {
+  padding-bottom: 20px; }
+
+.universitydetails-portlet .universitydetails {
+  font-size: 16px; }
+
+.universitydetails-portlet .universitydetails h1 {
+  display: none;
+  color: #000;
+  font: 600 16px Nunito, Tahoma, Verdana; }
+
+.universitydetails-portlet .universitydetails .courselogo {
+  clear: both;
+  display: block;
+  margin: 10px auto 10px;
+  width: 209px; }
+
+.universitydetails-portlet .universitydetails .taglib-custom-attributes-list {
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.universitydetails-portlet .universitydetails .taglib-custom-attributes-list .aui-field-wrapper-content {
+  margin: 0;
+  padding: 5px 0; }
+
+.universitydetails-portlet .universitydetails .taglib-custom-attributes-list .aui-field-label {
+  float: left;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: 600;
+  color: #00b5cc; }
+
+/* */
+/* banner */
+.banner_container_bottom {
+  padding-bottom: 7px;
+  background: white url("/wemoocdemo-theme/images/custom/portlet/bg_portlet_bottom_white.png") no-repeat 50% 100%; }
+
+.banner_container {
+  background: #f2f1f1;
+  padding: 16px 0;
+  min-height: 322px; }
+
+.banner_container img.banner_image {
+  width: 288px;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto; }
+
+.banner_container h1 {
+  margin: 0 18px 10px;
+  font: 600 20px Nunito, Tahoma, Verdana; }
+
+.banner_container .banner_content {
+  margin: 0 18px;
+  font: 300 16px Nunito, Tahoma, Verdana; }
+
+.banner_container2 {
+  background: #f2f1f1;
+  padding: 16px 0 0; }
+
+.banner_container2 img.banner_image {
+  width: 288px;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto; }
+
+.banner_container2 h1 {
+  margin: 0 18px 10px;
+  font: 600 20px Nunito, Tahoma, Verdana; }
+
+.banner_container2 .banner_content {
+  margin: 0 18px;
+  font: 300 16px Nunito, Tahoma, Verdana; }
+
+.taglib-custom-attributes-list {
+  clear: both;
+  overflow: hidden;
+  display: block;
+  font-size: 16px; }
+
+.courseextradata-portlet .portlet-body {
+  padding-left: 10px; }
+
+.teacher {
+  vertical-align: top;
+  width: 110px; }
+
+#resourcedescription {
+  margin: 5px;
+  font-size: 16px; }
+
+.additionalDocument {
+  margin: 5px;
+  font-size: 16px; }
+
+.coursedescription-portlet {
+  margin: 5px;
+  font-size: 16px; }
+
+/* */
+/* Buscador */
+input.input_search {
+  background: #EEECE0;
+  color: #999;
+  padding: 2px;
+  border: #aaa9a1 solid 1px; }
+
+/* */
+/*Busqueda cursos*/
+.coursesearch-portlet .aui-form {
+  padding: 10px 0;
+  text-align: right; }
+
+.coursesearch-portlet .buscadorcursos .aui-button-content input[type="submit"] {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 10px;
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat;
+  color: transparent;
+  width: 54px; }
+
+.coursesearch-portlet .aui-field-text {
+  display: inline-block; }
+
+.coursesearch-portlet .aui-button-submit {
+  display: inline-block;
+  font-size: 12px; }
+
+.coursesearch-portlet .header-title {
+  padding: 10px 20px;
+  background: #00b5cc;
+  color: #fff; }
+
+.coursesearch-portlet .taglib-header {
+  margin-bottom: 0; }
+
+.coursesearch-portlet .results-header {
+  background: #fff; }
+
+.coursesearch-portlet .results-row td {
+  font-size: 16px;
+  background: #f8f8f8;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.coursesearch-portlet .coursedasset {
+  padding: 20px 20px 0;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.coursesearch-portlet .coursedasset .courselogodiv {
+  padding: 11px 11px 0;
+  float: left;
+  margin-right: 10px;
+  background: url("/wemoocdemo-theme/images/custom/background/bg_image.png");
+  width: 197px;
+  height: 136px; }
+
+.coursesearch-portlet .coursedasset .courselogodiv .courselogo {
+  width: 198px;
+  height: 113px; }
+
+.coursesearch-portlet .asset-more {
+  text-align: right;
+  padding-right: 10px; }
+
+/* */
+/* chequqeos para ie */
+.ie6 .aui-search-bar .aui-button-content input.submit {
+  border: #fff none 0;
+  font-weight: 300;
+  font-size: 0px;
+  padding: 13px 10px;
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat;
+  color: #fff;
+  width: 54px; }
+
+.ie6 .coursesearch-portlet .buscadorcursos .aui-button-content input.submit {
+  border: #fff none 0;
+  font-weight: 300;
+  font-size: 0px;
+  padding: 13px 10px;
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat;
+  color: #fff;
+  width: 54px; }
+
+.ie7 .aui-search-bar .aui-button-content input.aui-button-input-submit {
+  border: #fff none 0;
+  font-weight: 300;
+  font-size: 0px !important;
+  padding: 13px 10px !important;
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat;
+  color: #fff !important;
+  width: 54px;
+  margin-top: 4px; }
+
+.ie7 .coursesearch-portlet .buscadorcursos .aui-button-content input.aui-button-input-submit {
+  border: #fff none 0;
+  font-weight: 300;
+  font-size: 0px;
+  padding: 13px 10px;
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat;
+  color: #fff;
+  width: 54px;
+  margin-top: 4px; }
+
+/* */
+/* usercount-portlet */
+.userscount-portlet .container-number {
+  text-align: right;
+  padding: 30px 5px; }
+
+.userscount-portlet .container-number .number {
+  display: inline-block;
+  width: 42px;
+  background: url(/wemoocdemo-theme/images/custom/background/bg_contador.png) no-repeat right 50%;
+  padding: 13px 0;
+  text-align: center;
+  color: #c38702;
+  font: bolder 40px Nunito, Tahoma, Verdana; }
+
+.ie7 .userscount-portlet .container-number .number {
+  float: left; }
+
+/* */
+/* buscador */
+input.button_search, input.button_search:hover {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat 0 0;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px;
+  vertical-align: top; }
+
+input.input_search {
+  height: 21px;
+  width: 170px;
+  padding-left: 5px;
+  color: #00b5cc; }
+
+/* */
+.lfr-token {
+  border: 0 none;
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 8px 16px;
+  background: #00b5cb;
+  font: 300 16px Nunito, Arial;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
+
+.lfr-token:hover {
+  background: #1ed1e7; }
+
+/* formularios */
+/* formulario */
+.aui-field-label, .journal-article-field-label {
+  color: #2d2849;
+  font: 600 16px Nunito, Arial;
+  padding: 7px 0; }
+
+.aui-choice-label, .aui-field-hint {
+  font-size: 16px;
+  color: #2d2849; }
+
+.taglib-user-display {
+  padding: 0; }
+
+img.avatar {
+  vertical-align: middle;
+  margin-right: 15px; }
+
+.taglib-user-display a .user-name {
+  font: 600 16px Nunito;
+  text-decoration: none; }
+
+.search-button-container button {
+  vertical-align: middle; }
+
+.search-button-container button .aui-icon-search {
+  display: none; }
+
+.date-column, .aui-searchcontainer .results-row td.date-column, .percent-column, .aui-searchcontainer .results-row td.percent-column {
+  text-align: center;
+  font: 600 16px Nunito;
+  color: #7e3f98; }
+
+.number-column, .aui-searchcontainer .results-row td.number-column {
+  text-align: right;
+  font: 600 16px Nunito;
+  color: #7e3f98; }
+
+/* */
+/* Desarrolladores codigo fuente y descargable */
+.hl01 a {
+  display: block;
+  padding: 15px 10px 15px 55px;
+  background: #2d2849 url(/wemoocdemo-theme/images/custom/icons/ico-codfuente.png) 10px 50% no-repeat;
+  font: 600 16px Nunito;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
+
+.hl01 a:hover {
+  background-color: #1ed1e7; }
+
+.hl02 a {
+  display: block;
+  padding: 10px 10px 10px 55px;
+  background: #2d2849 url(/wemoocdemo-theme/images/custom/icons/ico-descargable.png) 10px 50% no-repeat;
+  font: 600 16px Nunito;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
+
+.hl02 a:hover {
+  background-color: #1ed1e7; }
+
+/* */
+.portlet-column-content {
+  padding: 10px; }
+
+.newitem2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: right; }
+
+.newitem2 a.taglib-icon {
+  display: inline-block;
+  background: #e4701e;
+  color: #fff;
+  padding: 7px 35px;
+  font: 300 16px Nunito, Arial;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
+
+.newitem2 a.taglib-icon:hover {
+  background: #fcb034; }
+
+.newitem2 a.taglib-icon img {
+  display: none; }
+
+.newitem2 a.taglib-icon .taglib-text {
+  font: 300 16px Nunito, Arial;
+  text-decoration: none; }
+
+a.newitem2 {
+  display: inline;
+  background: #e4701e;
+  color: #fff;
+  padding: 7px 35px;
+  font: 300 16px Nunito, Arial; }
+
+a.newitem2:hover {
+  background: #fcb034; }
+
+/* Administrador de usuario usermanagement-portlet */
+.bt_newuser {
+  padding: 20px 0;
+  background: url(/wemoocdemo-theme/images/custom/icons/add_user.png) no-repeat 0 50%;
+  padding-left: 54px; }
+
+.bt_removeuser {
+  padding: 20px 0;
+  background: url(/wemoocdemo-theme/images/custom/icons/remove_user.png) no-repeat 0 50%;
+  padding-left: 54px; }
+
+.courseadmin-portlet .bt_removeuser {
+  float: left;
+  margin-left: 20px; }
+
+.communityadmin-portlet .bt_removeuser {
+  float: left;
+  margin-left: 20px; }
+
+.bt_new {
+  padding: 20px 0;
+  background: url(/wemoocdemo-theme/images/custom/icons/add_activity.png) no-repeat 0 50%;
+  padding-left: 54px;
+  float: left; }
+
+.bt_new li .taglib-text {
+  color: #37aebd;
+  font-weight: 600; }
+
+.bt_new li img {
+  display: none; }
+
+.bt_new .taglib-icon .taglib-text {
+  text-decoration: none; }
+
+.usermanagement-portlet .bt_newuser {
+  float: left; }
+
+.courseadmin-portlet .bt_newuser {
+  float: left; }
+
+.communityadmin-portlet .bt_newuser {
+  float: left; }
+
+.bt_importexport {
+  display: block;
+  padding: 20px 0;
+  background: url(/wemoocdemo-theme/images/custom/icons/add_impotexport.png) no-repeat 0 50%;
+  padding-left: 54px; }
+
+.bt_importexport:hover {
+  background: url(/wemoocdemo-theme/images/custom/icons/add_impotexport.png) no-repeat 0 50%; }
+
+.bt_importexport li a.aui-focus, .bt_importexport .lfr-menu-list ul .taglib-icon.aui-focus, .bt_importexport .lfr-menu-expanded li a:focus {
+  background: #37aebd; }
+
+.bt_importexport li .taglib-text {
+  color: #37aebd;
+  font-weight: 600; }
+
+.bt_importexport li a:hover .taglib-text {
+  color: #45c3d3; }
+
+.bt_importexport li img {
+  display: none; }
+
+.portal-popup .bt_importexport {
+  background: url(/wemoocdemo-theme/images/custom/icons/add_impotexport.png) no-repeat 0 50%; }
+
+.portal-popup .bt_new {
+  background: url(/wemoocdemo-theme/images/custom/icons/add_activity.png) no-repeat 0 50%; }
+
+/* submenu */
+.aui-tabview-list {
+  background: transparent none;
+  border: 0 none; }
+
+.aui-tabview-list .aui-tab {
+  border-left: #00b5cb solid 2px; }
+
+.aui-tabview-list .first, .aui-tabview-list .aui-tab:first-child {
+  border-left: 0 none; }
+
+.aui-tabview-list .first .aui-tab-content .aui-tab-label, .aui-tabview-list .aui-tab:first-child .aui-tab-content .aui-tab-label {
+  padding-left: 0; }
+
+.aui-tabview-list .last, .aui-tabview-list .aui-tab:last-child {
+  border-right: 0 none; }
+
+.aui-tab-active .aui-tab-content, .aui-tab-active .aui-tab-content:hover {
+  background: transparent none;
+  border: 0 none; }
+
+.aui-tab-active .aui-tab-content {
+  -moz-box-shadow: 0 0 0 #575757 inset, 0 0 0 #575757 inset;
+  -webkit-box-shadow: 0 0 0 #575757 insett, 0 0 0 #575757 inset;
+  box-shadow: 0 0 0 #575757 inset, 0 0 0 #575757 inset; }
+
+.aui-tab-content {
+  background: transparent none;
+  border: 0 none; }
+
+.aui-tab-content .aui-tab-label {
+  font: normal 16px Lato;
+  color: #00b5cb;
+  padding: 0 10px; }
+
+.aui-tab-content .aui-tab-label:hover {
+  text-decoration: underline;
+  color: #1ed1e7; }
+
+.aui-tab-active .aui-tab-label {
+  text-shadow: #3a3a3a 0 0 0;
+  text-decoration: underline;
+  color: #1ed1e7; }
+
+.aui-tab-active .aui-tab-label:hover {
+  text-shadow: #3a3a3a 0 0 0; }
+
+.aui-tab-active .aui-tab-label strong {
+  font-weight: normal; }
+
+/* */
+/* no puede contener + de 32 archivos importados */
+.portlet-borderless-container .portlet-body {
+  font-size: 16px; }
+
+.portlet-content .portlet-body {
+  font-size: 16px;
+  clear: both;
+  padding-bottom: 8px; }
+
+.portlet-content, .portlet-minimized .portlet-content-container {
+  padding: 0; }
+
+#navigation_table #ul_childmenu li a {
+  color: #2AA8BF;
+  text-decoration: none;
+  font-family: Nunito, Tahoma, Verdana, Arial;
+  font-size: 12px;
+  font-weight: bold; }
+
+#navigation_table #ul_childmenu .selected a {
+  color: #000; }
+
+#navigation_table #ul_childmenu li.last_li {
+  border-right: none; }
+
+#navigation_table #ul_childmenu li.first_child {
+  border-top: 1px solid #E3E3E3; }
+
+#navigation_table .submenu {
+  float: none;
+  list-style-type: none;
+  position: absolute; }
+
+#navigation_table #ul_childmenu li {
+  display: none;
+  float: none;
+  background-color: #FFFFFF;
+  width: auto;
+  padding: 0 10px 2px 10px;
+  margin: 0;
+  border: none;
+  height: auto;
+  border-bottom: 1px solid #E3E3E3;
+  border-left: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3; }
+
+#navigation_table .submenu li a {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+#navigation_table .submenu li span {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+#portletnav #menudearriba {
+  /*position: absolute;*/
+  margin: 0; }
+
+#portletnav {
+  clear: both;
+  overflow: hidden;
+  display: block;
+  padding: 39px 0; }
+
+#portletnav ul li.last_li {
+  border-right: none; }
+
+#portletnav ul li.first_child {
+  border-top: 1px solid #E3E3E3; }
+
+#portletnav .submenu {
+  float: none;
+  list-style-type: none;
+  position: absolute; }
+
+#portletnav ol, ul, dl {
+  margin-left: 0px; }
+
+#portletnav blockquote, ul, ol, dl {
+  margin: 0px; }
+
+#portletnav .submenu li {
+  display: none;
+  float: none;
+  background-color: #FFFFFF;
+  width: auto;
+  padding: 0 10px 2px 10px;
+  margin: 0;
+  border: none;
+  height: auto;
+  border-bottom: 1px solid #E3E3E3;
+  border-left: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3; }
+
+#portletnav .submenu li a {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+#portletnav .submenu li span {
+  cursor: pointer !important;
+  font-size: 12px; }
+
+/* GENERICO TT PORTLETS */
+.portlet .portlet-special-tt {
+  height: 66px;
+  border-bottom: 1px #e2e2e2 solid;
+  padding: 1px; }
+
+.portlet .portlet-special-tt .portlet-special-ttcontent {
+  height: 66px;
+  font-size: 20px;
+  color: #00c4d9; }
+
+.portlet .portlet-special-tt .table_text {
+  width: 100px;
+  font-size: 18px;
+  color: #36b3d1;
+  line-height: 18px;
+  text-align: left;
+  position: relative;
+  left: 12px;
+  top: 36px; }
+
+.portlet .portlet-special-tt .portlet-special-ttcontent .portlet-special-ttcontent-tape {
+  height: 66px; }
+
+.portlet .portlet-special-tt .specialFontSize {
+  font-size: 20px;
+  font-weight: bold; }
+
+.portlet-special-tt .portlet-title {
+  width: 200px; }
+
+/* Marco y sombreado portlets */
+.portlet {
+  background-color: #FFFFFF;
+  border: none; }
+
+/* Barra titulo portlets */
+.portlet-title img {
+  float: right;
+  padding-bottom: 4px; }
+
+.portlet-topper {
+  background-color: #fff;
+  color: #2d2849; }
+
+.portlet-title-text {
+  font: 600 20px Nunito, Tahoma, Verdana, Arial;
+  cursor: default;
+  color: #e4701e; }
+
+.portlet-topper-toolbar {
+  display: block;
+  margin: 0;
+  padding: 2px;
+  position: relative;
+  right: 3px;
+  text-align: right;
+  top: 0px;
+  top: -40px;
+  float: right; }
+
+.displaywebcontentrotator-portlet .body_cont {
+  height: 210px;
+  overflow: hidden;
+  margin-bottom: 10px; }
+
+.aui-calendar-link-none, .aui-calendar-link-today {
+  display: none; }
+
+/*FOROS*/
+/*Foros*/
+.portlet-message-boards ul.lfr-actions li.lfr-trigger .nobr {
+  color: #FFF; }
+
+.portlet-message-boards .col-2 {
+  display: none; }
+
+.portlet-message-boards .top-links {
+  float: left; }
+
+.portlet-message-boards .top-links img {
+  display: none; }
+
+.portlet-message-boards .taglib-text {
+  text-decoration: none; }
+
+.portlet-message-boards .thread-icon .taglib-icon .icon {
+  display: block;
+  padding-right: 5px;
+  margin-top: 5px; }
+
+.portlet-message-boards .message-container {
+  border: 0;
+  margin-left: 0; }
+
+.portlet-message-boards .thread-body {
+  font-size: 16px; }
+
+.portlet-message-boards {
+  background-color: #FFF;
+  padding: 0 0 5px 0; }
+
+.portlet-message-boards .lfr-panel-title {
+  color: #00b5cc;
+  font-size: 18px; }
+
+.portlet-message-boards .search-results {
+  color: #d78613;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px; }
+
+.portlet-message-boards .taglib-search-iterator-page-iterator-bottom {
+  padding: 10px 0; }
+
+.portlet-message-boards .taglib-search-iterator-page-iterator-bottom .search-results {
+  display: none; }
+
+.portlet-message-boards .top-links-container {
+  border-bottom: #2d2849 solid 1px;
+  padding: 0 0 10px 10px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  margin: 0; }
+
+.portlet-message-boards .top-links-container a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none; }
+
+.portlet-message-boards .taglib-icon {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .category-search .aui-button-content input[type="submit"] {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat 0 0;
+  color: transparent;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px; }
+
+.portlet-message-boards .search_box {
+  float: right;
+  clear: right;
+  padding: 5px;
+  margin: 0; }
+
+.portlet-message-boards .separator {
+  padding: 0;
+  clear: both;
+  border-top: 0 none transparent;
+  margin: 0; }
+
+.portlet-message-boards .taglib-flags .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .thread-bottom .taglib-icon .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .thread-top .taglib-icon .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .user-details {
+  font-size: 12px !important; }
+
+.portlet-message-boards .thread-message-view .taglib-user-display .user-details .user-name {
+  font-size: 16px;
+  font-weight: bold !important; }
+
+.portlet-message-boards .user-details .taglib-icon .taglib-text {
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-message-boards .header-back-position {
+  clear: left; }
+
+.portlet-message-boards .header-back-position a {
+  font-size: 16px;
+  font-weight: bold; }
+
+.portlet-message-boards .taglib-header .header-title {
+  font-size: 18px;
+  margin: 0; }
+
+.portlet-message-boards .taglib-header {
+  border: 0;
+  min-height: 10px;
+  margin-bottom: 0;
+  border-bottom: 0 none transparent; }
+
+.portlet-message-boards .header-title-position {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Nunito, Tahoma, Verdana, Arial;
+  clear: both;
+  overflow: hidden;
+  display: block;
+  color: #000;
+  padding: 5px 0; }
+
+.portlet-message-boards .header-pretit {
+  float: left;
+  margin-top: 0;
+  font-weight: bold;
+  color: #004250;
+  padding-right: 5px; }
+
+.portlet-message-boards .header-pretit2 {
+  float: left;
+  margin-top: 0;
+  font-weight: bold;
+  padding-right: 5px; }
+
+.portlet-message-boards .header-top-links-title {
+  float: left;
+  margin-top: 0;
+  font-weight: bold;
+  color: #56c1d3;
+  width: 350px;
+  padding: 20px 0 20px 0; }
+
+.portlet-message-boards .thread-navigation {
+  color: #FFF;
+  display: none; }
+
+.portlet-message-boards .thread-navigation a {
+  display: none; }
+
+/*Contenidos ocultos*/
+.portlet-message-boards .lfr-top .user-info .alt td {
+  background-color: #f8f8f8; }
+
+.portlet-message-boards .thread-message-view .portlet-section-alternate .results-row .alt td {
+  background-color: #f8f8f8 !important; }
+
+.portlet-message-boards #toggle_id_message_boards_view_message_thread tr.results-row td a, .portlet-message-boards #toggle_id_message_boards_view_message_thread tr.results-row-hover td a {
+  font-weight: bold !important; }
+
+.portlet-message-boards #toggle_id_message_boards_view_message_thread .results-row.alt td a, .portlet-message-boards #toggle_id_message_boards_view_message_thread .results-row-hover.alt td a {
+  font-weight: bold !important; }
+
+.portlet-message-boards .toggle_id_message_boards_view_message_thread {
+  border: 0 none transparent; }
+
+.portlet-message-boards .results-row .col-1 a, .portlet-message-boards .results-row-hover .col-1 a {
+  background: url(images/custom/enreda/bullet_triangulo_blanco.png) no-repeat right 50% transparent;
+  padding-right: 9px; }
+
+.portlet-message-boards .taglib-header .header-back-to {
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px; }
+
+.portlet-message-boards .category-buttons {
+  display: block!important;
+  float: right;
+  margin: 0;
+  clear: left;
+  font-size: 12px; }
+
+.portlet-message-boards .threads-panel {
+  margin-top: 10px; }
+
+/* DESACTIVAMOS  DISCUSIONES EN FINANZAS, SOLO DESDE CADA CATEGORIA */
+/*New estilos foros*/
+.portlet-message-boards .taglib-header .header-back-to a {
+  padding: 4px 10px 4px 2px;
+  color: #555555; }
+
+.portlet-message-boards .thread-message-view.portlet-section-alternate.results-row.alt td {
+  background-color: #f8f8f8 !important; }
+
+.portlet-message-boards .category-subscriptions {
+  float: right;
+  clear: right; }
+
+.portlet-message-boards .category-subscriptions .category-subscription-types {
+  padding-left: 5px; }
+
+.portlet-message-boards .category-subscriptions .category-subscription-types a {
+  display: inline-block;
+  font-size: 1em;
+  font-family: Nunito, Tahoma, Verdana;
+  font-weight: bold;
+  text-shadow: none; }
+
+.portlet-message-boards .category-subscriptions .category-subscription-types a span {
+  line-height: 15px; }
+
+.portlet-message-boards .thread-controls .thread-actions a {
+  display: inline-block;
+  font-weight: bold;
+  font-family: Nunito, Tahoma, Verdana;
+  text-shadow: none; }
+
+.portlet-message-boards .edit-controls a.taglib-icon {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Nunito, Tahoma, Verdana;
+  text-shadow: none; }
+
+/* add */
+.portlet-message-boards .portlet-topper-toolbar {
+  display: block; }
+
+.portlet-message-boards .thread-user-rank {
+  display: none; }
+
+/* */
+.portlet-message-boards .message-container .user-info {
+  border-right: 0 none transparent; }
+
+.portlet-message-boards .thread-top {
+  border-bottom: 0 none transparent; }
+
+/* BLOGS */
+.portlet-blogs {
+  background-color: #FFF; }
+
+.portlet-blogs .lfr-meta-actions.edit-actions,
+.portlet-blogs .entry-navigation {
+  display: none; }
+
+.portlet-blogs .aui-search-bar {
+  display: block;
+  clear: right;
+  padding-bottom: 10px; }
+
+.portlet-blogs .subscribe {
+  display: none; }
+
+/* .portlet-blogs .aui-field-assettags, .portlet-blogs .aui-field.aui-field-choice {display: none;} */
+/* .portlet-blogs .aui-field-assetcategories {display: none !important;} */
+.portlet-blogs .subscribe {
+  display: none; }
+
+/* BIBLIOTECA */
+#portlet_20 #aui_3_2_0_11166 {
+  display: none; }
+
+#portlet_20 .jnpk_-webdav-action {
+  display: none; }
+
+#portlet_20 .waho_-webdav-action {
+  display: none; }
+
+#portlet_20 .top-links-navigation,
+#portlet_20 .aui-column-content .aui-column-content-last .lfr-asset-column-content .lfr-asset-column-actions-content,
+#portlet_20 .lfr-asset-summary, .portlet-wiki .top-links {
+  padding-bottom: 0; }
+
+.portlet-blogs .taglib-header {
+  padding: 0 5px;
+  margin: 0 0 -2px -15px;
+  border: 0;
+  background-color: #FFF;
+  width: 100%; }
+
+.portlet-blogs .taglib-header h1 {
+  font-size: 20px; }
+
+.portlet-blogs .taglib-header span {
+  color: #000; }
+
+/*desde aquï¿½*/
+.portlet-blogs .lista_blogs {
+  overflow: hidden;
+  padding-bottom: 10px; }
+
+.portlet-blogs .lista_blogs .limpio {
+  width: 298px;
+  height: 80px;
+  float: left;
+  clear: none !important;
+  border: solid 1px #CCC;
+  padding: 2px; }
+
+.portlet-blogs .lista_blogs .limpio div {
+  padding: 1px 0; }
+
+/*hasta aquï¿½*/
+.portlet-blogs .entry {
+  clear: left !important;
+  display: block;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  background-color: #FFF;
+  float: left;
+  font-size: 16px;
+  border-bottom: #2d2849 solid 1px; }
+
+.portlet-blogs .entry .entry {
+  border-bottom: 0 none; }
+
+.portlet-blogs .entry-content {
+  overflow: hidden; }
+
+.portlet-blogs .entry-content .entry-title {
+  float: left; }
+
+.portlet-blogs .entry-content .entry-date {
+  float: Left;
+  padding-bottom: 6px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  color: #000;
+  background: #FFF;
+  padding-top: 3px;
+  padding-left: 5px; }
+
+.portlet-blogs .entry-body {
+  clear: left;
+  text-align: justify;
+  overflow: hidden;
+  font-size: 16px; }
+
+.portlet-blogs .entry-body a {
+  font-weight: bold; }
+
+.portlet-blogs .entry-body ol {
+  padding-left: 2em; }
+
+.portlet-blogs .taglib-user-display .user-name {
+  font-weight: bold;
+  font-style: italic; }
+
+.portlet-blogs .separator {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  border-top: 0 none; }
+
+.portlet-blogs .separator2 {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  background-color: #FFF;
+  height: 1px; }
+
+.portlet-blogs .lfr-panel-content {
+  margin: 0;
+  padding: 10px 0 10px 0; }
+
+.portlet-blogs .header-title span {
+  color: #000; }
+
+.portlet-blogs .aui-rating-label-element {
+  float: left;
+  padding-right: 5px;
+  display: block; }
+
+.portlet-blogs .entry-author {
+  font-family: Nunito;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #00b5cc;
+  background-color: #FFF;
+  margin-left: -20px;
+  margin-bottom: 4px;
+  padding-right: 0px;
+  margin-right: 0px;
+  border: 0; }
+
+.portlet-blogs .stats {
+  font-family: Nunito;
+  font-size: 1.1em;
+  color: #000; }
+
+.portlet-blogs .taglib-page-iterator .search-results {
+  left: 40%;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+  display: none; }
+
+.portlet-blogs .taglib-page-iterator {
+  clear: both; }
+
+.portlet-blogs .page-links {
+  clear: both;
+  width: 100%;
+  left: 10%;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 0;
+  text-align: center; }
+
+.portlet-blogs .search-pages {
+  background-color: #FFF;
+  width: 100%; }
+
+.portlet-blogs .delta-selector {
+  padding-left: 10px; }
+
+/*New estilos Blogs*/
+.portlet-blogs .lfr-meta-actions.edit-actions {
+  display: block;
+  margin-top: -20px;
+  height: 15px;
+  padding-left: 15px; }
+
+.portlet-blogs .taglib-header .header-back-to a {
+  padding: 0px; }
+
+.portlet-blogs .taglib-flags {
+  font-family: Nunito;
+  font-weight: 600;
+  border: 0; }
+
+.portlet-blogs #ykmt_socialBookmarks {
+  display: none; }
+
+.portlet-blogs .taglib-social-bookmarks {
+  display: none;
+  clear: none;
+  float: left;
+  padding-top: 0px;
+  width: 120px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.portlet-blogs .taglib-social-bookmarks li {
+  line-height: 30px; }
+
+.portlet-blogs .taglib-ratings .aui-rating-label-element {
+  font-family: Nunito;
+  font-size: 1.1em; }
+
+.portlet-blogs .add-comment td {
+  font-family: Nunito;
+  font-size: 1.1em; }
+
+.portlet-blogs .add-comment td a {
+  color: #1EADC4; }
+
+.portlet-blogs .add-comment td a:hover {
+  font-weight: bold;
+  text-decoration: underline; }
+
+.portlet-blogs .add-comment td #_33_mefv:hover {
+  font-weight: normal;
+  text-decoration: none; }
+
+.portlet-blogs .add-comment .taglib-icon {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none;
+  padding: 4px 20px; }
+
+.portlet-blogs .add-comment .taglib-icon .taglib-text {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.portlet-blogs .portlet-topper-toolbar .taglib-icon .icon {
+  display: inline; }
+
+.portlet-blogs .lfr-top.stretch {
+  color: #004151;
+  font-size: 1.1em;
+  font-weight: bold; }
+
+.portlet-blogs .lfr-top.stretch a {
+  color: #004151; }
+
+.portlet-blogs .lfr-top.stretch a:hover {
+  text-decoration: underline; }
+
+.portlet-blogs .lfr-top.stretch div:first-child {
+  font-weight: normal;
+  /*padding-top: 8px;*/ }
+
+.portlet-blogs .taglib-icon .taglib-text {
+  text-decoration: none;
+  font-weight: 600; }
+
+.portlet-blogs .taglib-user-display .user-details .user-name {
+  font-family: Nunito;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #004151; }
+
+.portlet-blogs .portlet-toolbar.search-form {
+  color: #FFF;
+  margin-right: 5px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  text-align: right; }
+
+.portlet-blogs .search-title {
+  font-family: Nunito, Tahoma, Verdana, Arial;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold; }
+
+.portlet-blogs .view-count {
+  color: #00b5cc; }
+
+.portlet-blogs .search-input {
+  color: #CCC; }
+
+.portlet-blogs .search-button {
+  padding-top: 5px;
+  float: right; }
+
+.portlet-blogs .written-by {
+  font-family: Nunito;
+  color: #000;
+  font-weight: normal; }
+
+.portlet-blogs .comments {
+  color: #00b5cc;
+  font-weight: bold;
+  border: 0; }
+
+.portlet-blogs .comments a {
+  color: #00b5cc;
+  font-weight: bold; }
+
+.portlet-blogs .entry-title a {
+  color: #00b5cc; }
+
+.portlet-blogs .lfr-panel-container {
+  width: 100%;
+  margin-left: -15px;
+  padding-left: 10px; }
+
+.portlet-blogs .taglib-ratings.stars {
+  clear: left;
+  color: #d48a0f;
+  font-weight: bold;
+  float: left !important;
+  padding-right: 8px;
+  display: inline;
+  position: relative; }
+
+.portlet-blogs .taglib-ratings {
+  float: left;
+  display: inline;
+  position: relative; }
+
+.portlet-blogs .taglib-social-bookmarks a {
+  font-weight: bold;
+  color: #d48a0f; }
+
+.portlet-blogs .aui-rating-label-element {
+  /*border-right: 1px solid #d48a0f;
+  padding-left:8px;*/ }
+
+.portlet-blogs .search-form .aui-field-text input[type="text"] {
+  width: 155px; }
+
+.portlet-blogs .search-form .aui-button-submit input.aui-button-input-submit {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat scroll 0 0 transparent;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px;
+  vertical-align: top; }
+
+.portlet-blogs .entry-footer {
+  clear: left !important;
+  width: 100%; }
+
+.portlet-blogs .opens-new-window-accessible {
+  display: none; }
+
+.portlet-blogs .liferay-rating-vote {
+  float: left; }
+
+.portlet-blogs .liferay-rating-score {
+  float: left; }
+
+/*FIN - New estilos Blogs*/
+#portlet_20 .results-header th {
+  background: url("/wemoocdemo-theme/images/custom/betwen.gif") no-repeat scroll left top white;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold; }
+
+#portlet_20 .lfr-menu-list li a {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+/* #portlet_20 .lfr-menu-list li a {width:100%} */
+#portlet_20 .results-row td a, #portlet_20 .results-row-hover td a {
+  color: #000000;
+  font-weight: normal !important; }
+
+#portlet_20 .taglib-page-iterator .search-results {
+  font-size: 12px;
+  font-weight: bold;
+  left: 40%;
+  padding-bottom: 10px;
+  position: relative; }
+
+#portlet_20 ul.lfr-actions li.lfr-trigger .nobr {
+  color: #FFF; }
+
+/*#portlet_20 .lfr-asset-field, */
+#portlet_20 .lfr-asset-column-actions-content {
+  background-color: #FFFFFF; }
+
+#portlet_20 .lfr-asset-column-actions .lfr-asset-column-actions-content {
+  border: 0px; }
+
+#portlet_20 .aui-w75 {
+  width: 75%; }
+
+#portlet_20 .aui-w25 {
+  width: 25%;
+  display: block; }
+
+/* wiki */
+.portlet-wiki .results-header th {
+  background: url("/wemoocdemo-theme/images/custom/betwen.gif") no-repeat scroll left top white;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold; }
+
+.portlet-wiki .lfr-menu-list li a {
+  background: #e4701e url("/wemoocdemo-theme/images/custom/bg_buttom2.jpg") repeat-x top left;
+  border: #f3e7cc solid 1px;
+  color: #FFFFFF;
+  text-shadow: none; }
+
+.portlet-wiki .lfr-menu-list li a {
+  width: 100%; }
+
+.portlet-wiki .results-row td a, .portlet-wiki .results-row-hover td a {
+  color: #000000;
+  font-weight: normal !important; }
+
+.portlet-wiki .taglib-page-iterator .search-results {
+  font-weight: bold;
+  left: 40%;
+  padding-bottom: 10px;
+  position: relative; }
+
+.portlet-wiki ul.lfr-actions li.lfr-trigger .nobr {
+  color: #fff; }
+
+.portlet-wiki .child-pages h2 {
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #2d2849;
+  border-top: 1px solid #2d2849;
+  font-size: 18px;
+  color: #2d2849; }
+
+.portlet-wiki .child-pages ul {
+  padding-left: 20px;
+  color: #00b1b0; }
+
+.portlet-wiki .child-pages li {
+  font-size: 1.4em;
+  padding: 3px 0; }
+
+.portlet-wiki .wiki-body {
+  font-size: 16px; }
+
+.portlet-wiki .wiki-body .portlet-msg-info {
+  font-size: 16px; }
+
+.portlet-wiki #ires {
+  padding-left: 10px; }
+
+#portlet_86 .portlet-icon-back {
+  display: none; }
+
+/* wiki */
+.portlet-wiki .top-links-container {
+  margin: 0;
+  padding: 0; }
+
+.portlet-wiki .top-links {
+  float: none; }
+
+.portlet-wiki .top-links .top-links-navigation {
+  float: none;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  border-bottom: #2d2849 solid 1px;
+  padding: 0 0 10px;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.portlet-wiki .top-links img.icon {
+  display: none; }
+
+.portlet-wiki .aui-search-bar input.aui-button-input-submit {
+  background: url(/wemoocdemo-theme/images/custom/lupav2.png) no-repeat scroll 0 0 transparent;
+  width: 54px;
+  height: 40px;
+  text-indent: -100000px; }
+
+.portlet-wiki .page-actions {
+  font-size: 12px; }
+
+.portlet-wiki .taglib-text {
+  font-size: 16px;
+  font-weight: 600; }
+
+.portlet-wiki .header-title {
+  padding: 10px 0; }
+
+.portlet-wiki .header-title span {
+  color: #000; }
+
+.portlet-wiki .taglib-header {
+  border-bottom: 0 none;
+  margin-bottom: 5px; }
+
+.portlet-wiki .results-header {
+  background: none;
+  border-bottom: #00b5cb solid 1px; }
+
+.portlet-wiki .results-header th {
+  background: none;
+  color: #00b5cc;
+  font-size: 16px;
+  padding: 5px 10px 10px; }
+
+.portlet-wiki .taglib-page-iterator .search-results {
+  left: 0;
+  padding: 10px;
+  font-weight: 300;
+  color: #000; }
+
+.portlet-wiki .taglib-ratings.stars {
+  padding-top: 0; }
+
+.aui-rating-label-element {
+  float: left;
+  color: #00b5cb; }
+
+.results-row.hover td {
+  background: #e5e5e5; }
+
+/*wiki hook*/
+.portlet-wiki .hook_comment {
+  padding-top: 10px;
+  font-size: 13px; }
+
+.portlet-wiki .hook_postedOn {
+  font-size: 13px;
+  color: #00b5cb;
+  font-weight: bold; }
+
+/* */
+/* documentos */
+.portlet-document-library .results-header th {
+  background-color: #FFFFFF;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #2d2849;
+  padding: 0 5px 5px; }
+
+.portlet-document-library .results-row {
+  background: url("/wemoocdemo-theme/images/custom/portlet/bullet_tr.gif") repeat-x 0 100%; }
+
+.portlet-document-library .results-row td a, .portlet-message-boards .results-row-hover td a {
+  font-weight: normal !important; }
+
+.portlet-document-library .results-row .col-1 a, .portlet-message-boards .results-row-hover .col-1 a {
+  background: url(images/custom/enreda/bullet_triangulo_blanco.png) no-repeat right 50% transparent;
+  padding-right: 9px; }
+
+.portlet-document-library .lfr-asset-column-actions .lfr-asset-column-actions-content {
+  border-color: #000; }
+
+.portlet-document-library .lfr-asset-column-actions-content {
+  background-color: #fff; }
+
+.portlet-document-library .lfr-asset-column-actions-content li {
+  list-style: none; }
+
+/* FIN documentos */
+.container-activity h2, .container-activity h3, .container-activity h4, .container-activity h5, .container-activity h6 {
+  margin: 0;
+  padding: 5px 0 10px; }
+
+.container-activity p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+h2.description-title {
+  color: #e4701e;
+  font: bold 18px Arial; }
+
+.description {
+  color: #000;
+  font-size: 14px; }
+
+.container-buttons {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  padding: 10px 0; }
+
+.video {
+  text-align: center; }
+
+.hide-calendar {
+  float: left;
+  display: block;
+  padding-right: 29px; }
+
+.doc_descarga {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_doc.png") no-repeat 0 50%;
+  padding: 5px 0 5px 25px; }
+
+.doc_descarga span {
+  float: left;
+  color: #e8557c;
+  display: block;
+  font: bold 14px Arial, Verdana;
+  padding: 5px 0; }
+
+.doc_descarga a.verMas {
+  float: left;
+  text-align: left;
+  display: block;
+  font: bold 14px Arial, Verdana;
+  padding: 5px 25px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 100% 50% no-repeat; }
+
+a.verMas {
+  display: block;
+  font: bold 14px Arial, Verdana;
+  padding: 5px 25px 5px 0;
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 100% 50% no-repeat; }
+
+/* lmsactivitieslist */
+.lms-tree ul {
+  padding: 0 0 0 10px; }
+
+.lms-tree ul li {
+  padding: 5px 0;
+  display: block;
+  list-style: none;
+  font: bold 16px Nunito;
+  color: #37aebd; }
+
+.lms-tree ul li li {
+  padding: 5px 0 5px 20px; }
+
+.lms-tree ul li a {
+  color: #37aebd; }
+
+.lms-tree ul li a:hover {
+  color: #45c3d3; }
+
+.lms-tree ul li .destacado {
+  color: #e4701e; }
+
+.lms-tree ul li li a, .lms-tree ul li li span {
+  background-image: none;
+  color: #37aebd; }
+
+.lms-tree ul li.informacionmodule a, .lms-tree ul li.informacionmodule span {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") 0 50% no-repeat; }
+
+.lms-tree ul li.learningCategory a, .lms-tree ul li.learningCategory span {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%; }
+
+.lms-tree ul li.learningCategory li a, .lms-tree ul li.learningCategory li span {
+  background-image: none; }
+
+.lms-tree ul li.option-none span.desplegar {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%;
+  padding: 10px 15px; }
+
+.lms-tree ul li.option-none span.desplegar:hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more_hover.png") no-repeat 0 50%;
+  padding: 10px 15px; }
+
+.lms-tree ul li.option-none span.locked {
+  background: url("/wemoocdemo-theme/images/common/lock.png") no-repeat 3px 50%;
+  padding: 10px 15px; }
+
+.lms-tree ul li.option-more span.desplegar {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-less span.desplegar {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_less.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-more span.desplegar:hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more_hover.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-less span.desplegar:hover {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more_hover.png") no-repeat 0 50%; }
+
+.lms-tree ul li.option-more li a, .lms-tree ul li.option-less li a, .lms-tree ul li.option-more li span, .lms-tree ul li.option-less li span {
+  background-image: none; }
+
+.lms-tree ul li.option-less span.desplegar, .lms-tree ul li.option-more span.desplegar {
+  padding: 10px 15px;
+  cursor: pointer; }
+
+.lms-tree ul li li.passed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ok.png") no-repeat 0% 50%; }
+
+.lms-tree ul li li.passed a, .lms-tree ul li li.passed span {
+  display: inline-block; }
+
+.lms-tree ul li li.failed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ko.png") no-repeat 0% 50%; }
+
+.lms-tree ul li li.activado {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_link.png") no-repeat 7px 50%; }
+
+.lms-tree ul li li.activado a, .lms-tree ul li li.activado span {
+  color: #37aebd; }
+
+.lms-tree ul li li.locked {
+  background: url("/wemoocdemo-theme/images/common/lock.png") no-repeat 0 50%; }
+
+.lms-tree ul li li.locked a, .lms-tree ul li li.locked span {
+  color: #464646; }
+
+.lms-tree ul li li.editing {
+  clear: both;
+  background: none; }
+
+.lms-tree ul li li.editing a {
+  width: 165px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.lms-tree ul li li.editing .iconsedit {
+  padding: 5px 0; }
+
+.lms-tree ul li li.editing .iconsedit span {
+  padding: 0 2px;
+  background: 0 none; }
+
+.lms-tree ul li li.editing .iconsedit span a {
+  width: auto;
+  padding: 0;
+  background: 0 none; }
+
+.lms-tree ul li .iconsedit {
+  padding: 5px 0 5px 20px; }
+
+.lms-tree ul li li .iconsedit {
+  padding: 5px 0; }
+
+/* Arbol con solo una unidad */
+.lms-desplegable ul {
+  padding: 0 0 0 10px; }
+
+.lms-desplegable ul li {
+  padding: 5px 0 5px 20px;
+  display: block;
+  list-style: none;
+  font: bold 16px Nunito;
+  color: #37aebd; }
+
+.lms-desplegable ul li a {
+  color: #37aebd; }
+
+.lms-desplegable ul li a:hover {
+  color: #45c3d3; }
+
+.lms-desplegable ul li.passed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ok.png") no-repeat 0% 50%; }
+
+.lms-desplegable ul li.passed a, .lms-desplegable ul li.passed span {
+  display: inline-block; }
+
+.lms-desplegable ul li.failed {
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_ko.png") no-repeat 0% 50%; }
+
+.lms-desplegable ul li.activado {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_link.png") no-repeat 7px 50%; }
+
+.lms-desplegable ul li.activado.editing {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_link.png") no-repeat 7px 50%;
+  background-position: 7px 10px; }
+
+.lms-desplegable ul li.activado a, .lms-desplegable ul li.activado span {
+  color: #37aebd; }
+
+.lms-desplegable ul li.locked {
+  background: url("/wemoocdemo-theme/images/common/lock.png") no-repeat 0 50%; }
+
+.lms-desplegable ul li.locked a, .lms-desplegable ul li.locked span {
+  color: #464646; }
+
+.lms-desplegable ul li.editing {
+  clear: both;
+  background: none; }
+
+.lms-desplegable ul li.editing a {
+  width: 165px;
+  padding-left: 0;
+  padding-right: 0; }
+
+.lms-desplegable ul li.editing .iconsedit {
+  padding: 5px 0; }
+
+.lms-desplegable ul li.editing .iconsedit span {
+  padding: 0 2px;
+  background: 0 none; }
+
+.lms-desplegable ul li.editing .iconsedit span a {
+  width: auto;
+  padding: 0;
+  background: 0 none; }
+
+.lms-desplegable ul li .iconsedit {
+  padding: 5px 0 5px 20px; }
+
+/* */
+.newactivity img.icon {
+  display: none; }
+
+.newactivity a.taglib-icon {
+  display: block;
+  background: #e4701e;
+  padding: 10px 5px;
+  text-align: center;
+  font: bold 16px Nunito, Arial;
+  color: white;
+  margin: 5px 0;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+  .newactivity a.taglib-icon .taglib-text {
+    color: white;
+    text-decoration: none; }
+
+.newactivity a.taglib-icon:hover {
+  background: #fcb034; }
+  .newactivity a.taglib-icon:hover .taglib-text {
+    color: white;
+    text-decoration: none; }
+
+/* formularios*/
+.lmsactivitieslist-portlet .taglib-header .header-title {
+  color: #e4701e;
+  font: bold 18px Arial; }
+
+/* */
+/* FIN lmsactivitieslist */
+/* titulo */
+.moduletitle-portlet .taglib-header {
+  margin-bottom: 0; }
+
+.moduletitle-portlet .taglib-header .header-title {
+  padding: 5px 0 5px 25px;
+  border-bottom: #2d2849 solid 1px;
+  color: #e4701e;
+  background: url("/wemoocdemo-theme/images/custom/arrow_buttom.png") no-repeat 0 50%;
+  font: 600 18px "Nunito"; }
+
+/* */
+/* Descripcion */
+.moduledescription-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  font-size: 14px; }
+
+/* */
+/* plantilla tarea */
+.reto_container .entradilla {
+  font-size: 14px; }
+
+.reto_container .galery_video .clearfix {
+  text-align: center; }
+
+.reto_container .galery_docs {
+  list-style: none; }
+
+.reto_container .galery_docs li {
+  text-align: left;
+  list-style: none;
+  color: #e8557c;
+  display: block;
+  font: bold 14px Arial, Verdana;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_doc.png") no-repeat 0 50%;
+  padding: 5px 0 5px 25px; }
+
+.reto_container .galery_docs a {
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") no-repeat scroll 100% 50% transparent;
+  padding: 5px 25px 5px 5px; }
+
+/* */
+/* Question */
+.execactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+.execactivity-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.execactivity-portlet .correct .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_correct.png") no-repeat 95% 50%;
+  min-height: 50px;
+  padding-right: 90px; }
+
+.execactivity-portlet .incorrect .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_incorrect.png") no-repeat 95% 50%;
+  min-height: 50px;
+  padding-right: 90px; }
+
+.execactivity-portlet .question {
+  font-size: 14px;
+  border-bottom: 0 none; }
+
+.execactivity-portlet .question .questiontext {
+  padding: 10px;
+  margin: 0 0 10px;
+  background: #f8f8f8;
+  border-top: 0 none;
+  border-bottom: 0 none;
+  font-weight: 600; }
+
+.execactivity-portlet .question .questiontext p {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.execactivity-portlet .question .answer {
+  padding: 5px 10px; }
+
+.execactivity-portlet .correct .answer {
+  padding: 5px 0 5px 10px; }
+
+.execactivity-portlet .incorrect .answer {
+  padding: 5px 0 5px 10px; }
+
+.execactivity-portlet .question .answer input {
+  margin-top: 5px;
+  margin-right: 5px;
+  float: left; }
+
+.execactivity-portlet .aui-button-submit {
+  padding: 10px 0;
+  text-align: right; }
+
+.execactivity-portlet .questionFeedback {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_informacion.png") no-repeat 0 50%;
+  padding: 10px 0 10px 30px;
+  font: bold 14px Arial;
+  color: #e4701e; }
+
+.execactivity-portlet .aui-button {
+  clear: both;
+  display: block;
+  padding: 10px 0 0;
+  text-align: right; }
+
+.question_sortable ul.sortable {
+  list-style: none; }
+
+.question_sortable ul.sortable .answer {
+  cursor: pointer; }
+
+.questiontype_fillblank .answer-fillblank img {
+  vertical-align: middle; }
+
+.questiontype_multioptions .answer input {
+  display: inline-block; }
+
+.questiontype_options .answer input {
+  display: inline-block; }
+
+.questiontype_options .answer .answer-options {
+  vertical-align: middle; }
+
+/* */
+/* Tipo tarea */
+.p2ptaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden; }
+
+.p2ptaskactivity-portlet .sub-title {
+  color: #37aebd;
+  font: bold 14px Arial, Verdana; }
+
+.p2ptaskactivity-portlet .steps {
+  color: #37aebd;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  font: bold 16px Arial, Verdana; }
+
+.p2ptaskactivity-portlet .steps span {
+  color: #37aebd; }
+
+.p2ptaskactivity-portlet .steps span.selected {
+  color: #2d2849; }
+
+.p2ptaskactivity-portlet .steps span.clicable {
+  cursor: pointer; }
+
+.p2ptaskactivity-portlet .steps span.clicable:hover {
+  color: #1ed1e7; }
+
+.p2ptaskactivity-portlet .container-textarea {
+  padding: 5px 0 10px; }
+
+.p2ptaskactivity-portlet .container-textarea textarea {
+  width: 99%;
+  padding: 10px;
+  background: white;
+  color: #2d2849;
+  font: 300 14px Arial;
+  border: 1px solid #d5d5d5; }
+
+.p2ptaskactivity-portlet .container-file {
+  border: #e4701e solid 1px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font: bold 14px Arial;
+  color: #e4701e; }
+
+.p2ptaskactivity-portlet .container-file label {
+  display: none; }
+
+.p2ptaskactivity-portlet .container-file input {
+  font-size: 14px;
+  font-weight: 300; }
+
+.p2ptaskactivity-portlet .option-more span.label-col {
+  display: block;
+  color: #e4701e;
+  font: bold 14px Arial;
+  padding: 5px 0 5px 25px;
+  cursor: pointer;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_more.png") no-repeat 0 50%; }
+
+.p2ptaskactivity-portlet .option-less span.label-col {
+  display: block;
+  color: #e8557c;
+  font: bold 14px Arial;
+  padding: 5px 0 5px 25px;
+  cursor: pointer;
+  background: url("/wemoocdemo-theme/images/custom/color_schemes/guest/comun/ico_less.png") no-repeat 0 50%; }
+
+.p2ptaskactivity-portlet span.label-col span.number {
+  display: none; }
+
+.p2ptaskactivity-portlet .option-more .collapsable span {
+  color: #000;
+  padding: 5px 0;
+  background: none; }
+
+.p2ptaskactivity-portlet .option-less .collapsable span {
+  color: #000;
+  padding: 5px 0;
+  background: none; }
+
+.p2ptaskactivity-portlet .portlet-body .portlet-body li {
+  list-style-image: url("/wemoocdemo-theme/images/custom/webcontent/bullet.png");
+  margin: 0 20px 10px; }
+
+.no-p2pActivites-uploaded {
+  font-size: 14px; }
+
+/* */
+/* marsupial*/
+.marsupialwebcontentactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden; }
+
+.marsupialwebcontentactivity-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+/* */
+/* lms navegacion */
+.activitynavigator-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+#previusactivity {
+  float: left; }
+
+#previusactivity a {
+  font: bold 16px "Nunito";
+  padding: 5px 5px 5px 25px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left.png") no-repeat 0 50%; }
+
+#previusactivity span {
+  font: bold 16px "Nunito";
+  padding: 5px 5px 5px 25px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left_off.png") no-repeat 0 50%;
+  color: #b4b4b4; }
+
+#nextactivity {
+  float: right; }
+
+#nextactivity a {
+  font: bold 16px "Nunito";
+  padding: 5px 25px 5px 5px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") no-repeat scroll 100% 50%; }
+
+#nextactivity span {
+  font: bold 16px "Nunito";
+  padding: 5px 25px 5px 5px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right_off.png") no-repeat scroll 100% 50%;
+  color: #b4b4b4; }
+
+#startactivity {
+  float: right; }
+
+#startactivity a {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  cursor: pointer;
+  overflow: visible;
+  padding: 8px 35px;
+  width: auto;
+  font: 300 16px Nunito, Arial; }
+
+#startactivity a:hover {
+  background: #45c3d3;
+  border: 0 none;
+  color: #fff; }
+
+.activitynavigator-portlet #modulegreetings {
+  text-align: center;
+  font: bold 16px Nunito;
+  color: #e4701e;
+  padding: 10px 10px 20px; }
+
+/* */
+/* Cambio de navegacion */
+.changeeditingmode-portlet {
+  margin: 0 0 10px; }
+
+.changeeditingmode-portlet .aui-button-input {
+  display: block;
+  background: #37aebd;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold; }
+
+.changeeditingmode-portlet .aui-button-input:hover {
+  background: #45c3d3; }
+
+/* */
+.moduledescription-portlet .taglib-discussion {
+  font-size: 14px; }
+
+.moduledescription-portlet #moduleDescription ul {
+  list-style-image: url("/wemoocdemo-theme/images/custom/webcontent/bullet.png");
+  margin: 0 20px 10px; }
+
+/* botones de unidades y actividades */
+.newitem .taglib-icon {
+  padding: 10px 10px 10px 10px;
+  font: bold 16px Nunito, Arial;
+  display: block;
+  background: #e4701e;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+  .newitem .taglib-icon .taglib-text {
+    text-decoration: none; }
+
+.newitem .taglib-icon:hover {
+  background: #fcb034; }
+  .newitem .taglib-icon:hover .taglib-text {
+    text-decoration: none; }
+
+.newitem .taglib-icon img.icon {
+  display: none; }
+
+/* */
+/* Offline */
+.offlinetaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+/* */
+/* Online */
+.onlinetaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+/* */
+/* Evaluacion activity */
+.evaluationtaskactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+.evaluationtaskactivity-portlet .col-calification .see-more {
+  float: none; }
+
+/* */
+/* Recursos activity */
+.resourceExternalActivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+.resourceInternalActivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px; }
+
+/* */
+/* Activity list */
+ul.activity-list li img.icon {
+  display: none; }
+
+ul.activity-list {
+  margin: 20px 50px; }
+
+ul.activity-list li {
+  list-style: none;
+  width: 32%;
+  display: inline-block;
+  padding: 10px 0; }
+
+ul.activity-list li a {
+  display: block;
+  padding-top: 90px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_list.png) no-repeat center top;
+  text-align: center;
+  font: bold 16px Arial; }
+
+ul.activity-list li.activity_0 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_prueba.png); }
+
+ul.activity-list li.activity_2 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_e.png); }
+
+ul.activity-list li.activity_3 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_p2p.png); }
+
+ul.activity-list li.activity_4 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_survey.png); }
+
+ul.activity-list li.activity_5 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_of.png); }
+
+ul.activity-list li.activity_6 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_on.png); }
+
+ul.activity-list li.activity_7 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_i.png); }
+
+ul.activity-list li.activity_8 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_evaluation.png); }
+
+ul.activity-list li.activity_9 a {
+  background-image: url(/wemoocdemo-theme/images/custom/icons/ico_activity_scorm.png); }
+
+ul.activity-list li.activity_103 a {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_group.png) no-repeat center top; }
+
+.col-type span {
+  display: block;
+  width: 50px;
+  height: 30px;
+  text-indent: -60000px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_list_m.png) no-repeat left top; }
+
+.col-type span.activity-2 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_e_m.png) no-repeat left top; }
+
+.col-type span.activity-7 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_resource_i_m.png) no-repeat left top; }
+
+.col-type span.activity-9 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_scorm_m.png) no-repeat left top; }
+
+.col-type span.activity-4 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_survey_m.png) no-repeat left top; }
+
+.col-type span.activity-3 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_p2p_m.png) no-repeat left top; }
+
+.col-type span.activity-8 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_evaluation_m.png) no-repeat left top; }
+
+.col-type span.activity-6 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_on_m.png) no-repeat left top; }
+
+.col-type span.activity-5 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_test_of_m.png) no-repeat left top; }
+
+.col-type span.activity-0 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_prueba_m.png) no-repeat left top; }
+
+.col-type span.activity-103 {
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_activity_group_m.png) no-repeat left top; }
+
+.evaluationtaskactivity-portlet .activity-0 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-2 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-3 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-4 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-5 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-6 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-7 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-8 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-9 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad_p.png) no-repeat 5px 50%; }
+
+.evaluationtaskactivity-portlet .activity-103 {
+  padding: 10px 10px 10px 30px;
+  background: url(/wemoocdemo-theme/images/custom/icons/ico_agenda_actividad.png) no-repeat 5px 50%; }
+
+/* */
+/* SCORM */
+.scormactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+#placeholder_treecontentContainer {
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+#placeholder_treeContainer {
+  font: 300 12px Nunito; }
+
+#placeholder_treeContainer a {
+  cursor: pointer; }
+
+/* Activity scorm */
+#placeholder_treeContainer {
+  position: absolute;
+  background: white;
+  border: 1px solid #d5d5d5;
+  padding: 5px 5px 0;
+  width: 20%;
+  margin-top: -3px; }
+
+.portal-popup #placeholder_treeContainer {
+  margin-top: -5px; }
+
+.portal-popup #placeholder_treeContainer {
+  width: 35%; }
+
+#treeContainer {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white; }
+
+#placeholder_barContainer {
+  margin-bottom: 2px;
+  background-color: white;
+  width: 36px; }
+
+#placeholder_navigationContainer {
+  float: right;
+  margin-bottom: 6px; }
+
+#navigationContainer2 {
+  width: 99%;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-top: 0 none;
+  height: 35px;
+  padding-top: 15px; }
+
+#btnPrevious-link {
+  float: left;
+  padding-left: 15px; }
+
+#btnPrevious-link a {
+  font: bold 16px Nunito;
+  padding: 15px 15px 15px 40px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left_2.png") no-repeat 0 50%;
+  color: #37aebd; }
+
+#btnPrevious-link a:hover {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_left_2_off.png") no-repeat 0 50%;
+  color: #b63b6a; }
+
+#btnContinue-link {
+  float: right;
+  padding-right: 15px; }
+
+#btnContinue-link a {
+  font: bold 16px Nunito;
+  padding: 15px 40px 15px 15px;
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right_2.png") no-repeat 100% 50%;
+  color: #37aebd; }
+
+#btnContinue-link a:hover {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/arrow_right_2_off.png") no-repeat 100% 50%;
+  color: #b63b6a; }
+
+/* */
+/* */
+/* encuesta */
+.surveyactivity-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.surveyactivity-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.surveyactivity-portlet .correct .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_correct.png") no-repeat 95% 50%; }
+
+.surveyactivity-portlet .incorrect .content_answer {
+  background: transparent url("/wemoocdemo-theme/images/custom/icons/ico_lms_incorrect.png") no-repeat 95% 50%; }
+
+.surveyactivity-portlet .question {
+  font-size: 14px;
+  border-bottom: 0 none; }
+
+.surveyactivity-portlet .question .questiontext {
+  padding: 10px;
+  margin: 0;
+  background: #f8f8f8;
+  border-top: 0 none;
+  border-bottom: 0 none;
+  font-weight: 600; }
+
+.surveyactivity-portlet .question .questiontext p {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.surveyactivity-portlet .question .answer {
+  padding: 5px 10px; }
+
+.surveyactivity-portlet .question .answer .aui-field-label-right {
+  float: left; }
+
+.surveyactivity-portlet .question .answer input {
+  margin-right: 5px; }
+
+.surveyactivity-portlet .aui-button-submit {
+  display: block;
+  padding: 10px 0;
+  text-align: right; }
+
+.surveyactivity-portlet .questionFeedback {
+  background: transparent "/wemoocdemo-theme/images/custom/icons/ico_informacion.png" no-repeat 0 50%;
+  padding: 10px 0 10px 30px;
+  font: bold 14px Arial;
+  color: #e4701e; }
+
+/* */
+.container-toolbar {
+  clear: both;
+  display: block;
+  overflow: hidden; }
+
+.option-nota {
+  font: bold 16px "Nunito";
+  padding: 10px 15px 10px 30px;
+  background: url("/wemoocdemo-theme/images/custom/icons/ico_h2_up_blue.png") no-repeat 10px 50%; }
+
+/* Evaluacion final */
+.evaluationAvg-portlet .portlet-borderless-container .portlet-body {
+  background: white;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+.evaluationAvg-portlet p {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px; }
+
+/* */
+/* navegador activity test */
+#testactivity-navigator {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background: #f8f8f8;
+  padding: 10px;
+  position: relative;
+  margin: 10px 0 0; }
+
+.execactivity-portlet #testactivity-navigator .aui-button {
+  padding: 0; }
+
+#testactivity-navigator #testactivity-navigator-pages {
+  text-align: center;
+  position: absolute;
+  width: 40%;
+  margin: 0 0 0 29%;
+  font-weight: 600; }
+
+#testactivity-navigator #testactivity-navigator-pages p {
+  display: inline; }
+
+#testactivity-navigator #testactivity-navigator-progress {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #e4701e;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+
+#testactivity-navigator #testactivity-navigator-progress .testactivity-navigator-progress-frame {
+  background: #e4701e;
+  height: 10px;
+  float: left; }
+
+#testactivity-navigator #testactivity-navigator-progress .testactivity-navigator-progress-frame-browsed {
+  background: #fcb034; }
+
+/* */
+/* */
+.wrapper-icon-course .aui-field-choice {
+  display: block;
+  margin-bottom: 10px; }
+
+.wrapper-icon-course .container_ico_course {
+  padding-top: 10px; }
+
+/* */
+.rightSideAnswer {
+  text-align: right; }
+
+.rightSideAnswer a.taglib-icon {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.rightSideAnswer a.taglib-icon:hover {
+  background: #45c3d3; }
+
+.rightSideAnswer a.taglib-icon img.icon {
+  display: none; }
+
+.rightSideAnswer .taglib-icon .taglib-text {
+  font: 300 16px Nunito, Arial; }
+
+/*  */
+.groupTask-portlet .portlet-borderless-container .portlet-body {
+  background: #fff;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  display: block; }
+
+/* enlaces que parezcan botones */
+.coursemodule .access a.module-list-button-edit {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-edit:hover {
+  background: #45c3d3; }
+
+.coursemodule .access a.module-list-button-access {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-access:hover {
+  background: #45c3d3; }
+
+/* */
+/* enlaces que parezcan botones */
+.coursemodule .access a.module-list-button-edit {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-edit:hover {
+  background: #45c3d3; }
+
+.coursemodule .access a.module-list-button-access {
+  background: #37aebd;
+  border: 0 none;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 35px;
+  font: 300 16px Nunito, Arial; }
+
+.coursemodule .access a.module-list-button-access:hover {
+  background: #45c3d3; }
+
+/* */
+.solution .leftSideAnswer input.aui-field-input-text {
+  width: 97%; }
+
+.execactivity-portlet .buttons_content .aui-button {
+  clear: none;
+  display: inline; }
+
+/* module selector */
+.modules_selector_container {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 10px; }
+
+.modules_selector_container span.modules_selector_list {
+  display: block;
+  float: left;
+  width: 80%; }
+
+.modules_selector_container select {
+  width: 100%;
+  height: 35px; }
+
+.modules_selector_container span.aui-button {
+  display: block;
+  float: left;
+  width: 19%;
+  text-align: left;
+  padding: 0; }
+
+.modules_selector_container span.aui-button input {
+  padding: 7px 14px; }
+
+/* */
+.contain_actions {
+  text-align: right; }
+
+.aui-button {
+  text-align: right;
+  padding: 10px 0; }
+
+/* formulario de busqueda */
+.student_search .aui-column {
+  float: none;
+  display: inline-block; }
+
+.student_search .search_lms_button {
+  float: none;
+  display: inline-block;
+  vertical-align: bottom; }
+
+/* */
+/* no puede contener + de 32 archivos importados */
+/* Esquemas de color */
+body.guest {
+  background: #f9f9f9 url(/wemoocdemo-theme/images/custom/color_schemes/guest/bg_body.png) 0 -39px repeat-x; }
+
+body.guest.dockbar-ready {
+  background: #f9f9f9 url(/wemoocdemo-theme/images/custom/color_schemes/guest/bg_body.png) 0 -9px repeat-x; }
+
+.guest #content {
+  background-color: #fff; }
+
+body.guest.portal-popup {
+  background: none #fff; }
+
+.guest #navigation_table_column2 {
+  float: left; }
+
+.guest .title_arrow .portlet-title {
+  margin-bottom: 0;
+  background: url("/wemoocdemo-theme/images/custom/icons/arrow_right.png") no-repeat scroll 0% 50% transparent; }
+
+.guest .title_arrow .portlet-title .portlet-title-text {
+  padding-left: 25px; }
+
+html body.pop_up_scheme.css {
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+body.pop_up_scheme.css .conteiner_bg {
+  background: none;
+  padding: 20px; }
+
+body.pop_up_scheme.css #wrapper {
+  width: 90%;
+  padding: 0; }
+
+body.pop_up_scheme.css #content {
+  width: 99%;
+  padding: 0; }
+
+body.pop_up_scheme.css #navigation_sup {
+  display: none; }
+
+body.pop_up_scheme.css #banner {
+  display: none; }
+
+body.pop_up_scheme.css #footer {
+  display: none; }
+
+body.pop_up_scheme.css #barra_foot {
+  display: none; }
+
+body.pop_up_scheme.css .ico_feedback {
+  display: none; }
+
+body.pop_up_scheme.css .socialportlet20-portlet {
+  display: none; }
+
+body.pop_up_scheme.css .aui-fieldset-legend {
+  font-size: 1em;
+  display: block;
+  width: 100%; }
+
+body.pop_up_scheme.css .aui-legend {
+  position: relative;
+  padding-top: 10px;
+  font: 600 2em Nunito, Tahoma, Verdana;
+  border-top: 1px solid #2d2849;
+  border-bottom: 0 none;
+  color: #00b5cb; }
+
+body.pop_up_scheme.css .aui-fieldset-content em.description {
+  padding-bottom: 10px;
+  display: block;
+  border-bottom: 1px solid #2d2849;
+  font: 600 1.6em Nunito, Tahoma, Verdana;
+  color: #00b5cc; }
+
+body.pop_up_scheme.css .aui-fieldset-content .aui-field-label {
+  font: 600 1.4em Nunito, Tahoma, Verdana;
+  color: #00b5cc; }
+
+body.pop_up_scheme.css .aui-fieldset-content .aui-button-submit {
+  display: block;
+  text-align: right; }
+
+body.pop_up_scheme.css .aui-fieldset-content .aui-button-submit input {
+  margin-right: 10px; }
+
+body.pop_up_scheme.css .aui-field-input {
+  width: 99%; }
+
+body.pop_up_scheme.css textarea.aui-field-input {
+  height: 50px; }
+
+body.pop_up_scheme.css iframe {
+  border: 0 none; }
+
+body.pop_up_scheme.css iframe html {
+  overflow: auto; }
+
